@@ -33,3 +33,4 @@
 2021-12-01 19:45:31,347 - INFO - Value for header {X-Monitor-Sign: {'X-Inner-Service-Sign': 'f0d0c874cfdab37fde240da24fb14ec2', 'X-Inner-Service-Timestamp': '1638359131', 'X-Inner-Service-Type': 'test-unit'}} must be of type str or bytes, not <class 'dict'>
 2021-12-01 19:48:59,863 - INFO - Value for header {X-Monitor-Sign: {'X-Inner-Service-Sign': 'd80514bcfc3462fb5695e424a42c66f5', 'X-Inner-Service-Timestamp': '1638359339', 'X-Inner-Service-Type': 'test-unit'}} must be of type str or bytes, not <class 'dict'>
 2021-12-01 19:50:01,735 - INFO - Value for header {X-Monitor-Sign: {'X-Inner-Service-Sign': 'e6a9337346854f7b16461c581195f778', 'X-Inner-Service-Timestamp': '1638359401', 'X-Inner-Service-Type': 'test-unit'}} must be of type str or bytes, not <class 'dict'>
+2021-12-02 16:10:49,351 - ERROR - 获取token失败

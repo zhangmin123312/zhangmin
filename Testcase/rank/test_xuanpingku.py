@@ -2,15 +2,17 @@
 # @Time    : 2021/12/1
 # @Author  : chenxubin
 # @File    : test_xuanpingku.py
-
 import allure
+import pytest
+
 from Common.Base import base
 from Config.path_config import PathMessage
-
+import os
 
 
 
 @allure.feature('测试样例')
+@pytest.mark.flaky(reruns=5, reruns_delay=1)
 class TestCase_XuanPingKu():
 
     """测试样例"""
@@ -26,11 +28,14 @@ class TestCase_XuanPingKu():
         assert responce["status_code"] == 200
 
 
-    def test_cheng_zhang_da_ren_bang(self,get_token,get_host):
-        data = {"bang_type":"G","star_category":"","day_type":"day","day":base.get_time("nowday","del",1),"page":1}
+    @allure.description("""验证成长达人榜日榜、周榜、月榜是否数据大于20条""")
+    @pytest.mark.parametrize('times',base.return_time_message())
+    @allure.title("成长达人榜日期:{times},类目：{star_type}")
+    @pytest.mark.parametrize('star_type',base.return_star_category(os.getenv("host"),1))
+    def test_cheng_zhang_da_ren_bang(self,get_token,get_host,star_type,times):
+        data = {"bang_type":"G","star_category":star_type,"day_type":times[0],"day":times[1],"page":1}
         responce = base().return_request(method="post", path=PathMessage.cheng_zhang_da_ren_bang, data=data,tokens=get_token,hosts=get_host, )
-        print(responce)
-        assert responce["status_code"] == 200
+        assert len(responce["response_body"]["data"]["rank_result"]) > 20
 
 
 

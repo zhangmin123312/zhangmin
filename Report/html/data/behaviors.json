@@ -1,0 +1,1005 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "测试样例",
+    "children" : [ {
+      "name" : "test_douyin_xiao_liang_bang",
+      "uid" : "c9e950cc3eaa5981",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766450,
+        "stop" : 1638447766602,
+        "duration" : 152
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['音乐']",
+      "uid" : "b79c0fd27bbf3e",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766453,
+        "stop" : 1638447766718,
+        "duration" : 265
+      },
+      "flaky" : false,
+      "parameters" : [ "['音乐']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['颜值达人']",
+      "uid" : "8149035b1f15d2a",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766453,
+        "stop" : 1638447766803,
+        "duration" : 350
+      },
+      "flaky" : false,
+      "parameters" : [ "['颜值达人']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['音乐']",
+      "uid" : "5653634adc61acf4",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766455,
+        "stop" : 1638447766810,
+        "duration" : 355
+      },
+      "flaky" : false,
+      "parameters" : [ "['音乐']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['颜值达人']",
+      "uid" : "a48e67c737696df9",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766459,
+        "stop" : 1638447766799,
+        "duration" : 340
+      },
+      "flaky" : false,
+      "parameters" : [ "['颜值达人']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['颜值达人']",
+      "uid" : "b48eaf3eb2418fbb",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766462,
+        "stop" : 1638447766844,
+        "duration" : 382
+      },
+      "flaky" : false,
+      "parameters" : [ "['颜值达人']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['音乐']",
+      "uid" : "4d606f57fa31ff0c",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766462,
+        "stop" : 1638447766788,
+        "duration" : 326
+      },
+      "flaky" : false,
+      "parameters" : [ "['音乐']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "test_xuan_ping_ku",
+      "uid" : "750f32fc5bdba8c9",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766462,
+        "stop" : 1638447766837,
+        "duration" : 375
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['运动健身']",
+      "uid" : "c91b96ecb8606825",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766607,
+        "stop" : 1638447767018,
+        "duration" : 411
+      },
+      "flaky" : false,
+      "parameters" : [ "['运动健身']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['萌宠']",
+      "uid" : "8e65c70fc66eb0a8",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766725,
+        "stop" : 1638447767222,
+        "duration" : 497
+      },
+      "flaky" : false,
+      "parameters" : [ "['萌宠']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['财经投资']",
+      "uid" : "e6d5bbfefb086c91",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766795,
+        "stop" : 1638447767161,
+        "duration" : 366
+      },
+      "flaky" : false,
+      "parameters" : [ "['财经投资']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['运动健身']",
+      "uid" : "79ea1d721a85cbdb",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766803,
+        "stop" : 1638447767128,
+        "duration" : 325
+      },
+      "flaky" : false,
+      "parameters" : [ "['运动健身']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['财经投资']",
+      "uid" : "c41537730e4bd27d",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766807,
+        "stop" : 1638447767180,
+        "duration" : 373
+      },
+      "flaky" : false,
+      "parameters" : [ "['财经投资']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['萌宠']",
+      "uid" : "ffe02ceb0d88d780",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766819,
+        "stop" : 1638447767180,
+        "duration" : 361
+      },
+      "flaky" : false,
+      "parameters" : [ "['萌宠']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['运动健身']",
+      "uid" : "ea762e72c424597",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766840,
+        "stop" : 1638447767132,
+        "duration" : 292
+      },
+      "flaky" : false,
+      "parameters" : [ "['运动健身']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['财经投资']",
+      "uid" : "abf16501cf7c8f4f",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447766849,
+        "stop" : 1638447767229,
+        "duration" : 380
+      },
+      "flaky" : false,
+      "parameters" : [ "['财经投资']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['萌宠']",
+      "uid" : "ed5159545d2c78e1",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767031,
+        "stop" : 1638447767407,
+        "duration" : 376
+      },
+      "flaky" : false,
+      "parameters" : [ "['萌宠']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['艺术文化']",
+      "uid" : "ed5bbfe474db8b6f",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767134,
+        "stop" : 1638447767505,
+        "duration" : 371
+      },
+      "flaky" : false,
+      "parameters" : [ "['艺术文化']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['艺术文化']",
+      "uid" : "aac43897b35c16e6",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767143,
+        "stop" : 1638447767506,
+        "duration" : 363
+      },
+      "flaky" : false,
+      "parameters" : [ "['艺术文化']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['舞蹈']",
+      "uid" : "4b4ec27ffe9ec635",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767165,
+        "stop" : 1638447767574,
+        "duration" : 409
+      },
+      "flaky" : false,
+      "parameters" : [ "['舞蹈']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['美食']",
+      "uid" : "c68ac3de40fbd106",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767194,
+        "stop" : 1638447767582,
+        "duration" : 388
+      },
+      "flaky" : false,
+      "parameters" : [ "['美食']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['艺术文化']",
+      "uid" : "168af16324b2d99",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767199,
+        "stop" : 1638447767505,
+        "duration" : 306
+      },
+      "flaky" : false,
+      "parameters" : [ "['艺术文化']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['舞蹈']",
+      "uid" : "5aeaa3580cdee8af",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767226,
+        "stop" : 1638447767717,
+        "duration" : 491
+      },
+      "flaky" : false,
+      "parameters" : [ "['舞蹈']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['美妆']",
+      "uid" : "156145fe3376df94",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767232,
+        "stop" : 1638447767676,
+        "duration" : 444
+      },
+      "flaky" : false,
+      "parameters" : [ "['美妆']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['美妆']",
+      "uid" : "ebe39e33c8360d4f",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767413,
+        "stop" : 1638447767778,
+        "duration" : 365
+      },
+      "flaky" : false,
+      "parameters" : [ "['美妆']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['生活']",
+      "uid" : "c49283effec6e3b4",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767513,
+        "stop" : 1638447767916,
+        "duration" : 403
+      },
+      "flaky" : false,
+      "parameters" : [ "['生活']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['生活']",
+      "uid" : "25ab4e91f3b0d1e6",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767513,
+        "stop" : 1638447767903,
+        "duration" : 390
+      },
+      "flaky" : false,
+      "parameters" : [ "['生活']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['科技数码']",
+      "uid" : "ffa478e841f1cf7a",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767513,
+        "stop" : 1638447767923,
+        "duration" : 410
+      },
+      "flaky" : false,
+      "parameters" : [ "['科技数码']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['美食']",
+      "uid" : "bb244007f9f8be49",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767578,
+        "stop" : 1638447768010,
+        "duration" : 432
+      },
+      "flaky" : false,
+      "parameters" : [ "['美食']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['美食']",
+      "uid" : "7d9f5ede07a71823",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767587,
+        "stop" : 1638447767933,
+        "duration" : 346
+      },
+      "flaky" : false,
+      "parameters" : [ "['美食']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['美妆']",
+      "uid" : "6d0930cbf42050e2",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767683,
+        "stop" : 1638447768051,
+        "duration" : 368
+      },
+      "flaky" : false,
+      "parameters" : [ "['美妆']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['舞蹈']",
+      "uid" : "b407cc9f338d8d6f",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767724,
+        "stop" : 1638447768083,
+        "duration" : 359
+      },
+      "flaky" : false,
+      "parameters" : [ "['舞蹈']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['科技数码']",
+      "uid" : "c49f155bb88625f1",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767782,
+        "stop" : 1638447768246,
+        "duration" : 464
+      },
+      "flaky" : false,
+      "parameters" : [ "['科技数码']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['游戏']",
+      "uid" : "e11d5b2b0fd7e3d9",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767909,
+        "stop" : 1638447768313,
+        "duration" : 404
+      },
+      "flaky" : false,
+      "parameters" : [ "['游戏']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['生活']",
+      "uid" : "e7d250438d780ef5",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767920,
+        "stop" : 1638447768313,
+        "duration" : 393
+      },
+      "flaky" : false,
+      "parameters" : [ "['生活']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['科技数码']",
+      "uid" : "f4b574caa53bc975",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767928,
+        "stop" : 1638447768262,
+        "duration" : 334
+      },
+      "flaky" : false,
+      "parameters" : [ "['科技数码']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['游戏']",
+      "uid" : "5fee383cd9b4ab88",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447767937,
+        "stop" : 1638447768352,
+        "duration" : 415
+      },
+      "flaky" : false,
+      "parameters" : [ "['游戏']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['游戏']",
+      "uid" : "1855e4245973b7db",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768016,
+        "stop" : 1638447768359,
+        "duration" : 343
+      },
+      "flaky" : false,
+      "parameters" : [ "['游戏']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['测评']",
+      "uid" : "991de83da4cf96a",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768059,
+        "stop" : 1638447768624,
+        "duration" : 565
+      },
+      "flaky" : false,
+      "parameters" : [ "['测评']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['测评']",
+      "uid" : "cac96a177d552f48",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768089,
+        "stop" : 1638447768496,
+        "duration" : 407
+      },
+      "flaky" : false,
+      "parameters" : [ "['测评']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['测评']",
+      "uid" : "6fe7e9d5d79936a1",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768253,
+        "stop" : 1638447768674,
+        "duration" : 421
+      },
+      "flaky" : false,
+      "parameters" : [ "['测评']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['汽车']",
+      "uid" : "6ddfb7fce820b51b",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768266,
+        "stop" : 1638447768624,
+        "duration" : 358
+      },
+      "flaky" : false,
+      "parameters" : [ "['汽车']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['汽车']",
+      "uid" : "f6e059038ef64bd0",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768321,
+        "stop" : 1638447768808,
+        "duration" : 487
+      },
+      "flaky" : false,
+      "parameters" : [ "['汽车']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['汽车']",
+      "uid" : "8fe6cd6fd4e0948b",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768321,
+        "stop" : 1638447768699,
+        "duration" : 378
+      },
+      "flaky" : false,
+      "parameters" : [ "['汽车']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['母婴亲子']",
+      "uid" : "4eda5d9bdd16dba",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768359,
+        "stop" : 1638447768746,
+        "duration" : 387
+      },
+      "flaky" : false,
+      "parameters" : [ "['母婴亲子']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['母婴亲子']",
+      "uid" : "c72f7966711ff6f2",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768365,
+        "stop" : 1638447768722,
+        "duration" : 357
+      },
+      "flaky" : false,
+      "parameters" : [ "['母婴亲子']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['时尚']",
+      "uid" : "c93c962e332e188c",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768502,
+        "stop" : 1638447769003,
+        "duration" : 501
+      },
+      "flaky" : false,
+      "parameters" : [ "['时尚']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['母婴亲子']",
+      "uid" : "e38560ac0e4c1477",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768631,
+        "stop" : 1638447768941,
+        "duration" : 310
+      },
+      "flaky" : false,
+      "parameters" : [ "['母婴亲子']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['时尚']",
+      "uid" : "81bc8aa7612be4e3",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768631,
+        "stop" : 1638447769036,
+        "duration" : 405
+      },
+      "flaky" : false,
+      "parameters" : [ "['时尚']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['时尚']",
+      "uid" : "19948b388841e3b8",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768680,
+        "stop" : 1638447769053,
+        "duration" : 373
+      },
+      "flaky" : false,
+      "parameters" : [ "['时尚']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['旅行']",
+      "uid" : "be0eeaa479921638",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768710,
+        "stop" : 1638447769231,
+        "duration" : 521
+      },
+      "flaky" : false,
+      "parameters" : [ "['旅行']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['教育培训']",
+      "uid" : "276809a74033e7c8",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768726,
+        "stop" : 1638447769247,
+        "duration" : 521
+      },
+      "flaky" : false,
+      "parameters" : [ "['教育培训']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['旅行']",
+      "uid" : "c165e5fa1a302eea",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768750,
+        "stop" : 1638447769247,
+        "duration" : 497
+      },
+      "flaky" : false,
+      "parameters" : [ "['旅行']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['旅行']",
+      "uid" : "5af5bc61319e6478",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768815,
+        "stop" : 1638447769398,
+        "duration" : 583
+      },
+      "flaky" : false,
+      "parameters" : [ "['旅行']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['政务']",
+      "uid" : "519e647ad80605b4",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447768948,
+        "stop" : 1638447769452,
+        "duration" : 504
+      },
+      "flaky" : false,
+      "parameters" : [ "['政务']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['教育培训']",
+      "uid" : "6e16316068308663",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769009,
+        "stop" : 1638447769380,
+        "duration" : 371
+      },
+      "flaky" : false,
+      "parameters" : [ "['教育培训']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['教育培训']",
+      "uid" : "9f5a8e4e3373b15d",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769042,
+        "stop" : 1638447769380,
+        "duration" : 338
+      },
+      "flaky" : false,
+      "parameters" : [ "['教育培训']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['政务']",
+      "uid" : "2ee7f5d81a3e5852",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769058,
+        "stop" : 1638447769449,
+        "duration" : 391
+      },
+      "flaky" : false,
+      "parameters" : [ "['政务']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['政务']",
+      "uid" : "3c61c6e720dc4275",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769238,
+        "stop" : 1638447769598,
+        "duration" : 360
+      },
+      "flaky" : false,
+      "parameters" : [ "['政务']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['才艺技能']",
+      "uid" : "e77059045ce38321",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769252,
+        "stop" : 1638447769697,
+        "duration" : 445
+      },
+      "flaky" : false,
+      "parameters" : [ "['才艺技能']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['才艺技能']",
+      "uid" : "12621afc5a4df424",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769252,
+        "stop" : 1638447769691,
+        "duration" : 439
+      },
+      "flaky" : false,
+      "parameters" : [ "['才艺技能']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['情感']",
+      "uid" : "49a36b291f9e027a",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769387,
+        "stop" : 1638447769850,
+        "duration" : 463
+      },
+      "flaky" : false,
+      "parameters" : [ "['情感']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['情感']",
+      "uid" : "57d386098843e364",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769388,
+        "stop" : 1638447769836,
+        "duration" : 448
+      },
+      "flaky" : false,
+      "parameters" : [ "['情感']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['才艺技能']",
+      "uid" : "931dde029c966fce",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769402,
+        "stop" : 1638447769820,
+        "duration" : 418
+      },
+      "flaky" : false,
+      "parameters" : [ "['才艺技能']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['影视娱乐']",
+      "uid" : "ff0508fdf2cdb16c",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769456,
+        "stop" : 1638447769947,
+        "duration" : 491
+      },
+      "flaky" : false,
+      "parameters" : [ "['影视娱乐']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['情感']",
+      "uid" : "dd7aa62846612c3c",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769457,
+        "stop" : 1638447769942,
+        "duration" : 485
+      },
+      "flaky" : false,
+      "parameters" : [ "['情感']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['影视娱乐']",
+      "uid" : "f23ed57056da3a40",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769606,
+        "stop" : 1638447769985,
+        "duration" : 379
+      },
+      "flaky" : false,
+      "parameters" : [ "['影视娱乐']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['家居家装']",
+      "uid" : "30b879c3a62467cf",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769700,
+        "stop" : 1638447770155,
+        "duration" : 455
+      },
+      "flaky" : false,
+      "parameters" : [ "['家居家装']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['影视娱乐']",
+      "uid" : "c9c9418e12b68346",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769710,
+        "stop" : 1638447770000,
+        "duration" : 290
+      },
+      "flaky" : false,
+      "parameters" : [ "['影视娱乐']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['园艺']",
+      "uid" : "d9f5daa94324d4ae",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769827,
+        "stop" : 1638447770012,
+        "duration" : 185
+      },
+      "flaky" : false,
+      "parameters" : [ "['园艺']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['家居家装']",
+      "uid" : "a9862d5d206dd9ef",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769842,
+        "stop" : 1638447770198,
+        "duration" : 356
+      },
+      "flaky" : false,
+      "parameters" : [ "['家居家装']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['家居家装']",
+      "uid" : "e5622a3b33dc86b9",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769854,
+        "stop" : 1638447770234,
+        "duration" : 380
+      },
+      "flaky" : false,
+      "parameters" : [ "['家居家装']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['园艺']",
+      "uid" : "43f52515d5d3e596",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769949,
+        "stop" : 1638447770145,
+        "duration" : 196
+      },
+      "flaky" : false,
+      "parameters" : [ "['园艺']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['园艺']",
+      "uid" : "8e0a3c9f198fe625",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769953,
+        "stop" : 1638447770145,
+        "duration" : 192
+      },
+      "flaky" : false,
+      "parameters" : [ "['园艺']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['剧情搞笑']",
+      "uid" : "aee2f49bd0e992ee",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447769992,
+        "stop" : 1638447770434,
+        "duration" : 442
+      },
+      "flaky" : false,
+      "parameters" : [ "['剧情搞笑']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['剧情搞笑']",
+      "uid" : "4328737e49eb4b0",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447770005,
+        "stop" : 1638447770435,
+        "duration" : 430
+      },
+      "flaky" : false,
+      "parameters" : [ "['剧情搞笑']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['二次元']",
+      "uid" : "eee3437708997630",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447770016,
+        "stop" : 1638447770443,
+        "duration" : 427
+      },
+      "flaky" : false,
+      "parameters" : [ "['二次元']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['三农']",
+      "uid" : "635073e7bca2c775",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447770153,
+        "stop" : 1638447770399,
+        "duration" : 246
+      },
+      "flaky" : false,
+      "parameters" : [ "['三农']", "['day', '2021-12-01']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['三农']",
+      "uid" : "278c2e93dd409f9f",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447770153,
+        "stop" : 1638447770434,
+        "duration" : 281
+      },
+      "flaky" : false,
+      "parameters" : [ "['三农']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['剧情搞笑']",
+      "uid" : "f55159a8a8322954",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447770168,
+        "stop" : 1638447770509,
+        "duration" : 341
+      },
+      "flaky" : false,
+      "parameters" : [ "['剧情搞笑']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['二次元']",
+      "uid" : "bb432b850bcaa84e",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447770205,
+        "stop" : 1638447770630,
+        "duration" : 425
+      },
+      "flaky" : false,
+      "parameters" : [ "['二次元']", "['week', '20211122-20211128']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['二次元']",
+      "uid" : "662d980ff55f5722",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447770242,
+        "stop" : 1638447770630,
+        "duration" : 388
+      },
+      "flaky" : false,
+      "parameters" : [ "['二次元']", "['month', '202111']" ]
+    }, {
+      "name" : "成长达人榜日期:['month', '202111'],类目：['三农']",
+      "uid" : "565fa904db92281c",
+      "parentUid" : "97f36ac6395549ba1eb1f79b19799004",
+      "status" : "passed",
+      "time" : {
+        "start" : 1638447770441,
+        "stop" : 1638447770725,
+        "duration" : 284
+      },
+      "flaky" : false,
+      "parameters" : [ "['三农']", "['month', '202111']" ]
+    } ],
+    "uid" : "97f36ac6395549ba1eb1f79b19799004"
+  } ],
+  "name" : "behaviors"
+}

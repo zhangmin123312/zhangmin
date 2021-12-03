@@ -8,14 +8,14 @@
 """
 import shutil
 import hashlib
-import requests
-import json
 import datetime
 from datetime import timedelta
 import time
 from dingtalkchatbot.chatbot import DingtalkChatbot
 from Common.request import Request
 from Config.Consts import user_agent
+from Config.path_config import PathMessage
+
 
 
 class base():
@@ -52,6 +52,7 @@ class base():
         # :param num: 具体的天数或周数
         # :return: 当前日期加上或减去具体的天数或周数
         """
+
         if types == "nowweek":
             if method == "add":
                 now = datetime.datetime.now().date()
@@ -97,14 +98,35 @@ class base():
             print("类型输入错误")
 
 
+
+
     @staticmethod
-    def return_product_types(host):
+    def return_time_message():
+        """
+        返回昨天、上周、上个月的时间list
+        """
+        now = datetime.datetime.now().date()
+        lDay = now - timedelta(days=now.weekday() + (7 * abs(1)))
+        rDay = lDay + timedelta(days=6)
+        week_date = "{}-{}".format(str(lDay).replace("-", ""), str(rDay).replace("-", ""))
+        del_day = datetime.datetime.now() - datetime.timedelta(days=1)
+        now_day = del_day.strftime('%Y-%m-%d')
+        today = datetime.date.today()
+        day = today.replace(day=1)
+        last_month = day - datetime.timedelta(days=1)
+        month_data = last_month.strftime("%Y%m")
+
+        return [["day",now_day],["week",week_date],["month",month_data]]
+
+
+
+
+    @staticmethod
+    def return_product_types(host,type):
         """
         返回商品分类
         """
-        url = host + "/v1/product/category?type=all"
-        host_header = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:89.0) Gecko/20100101 Firefox/89.0"
-        responce = requests.get(url, host_header).json()["data"]
+        responce = base().return_request(method="get",path=PathMessage.product_path,hosts=host)['response_body']['data']
         category_big_types_list = []
         category_first_types_list = []
         # category_two_types_list = []
@@ -115,7 +137,51 @@ class base():
             # for b in a["sub_categories"]:
             # 	category_two_types_list.append([i["cat_name"],a["cat_name"],b["cat_name"]])
 
-        return [category_big_types_list, category_first_types_list]
+
+        if type == 1:
+
+            return category_big_types_list
+
+        elif type == 2:
+
+            return category_first_types_list
+
+        else:
+            print("类别输入有误")
+            raise False
+
+
+
+    @staticmethod
+    def return_star_category(host,type):
+        """
+        返回达人分类
+        """
+        responce = base().return_request(method="get",path=PathMessage.star_category,hosts=host)['response_body']['data']
+        category_big_types_list = []
+        category_first_types_list = []
+        # category_two_types_list = []
+        for i in responce:
+            category_big_types_list.append([i["cat_name"]])
+            for a in i["sub_categories"]:
+                category_first_types_list.append([i["cat_name"], a["cat_name"]])
+            # for b in a["sub_categories"]:
+            # 	category_two_types_list.append([i["cat_name"],a["cat_name"],b["cat_name"]])
+
+        if type == 1:
+
+            return category_big_types_list
+
+        elif type == 2:
+
+            return category_first_types_list
+
+        else:
+            print("类别输入有误")
+            raise False
+
+
+
 
 
 
@@ -170,9 +236,14 @@ class base():
 
 
 
+
+
+
+
+
 if __name__ == '__main__':
 
-    print(base.return_Sign("https://sv-api-test.ajin.me/v1/home/rank/liveRank"))
+    print(base.return_times())
 
 
 

@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/05/04
+# @Time    : 2021/12/01
 # @Author  : chenxubin
 # @File    : conftest.py
 
@@ -12,13 +12,10 @@ from Common.mylog import Mylog
 from Config.request_config import HostMessage
 from Config.Consts import API_ENVIRONMENT,telephone,user_agent
 from Config.path_config import PathMessage
-from Common.Base import base
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
-
-
 
 if API_ENVIRONMENT == "release":
 	host = HostMessage.release_host
@@ -28,6 +25,9 @@ if API_ENVIRONMENT == "debug":
 
 if API_ENVIRONMENT == "stage":
 	host = HostMessage.stage_host
+
+#设置全局host变量
+os.environ["host"] = host
 
 
 
@@ -51,7 +51,7 @@ def get_token():
 
 	try:
 
-		token = Request.post_request(url=host + PathMessage.token, headers=header, data=data)['response_body']["data"]["token"]
+		token = Request.post_request(url=host + PathMessage.token[0], headers=header, data=data)['response_body']["data"]["token"]
 
 	except:
 		print("获取token失败")
