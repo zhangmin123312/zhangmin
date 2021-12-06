@@ -26,6 +26,14 @@ class PathMessage:
     #成长达人榜
     cheng_zhang_da_ren_bang = ["/v1/authorRank/bangNew"]
 
+    #行业达人榜
+    hang_ye_da_ren_bang = ["/v1/authorRank/bangNew"]
+
+    #商品品牌榜
+    brand_rank = ["/v1/brand/rank"]
+
+
+
 
 
 

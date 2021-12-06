@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2020/05/06
+# @Time    : 2021/12/01
 # @Author  : chenxubin
 # @File    : Base.py
 
@@ -214,10 +214,10 @@ class base():
 
             if len(path) > 2:
 
-                res = Request.get_request(url=hosts+ path[0] + path[1],headers=header)
+                res = Request.get_request(url=hosts+ path[0] + path[1],headers=header,data=data)
                 return res
 
-            res = Request.get_request(url=hosts + path[0] , headers=header)
+            res = Request.get_request(url=hosts + path[0] , headers=header,data=data)
             return res
 
         elif method == "post":

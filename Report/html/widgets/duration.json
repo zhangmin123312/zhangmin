@@ -1,830 +1,750 @@
 [ {
-  "uid" : "8e65c70fc66eb0a8",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['萌宠']",
+  "uid" : "28d687f7faa2d8e",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['鲜花绿植']",
   "time" : {
-    "start" : 1638447766725,
-    "stop" : 1638447767222,
-    "duration" : 497
+    "start" : 1638796160098,
+    "stop" : 1638796160268,
+    "duration" : 170
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "3c61c6e720dc4275",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['政务']",
+  "uid" : "ac4c10880123a742",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['食品饮料']",
   "time" : {
-    "start" : 1638447769238,
-    "stop" : 1638447769598,
-    "duration" : 360
+    "start" : 1638796159564,
+    "stop" : 1638796159730,
+    "duration" : 166
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c72f7966711ff6f2",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['母婴亲子']",
+  "uid" : "44028c514069f39a",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['其他']",
   "time" : {
-    "start" : 1638447768365,
-    "stop" : 1638447768722,
-    "duration" : 357
+    "start" : 1638796160962,
+    "stop" : 1638796161121,
+    "duration" : 159
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c9c9418e12b68346",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['影视娱乐']",
+  "uid" : "c5af15f9db69d48c",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['珠宝饰品']",
   "time" : {
-    "start" : 1638447769710,
-    "stop" : 1638447770000,
-    "duration" : 290
+    "start" : 1638796159742,
+    "stop" : 1638796159912,
+    "duration" : 170
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e6d5bbfefb086c91",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['财经投资']",
+  "uid" : "82fe688d1032021d",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['服饰内衣']",
   "time" : {
-    "start" : 1638447766795,
-    "stop" : 1638447767161,
-    "duration" : 366
+    "start" : 1638796159571,
+    "stop" : 1638796159753,
+    "duration" : 182
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "168af16324b2d99",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['艺术文化']",
+  "uid" : "a3afc7590fd80671",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['汽配摩托']",
   "time" : {
-    "start" : 1638447767199,
-    "stop" : 1638447767505,
-    "duration" : 306
+    "start" : 1638796160947,
+    "stop" : 1638796161106,
+    "duration" : 159
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "991de83da4cf96a",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['测评']",
+  "uid" : "7619ec25d4eabba4",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['本地生活']",
   "time" : {
-    "start" : 1638447768059,
-    "stop" : 1638447768624,
-    "duration" : 565
+    "start" : 1638796160800,
+    "stop" : 1638796160956,
+    "duration" : 156
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c41537730e4bd27d",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['财经投资']",
+  "uid" : "7a8e0558eb9176",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['其他']",
   "time" : {
-    "start" : 1638447766807,
-    "stop" : 1638447767180,
-    "duration" : 373
+    "start" : 1638796160956,
+    "stop" : 1638796161113,
+    "duration" : 157
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5aeaa3580cdee8af",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['舞蹈']",
+  "uid" : "bc634b133c6f4b6a",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['家居家纺']",
   "time" : {
-    "start" : 1638447767226,
-    "stop" : 1638447767717,
-    "duration" : 491
+    "start" : 1638796159923,
+    "stop" : 1638796160089,
+    "duration" : 166
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c49f155bb88625f1",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['科技数码']",
+  "uid" : "dc78c1bfd7b0669f",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['玩具乐器']",
   "time" : {
-    "start" : 1638447767782,
-    "stop" : 1638447768246,
-    "duration" : 464
+    "start" : 1638796160609,
+    "stop" : 1638796160784,
+    "duration" : 175
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "19948b388841e3b8",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['时尚']",
+  "uid" : "9a46b00336c76243",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['家具建材']",
   "time" : {
-    "start" : 1638447768680,
-    "stop" : 1638447769053,
-    "duration" : 373
+    "start" : 1638796160461,
+    "stop" : 1638796160634,
+    "duration" : 173
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "eee3437708997630",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['二次元']",
+  "uid" : "80a0fb536f8a9d63",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['玩具乐器']",
   "time" : {
-    "start" : 1638447770016,
-    "stop" : 1638447770443,
-    "duration" : 427
+    "start" : 1638796160617,
+    "stop" : 1638796160795,
+    "duration" : 178
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "49a36b291f9e027a",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['情感']",
+  "uid" : "a5b94578a1361c0f",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['珠宝饰品']",
   "time" : {
-    "start" : 1638447769387,
-    "stop" : 1638447769850,
-    "duration" : 463
+    "start" : 1638796159757,
+    "stop" : 1638796159916,
+    "duration" : 159
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4328737e49eb4b0",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['剧情搞笑']",
+  "uid" : "aa887d78932f05d2",
+  "name" : "商品品牌榜日期:['month', '202111'],排序类型：amount",
   "time" : {
-    "start" : 1638447770005,
-    "stop" : 1638447770435,
-    "duration" : 430
+    "start" : 1638796161120,
+    "stop" : 1638796161275,
+    "duration" : 155
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f6e059038ef64bd0",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['汽车']",
+  "uid" : "8e31afcc6745baf2",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['医药保健']",
   "time" : {
-    "start" : 1638447768321,
-    "stop" : 1638447768808,
-    "duration" : 487
+    "start" : 1638796160810,
+    "stop" : 1638796160961,
+    "duration" : 151
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c165e5fa1a302eea",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['旅行']",
+  "uid" : "d0e50b28059eaa2",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],排序类型：volume",
   "time" : {
-    "start" : 1638447768750,
-    "stop" : 1638447769247,
-    "duration" : 497
+    "start" : 1638796160981,
+    "stop" : 1638796161141,
+    "duration" : 160
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "bb432b850bcaa84e",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['二次元']",
+  "uid" : "ba07bc1fdd86315a",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['玩具乐器']",
   "time" : {
-    "start" : 1638447770205,
-    "stop" : 1638447770630,
-    "duration" : 425
+    "start" : 1638796160612,
+    "stop" : 1638796160792,
+    "duration" : 180
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "635073e7bca2c775",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['三农']",
+  "uid" : "2af88026c4450a53",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['本地生活']",
   "time" : {
-    "start" : 1638447770153,
-    "stop" : 1638447770399,
-    "duration" : 246
+    "start" : 1638796160802,
+    "stop" : 1638796160949,
+    "duration" : 147
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c49283effec6e3b4",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['生活']",
+  "uid" : "518f95d7ee561549",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['汽配摩托']",
   "time" : {
-    "start" : 1638447767513,
-    "stop" : 1638447767916,
-    "duration" : 403
+    "start" : 1638796160819,
+    "stop" : 1638796160964,
+    "duration" : 145
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e38560ac0e4c1477",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['母婴亲子']",
+  "uid" : "9724a1029d5a6496",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['生鲜蔬果']",
   "time" : {
-    "start" : 1638447768631,
-    "stop" : 1638447768941,
-    "duration" : 310
+    "start" : 1638796160081,
+    "stop" : 1638796160240,
+    "duration" : 159
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ffe02ceb0d88d780",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['萌宠']",
+  "uid" : "efd191f25905af35",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['厨卫家电']",
   "time" : {
-    "start" : 1638447766819,
-    "stop" : 1638447767180,
-    "duration" : 361
+    "start" : 1638796160593,
+    "stop" : 1638796160805,
+    "duration" : 212
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "25ab4e91f3b0d1e6",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['生活']",
+  "uid" : "fcadf9da2da9e8df",
+  "name" : "商品品牌榜日期:['month', '202111'],排序类型：volume",
   "time" : {
-    "start" : 1638447767513,
-    "stop" : 1638447767903,
-    "duration" : 390
+    "start" : 1638796160979,
+    "stop" : 1638796161147,
+    "duration" : 168
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "aee2f49bd0e992ee",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['剧情搞笑']",
+  "uid" : "2941b9aef0484d8b",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['鞋靴箱包']",
   "time" : {
-    "start" : 1638447769992,
-    "stop" : 1638447770434,
-    "duration" : 442
+    "start" : 1638796159941,
+    "stop" : 1638796160112,
+    "duration" : 171
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "aac43897b35c16e6",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['艺术文化']",
+  "uid" : "b3674f8fc2c9292a",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['图书音像']",
   "time" : {
-    "start" : 1638447767143,
-    "stop" : 1638447767506,
-    "duration" : 363
+    "start" : 1638796160090,
+    "stop" : 1638796160237,
+    "duration" : 147
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4b4ec27ffe9ec635",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['舞蹈']",
+  "uid" : "1dd28d54163631ba",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['宠物用品']",
   "time" : {
-    "start" : 1638447767165,
-    "stop" : 1638447767574,
-    "duration" : 409
+    "start" : 1638796160637,
+    "stop" : 1638796160814,
+    "duration" : 177
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6ddfb7fce820b51b",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['汽车']",
+  "uid" : "5bcedc325ed47684",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['日用百货']",
   "time" : {
-    "start" : 1638447768266,
-    "stop" : 1638447768624,
-    "duration" : 358
+    "start" : 1638796159758,
+    "stop" : 1638796159933,
+    "duration" : 175
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "79ea1d721a85cbdb",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['运动健身']",
+  "uid" : "187afbddf764e2ed",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['汽配摩托']",
   "time" : {
-    "start" : 1638447766803,
-    "stop" : 1638447767128,
-    "duration" : 325
+    "start" : 1638796160955,
+    "stop" : 1638796161133,
+    "duration" : 178
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4eda5d9bdd16dba",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['母婴亲子']",
+  "uid" : "e87652479c45416f",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['家具建材']",
   "time" : {
-    "start" : 1638447768359,
-    "stop" : 1638447768746,
-    "duration" : 387
+    "start" : 1638796160430,
+    "stop" : 1638796160612,
+    "duration" : 182
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f23ed57056da3a40",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['影视娱乐']",
+  "uid" : "2e57208022ee26c",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['鞋靴箱包']",
   "time" : {
-    "start" : 1638447769606,
-    "stop" : 1638447769985,
-    "duration" : 379
+    "start" : 1638796160115,
+    "stop" : 1638796160275,
+    "duration" : 160
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "57d386098843e364",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['情感']",
+  "uid" : "4d1863ecf5e26c71",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['母婴用品']",
   "time" : {
-    "start" : 1638447769388,
-    "stop" : 1638447769836,
-    "duration" : 448
+    "start" : 1638796159927,
+    "stop" : 1638796160092,
+    "duration" : 165
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "81bc8aa7612be4e3",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['时尚']",
+  "uid" : "c8f5741c94e3b170",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['宠物用品']",
   "time" : {
-    "start" : 1638447768631,
-    "stop" : 1638447769036,
-    "duration" : 405
+    "start" : 1638796160795,
+    "stop" : 1638796160954,
+    "duration" : 159
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c9e950cc3eaa5981",
-  "name" : "test_douyin_xiao_liang_bang",
+  "uid" : "7e418605ed3250f0",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['鲜花绿植']",
   "time" : {
-    "start" : 1638447766450,
-    "stop" : 1638447766602,
-    "duration" : 152
+    "start" : 1638796160246,
+    "stop" : 1638796160400,
+    "duration" : 154
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "d9f5daa94324d4ae",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['园艺']",
+  "uid" : "20f18cec524c6361",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['生鲜蔬果']",
   "time" : {
-    "start" : 1638447769827,
-    "stop" : 1638447770012,
-    "duration" : 185
+    "start" : 1638796159908,
+    "stop" : 1638796160074,
+    "duration" : 166
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "9f5a8e4e3373b15d",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['教育培训']",
+  "uid" : "49d7ce5de04c8b47",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['运动户外']",
   "time" : {
-    "start" : 1638447769042,
-    "stop" : 1638447769380,
-    "duration" : 338
+    "start" : 1638796160244,
+    "stop" : 1638796160399,
+    "duration" : 155
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6fe7e9d5d79936a1",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['测评']",
+  "uid" : "32eaaf2e4f0d044a",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['母婴用品']",
   "time" : {
-    "start" : 1638447768253,
-    "stop" : 1638447768674,
-    "duration" : 421
+    "start" : 1638796159946,
+    "stop" : 1638796160101,
+    "duration" : 155
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b48eaf3eb2418fbb",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['颜值达人']",
+  "uid" : "d463aaef09cd12d6",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['日用百货']",
   "time" : {
-    "start" : 1638447766462,
-    "stop" : 1638447766844,
-    "duration" : 382
+    "start" : 1638796159562,
+    "stop" : 1638796159734,
+    "duration" : 172
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ffa478e841f1cf7a",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['科技数码']",
+  "uid" : "3c890d2f21a39b4d",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['钟表配饰']",
   "time" : {
-    "start" : 1638447767513,
-    "stop" : 1638447767923,
-    "duration" : 410
+    "start" : 1638796160291,
+    "stop" : 1638796160445,
+    "duration" : 154
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ea762e72c424597",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['运动健身']",
+  "uid" : "ecb1304df4a0fc56",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['厨卫家电']",
   "time" : {
-    "start" : 1638447766840,
-    "stop" : 1638447767132,
-    "duration" : 292
+    "start" : 1638796160598,
+    "stop" : 1638796160780,
+    "duration" : 182
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "4d606f57fa31ff0c",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['音乐']",
+  "uid" : "c52c58d896461b82",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['鲜花绿植']",
   "time" : {
-    "start" : 1638447766462,
-    "stop" : 1638447766788,
-    "duration" : 326
+    "start" : 1638796160106,
+    "stop" : 1638796160286,
+    "duration" : 180
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "1855e4245973b7db",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['游戏']",
+  "uid" : "e859df2e1c602e61",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['服饰内衣']",
   "time" : {
-    "start" : 1638447768016,
-    "stop" : 1638447768359,
-    "duration" : 343
+    "start" : 1638796159561,
+    "stop" : 1638796159726,
+    "duration" : 165
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b79c0fd27bbf3e",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['音乐']",
+  "uid" : "d1576e358630009b",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],排序类型：volume",
   "time" : {
-    "start" : 1638447766453,
-    "stop" : 1638447766718,
-    "duration" : 265
+    "start" : 1638796160969,
+    "stop" : 1638796161139,
+    "duration" : 170
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "750f32fc5bdba8c9",
-  "name" : "test_xuan_ping_ku",
+  "uid" : "e5ba6a74ca0c0aa2",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['家具建材']",
   "time" : {
-    "start" : 1638447766462,
-    "stop" : 1638447766837,
-    "duration" : 375
+    "start" : 1638796160457,
+    "stop" : 1638796160617,
+    "duration" : 160
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "278c2e93dd409f9f",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['三农']",
+  "uid" : "e4c98d4f62bc683d",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['本地生活']",
   "time" : {
-    "start" : 1638447770153,
-    "stop" : 1638447770434,
-    "duration" : 281
+    "start" : 1638796160812,
+    "stop" : 1638796160967,
+    "duration" : 155
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ed5bbfe474db8b6f",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['艺术文化']",
+  "uid" : "207f46776b8ed7fe",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['鞋靴箱包']",
   "time" : {
-    "start" : 1638447767134,
-    "stop" : 1638447767505,
-    "duration" : 371
+    "start" : 1638796159930,
+    "stop" : 1638796160098,
+    "duration" : 168
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "565fa904db92281c",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['三农']",
+  "uid" : "2ced28ec206e8519",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['家居家纺']",
   "time" : {
-    "start" : 1638447770441,
-    "stop" : 1638447770725,
-    "duration" : 284
+    "start" : 1638796160094,
+    "stop" : 1638796160260,
+    "duration" : 166
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e11d5b2b0fd7e3d9",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['游戏']",
+  "uid" : "d9c69c39d5ca7e0e",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['运动户外']",
   "time" : {
-    "start" : 1638447767909,
-    "stop" : 1638447768313,
-    "duration" : 404
+    "start" : 1638796160267,
+    "stop" : 1638796160417,
+    "duration" : 150
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a48e67c737696df9",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['颜值达人']",
+  "uid" : "798a3b9bbba74de3",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['其他']",
   "time" : {
-    "start" : 1638447766459,
-    "stop" : 1638447766799,
-    "duration" : 340
+    "start" : 1638796160964,
+    "stop" : 1638796161128,
+    "duration" : 164
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5af5bc61319e6478",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['旅行']",
+  "uid" : "3a50f9b02ad12887",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['礼品文创']",
   "time" : {
-    "start" : 1638447768815,
-    "stop" : 1638447769398,
-    "duration" : 583
+    "start" : 1638796160428,
+    "stop" : 1638796160605,
+    "duration" : 177
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "30b879c3a62467cf",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['家居家装']",
+  "uid" : "2da19f508ed2e496",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['礼品文创']",
   "time" : {
-    "start" : 1638447769700,
-    "stop" : 1638447770155,
-    "duration" : 455
+    "start" : 1638796160433,
+    "stop" : 1638796160608,
+    "duration" : 175
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e5622a3b33dc86b9",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['家居家装']",
+  "uid" : "e979e066a3af59a7",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],排序类型：amount",
   "time" : {
-    "start" : 1638447769854,
-    "stop" : 1638447770234,
-    "duration" : 380
+    "start" : 1638796161113,
+    "stop" : 1638796161264,
+    "duration" : 151
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "e77059045ce38321",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['才艺技能']",
+  "uid" : "801785c7830e611b",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['美妆护肤']",
   "time" : {
-    "start" : 1638447769252,
-    "stop" : 1638447769697,
-    "duration" : 445
+    "start" : 1638796159751,
+    "stop" : 1638796159920,
+    "duration" : 169
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ff0508fdf2cdb16c",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['影视娱乐']",
+  "uid" : "e33b117f776b8462",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['生鲜蔬果']",
   "time" : {
-    "start" : 1638447769456,
-    "stop" : 1638447769947,
-    "duration" : 491
+    "start" : 1638796159912,
+    "stop" : 1638796160122,
+    "duration" : 210
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ed5159545d2c78e1",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['萌宠']",
+  "uid" : "4484c1ee373c0cf1",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['珠宝饰品']",
   "time" : {
-    "start" : 1638447767031,
-    "stop" : 1638447767407,
-    "duration" : 376
+    "start" : 1638796159750,
+    "stop" : 1638796159923,
+    "duration" : 173
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "12621afc5a4df424",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['才艺技能']",
+  "uid" : "98b2b293560e2e81",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['美妆护肤']",
   "time" : {
-    "start" : 1638447769252,
-    "stop" : 1638447769691,
-    "duration" : 439
+    "start" : 1638796159738,
+    "stop" : 1638796159905,
+    "duration" : 167
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "dd7aa62846612c3c",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['情感']",
+  "uid" : "a52aba923db0e7d9",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['3C数码']",
   "time" : {
-    "start" : 1638447769457,
-    "stop" : 1638447769942,
-    "duration" : 485
+    "start" : 1638796160291,
+    "stop" : 1638796160455,
+    "duration" : 164
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8fe6cd6fd4e0948b",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['汽车']",
+  "uid" : "8e73f3c07b9c59f",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['厨卫家电']",
   "time" : {
-    "start" : 1638447768321,
-    "stop" : 1638447768699,
-    "duration" : 378
+    "start" : 1638796160592,
+    "stop" : 1638796160787,
+    "duration" : 195
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "ebe39e33c8360d4f",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['美妆']",
+  "uid" : "e62c5b4e226c9462",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['医药保健']",
   "time" : {
-    "start" : 1638447767413,
-    "stop" : 1638447767778,
-    "duration" : 365
+    "start" : 1638796160787,
+    "stop" : 1638796160938,
+    "duration" : 151
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "2ee7f5d81a3e5852",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['政务']",
+  "uid" : "3a3c291586d1a50e",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['宠物用品']",
   "time" : {
-    "start" : 1638447769058,
-    "stop" : 1638447769449,
-    "duration" : 391
+    "start" : 1638796160621,
+    "stop" : 1638796160808,
+    "duration" : 187
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f55159a8a8322954",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['剧情搞笑']",
+  "uid" : "b17405b90e0c5da",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['食品饮料']",
   "time" : {
-    "start" : 1638447770168,
-    "stop" : 1638447770509,
-    "duration" : 341
+    "start" : 1638796159572,
+    "stop" : 1638796159743,
+    "duration" : 171
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c93c962e332e188c",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['时尚']",
+  "uid" : "5d244885a6cedd48",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],排序类型：amount",
   "time" : {
-    "start" : 1638447768502,
-    "stop" : 1638447769003,
-    "duration" : 501
+    "start" : 1638796161137,
+    "stop" : 1638796161295,
+    "duration" : 158
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "276809a74033e7c8",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['教育培训']",
+  "uid" : "f615383074081b69",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['3C数码']",
   "time" : {
-    "start" : 1638447768726,
-    "stop" : 1638447769247,
-    "duration" : 521
+    "start" : 1638796160407,
+    "stop" : 1638796160584,
+    "duration" : 177
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "5fee383cd9b4ab88",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['游戏']",
+  "uid" : "2bafda43a4d25afb",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['图书音像']",
   "time" : {
-    "start" : 1638447767937,
-    "stop" : 1638447768352,
-    "duration" : 415
+    "start" : 1638796160127,
+    "stop" : 1638796160286,
+    "duration" : 159
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8e0a3c9f198fe625",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['园艺']",
+  "uid" : "85e3e82bdaef3cb4",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['3C数码']",
   "time" : {
-    "start" : 1638447769953,
-    "stop" : 1638447770145,
-    "duration" : 192
+    "start" : 1638796160407,
+    "stop" : 1638796160590,
+    "duration" : 183
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "a9862d5d206dd9ef",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['家居家装']",
+  "uid" : "986e0b0d0c23dba0",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['钟表配饰']",
   "time" : {
-    "start" : 1638447769842,
-    "stop" : 1638447770198,
-    "duration" : 356
+    "start" : 1638796160277,
+    "stop" : 1638796160428,
+    "duration" : 151
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "abf16501cf7c8f4f",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['财经投资']",
+  "uid" : "ca57289d2fdc21ea",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['家居家纺']",
   "time" : {
-    "start" : 1638447766849,
-    "stop" : 1638447767229,
-    "duration" : 380
+    "start" : 1638796160103,
+    "stop" : 1638796160272,
+    "duration" : 169
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "f4b574caa53bc975",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['科技数码']",
+  "uid" : "2e32fe58b8ae3ad4",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['母婴用品']",
   "time" : {
-    "start" : 1638447767928,
-    "stop" : 1638447768262,
-    "duration" : 334
+    "start" : 1638796159746,
+    "stop" : 1638796159928,
+    "duration" : 182
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "43f52515d5d3e596",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['园艺']",
+  "uid" : "22260d5efa829aee",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],类目：['礼品文创']",
   "time" : {
-    "start" : 1638447769949,
-    "stop" : 1638447770145,
-    "duration" : 196
+    "start" : 1638796160421,
+    "stop" : 1638796160586,
+    "duration" : 165
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "8149035b1f15d2a",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['颜值达人']",
+  "uid" : "7b3d60845c3ebf85",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['食品饮料']",
   "time" : {
-    "start" : 1638447766453,
-    "stop" : 1638447766803,
-    "duration" : 350
+    "start" : 1638796159565,
+    "stop" : 1638796159751,
+    "duration" : 186
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "519e647ad80605b4",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['政务']",
+  "uid" : "5811274c7e9cd81f",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['美妆护肤']",
   "time" : {
-    "start" : 1638447768948,
-    "stop" : 1638447769452,
-    "duration" : 504
+    "start" : 1638796159735,
+    "stop" : 1638796159901,
+    "duration" : 166
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "7d9f5ede07a71823",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['美食']",
+  "uid" : "66d9901fdca9c7e9",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['日用百货']",
   "time" : {
-    "start" : 1638447767587,
-    "stop" : 1638447767933,
-    "duration" : 346
+    "start" : 1638796159560,
+    "stop" : 1638796159738,
+    "duration" : 178
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "b407cc9f338d8d6f",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['舞蹈']",
+  "uid" : "1ec6df9c51429830",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['钟表配饰']",
   "time" : {
-    "start" : 1638447767724,
-    "stop" : 1638447768083,
-    "duration" : 359
+    "start" : 1638796160279,
+    "stop" : 1638796160425,
+    "duration" : 146
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c68ac3de40fbd106",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['美食']",
+  "uid" : "df2f609454bf2404",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['医药保健']",
   "time" : {
-    "start" : 1638447767194,
-    "stop" : 1638447767582,
-    "duration" : 388
+    "start" : 1638796160793,
+    "stop" : 1638796160947,
+    "duration" : 154
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "6e16316068308663",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['教育培训']",
+  "uid" : "55421f14abd96103",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['图书音像']",
   "time" : {
-    "start" : 1638447769009,
-    "stop" : 1638447769380,
-    "duration" : 371
+    "start" : 1638796159919,
+    "stop" : 1638796160084,
+    "duration" : 165
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "c91b96ecb8606825",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['运动健身']",
+  "uid" : "3e8988f26906ea62",
+  "name" : "商品品牌榜日期:['month', '202111'],类目：['运动户外']",
   "time" : {
-    "start" : 1638447766607,
-    "stop" : 1638447767018,
-    "duration" : 411
+    "start" : 1638796160275,
+    "stop" : 1638796160423,
+    "duration" : 148
   },
   "status" : "passed",
   "severity" : "normal"
 }, {
-  "uid" : "662d980ff55f5722",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['二次元']",
+  "uid" : "57d038073798817b",
+  "name" : "商品品牌榜日期:['week', '20211129-20211205'],类目：['服饰内衣']",
   "time" : {
-    "start" : 1638447770242,
-    "stop" : 1638447770630,
-    "duration" : 388
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "931dde029c966fce",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['才艺技能']",
-  "time" : {
-    "start" : 1638447769402,
-    "stop" : 1638447769820,
-    "duration" : 418
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "5653634adc61acf4",
-  "name" : "成长达人榜日期:['month', '202111'],类目：['音乐']",
-  "time" : {
-    "start" : 1638447766455,
-    "stop" : 1638447766810,
-    "duration" : 355
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "be0eeaa479921638",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['旅行']",
-  "time" : {
-    "start" : 1638447768710,
-    "stop" : 1638447769231,
-    "duration" : 521
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "bb244007f9f8be49",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['美食']",
-  "time" : {
-    "start" : 1638447767578,
-    "stop" : 1638447768010,
-    "duration" : 432
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "156145fe3376df94",
-  "name" : "成长达人榜日期:['day', '2021-12-01'],类目：['美妆']",
-  "time" : {
-    "start" : 1638447767232,
-    "stop" : 1638447767676,
-    "duration" : 444
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "e7d250438d780ef5",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['生活']",
-  "time" : {
-    "start" : 1638447767920,
-    "stop" : 1638447768313,
-    "duration" : 393
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "6d0930cbf42050e2",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['美妆']",
-  "time" : {
-    "start" : 1638447767683,
-    "stop" : 1638447768051,
-    "duration" : 368
-  },
-  "status" : "passed",
-  "severity" : "normal"
-}, {
-  "uid" : "cac96a177d552f48",
-  "name" : "成长达人榜日期:['week', '20211122-20211128'],类目：['测评']",
-  "time" : {
-    "start" : 1638447768089,
-    "stop" : 1638447768496,
-    "duration" : 407
+    "start" : 1638796159563,
+    "stop" : 1638796159746,
+    "duration" : 183
   },
   "status" : "passed",
   "severity" : "normal"
