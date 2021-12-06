@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "0ff307069b33a5380b609a85d19c0c35",
-    "name" : "Testcase.rank",
+    "uid" : "7b096d678dae97a6865d9361abdec460",
+    "name" : "Testcase.shop_brand",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 83,
+      "passed" : 75,
       "unknown" : 0,
-      "total" : 83
+      "total" : 75
     }
   } ]
 }

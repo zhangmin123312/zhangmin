@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "97f36ac6395549ba1eb1f79b19799004",
-    "name" : "测试样例",
+    "uid" : "7da54ae791170cd62762a57a80406349",
+    "name" : "商品品牌榜",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 83,
+      "passed" : 75,
       "unknown" : 0,
-      "total" : 83
+      "total" : 75
     }
   } ]
 }

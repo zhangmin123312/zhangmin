@@ -1,0 +1,96 @@
+{
+  "uid" : "d1576e358630009b",
+  "name" : "商品品牌榜日期:['day', '2021-12-05'],排序类型：volume",
+  "fullName" : "Testcase.shop_brand.test_brand_rank.TestCase_Brand_Rank#test_brand_rank_sort",
+  "historyId" : "1a1bede5c7cb436c7d17ae3d5c90247f",
+  "time" : {
+    "start" : 1638796160969,
+    "stop" : 1638796161139,
+    "duration" : 170
+  },
+  "description" : "验证商品品牌榜日榜、周榜、月榜按销量和销售降序排序是否正确",
+  "descriptionHtml" : "<p>验证商品品牌榜日榜、周榜、月榜按销量和销售降序排序是否正确</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1638796159380,
+      "stop" : 1638796159562,
+      "duration" : 182
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1638796159380,
+      "stop" : 1638796159380,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "商品品牌榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.shop_brand"
+  }, {
+    "name" : "suite",
+    "value" : "test_brand_rank"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Brand_Rank"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-3.local"
+  }, {
+    "name" : "thread",
+    "value" : "3193-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.shop_brand.test_brand_rank"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sort",
+    "value" : "'volume'"
+  }, {
+    "name" : "times",
+    "value" : "['day', '2021-12-05']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d1576e358630009b.json",
+  "parameterValues" : [ "'volume'", "['day', '2021-12-05']" ]
+}
