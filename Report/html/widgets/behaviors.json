@@ -1,0 +1,15 @@
+{
+  "total" : 1,
+  "items" : [ {
+    "uid" : "7da54ae791170cd62762a57a80406349",
+    "name" : "商品品牌榜",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 75,
+      "unknown" : 0,
+      "total" : 75
+    }
+  } ]
+}
