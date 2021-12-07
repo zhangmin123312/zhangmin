@@ -32,6 +32,9 @@ class PathMessage:
     #商品品牌榜
     brand_rank = ["/v1/brand/rank"]
 
+    #抖音销量榜
+    rank_yesterdaySaleRank = ["/v1/home/rank/yesterdaySaleRank"]
+
 
 
 
