@@ -35,6 +35,12 @@ class PathMessage:
     #抖音销量榜
     rank_yesterdaySaleRank = ["/v1/home/rank/yesterdaySaleRank"]
 
+    #抖音热推榜
+    rank_yesterdayHotRank = ["/v1/home/rank/yesterdayHotRank"]
+
+    #实时销量榜
+    rank_liveRank = ["/v1/home/rank/liveRank"]
+
 
 
 
