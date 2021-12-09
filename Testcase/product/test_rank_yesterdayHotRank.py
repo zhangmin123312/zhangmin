@@ -15,6 +15,17 @@ import os,jsonpath
 # @pytest.mark.flaky(reruns=5, reruns_delay=1)
 class TestCase_Rank_YesterdayHotRank():
 
+    @allure.description("""验证抖音热推榜单是否按昨日达人带货排序""")
+    @allure.title("抖音热推榜按昨日达人带货排序")
+    def test_yesterdayHotRank_author_number(self,get_token,get_host):
+        para=f"big_category=&first_category=&second_category=&page=1&size=50&commission_rate="
+        response = base().return_request(method="get", path=PathMessage.rank_yesterdayHotRank, data=para,tokens=get_token,hosts=get_host, )
+        author_number_list = jsonpath.jsonpath(response["response_body"], '$.data[*].author_number')
+        assert response["status_code"]==200
+        assert len(response["response_body"]["data"]) > 0
+        assert all(author_number_list[i] >= author_number_list[i+1] for i in range(len(author_number_list)-1))
+
+
     @allure.description("""验证抖音热推榜日榜、周榜、月榜遍历商品一级分类返回的数据是否大于20条""")
     @pytest.mark.parametrize('times',base.return_time_message())
     @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),1))

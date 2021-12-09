@@ -41,7 +41,8 @@ class PathMessage:
     #实时销量榜
     rank_liveRank = ["/v1/home/rank/liveRank"]
 
-
+    #全天销量榜
+    rank_allDayRank = ["/v1/home/rank/allDayRank"]
 
 
 
