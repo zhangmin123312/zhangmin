@@ -243,7 +243,7 @@ class base():
 
 if __name__ == '__main__':
 
-    print(base.return_times())
+    print(base.return_product_types("https://api-service.chanmama.com",2))
 
 
 
