@@ -85,7 +85,7 @@ class TestCase_Product_Search():
     @allure.description("""验证选品库昨日、7天、30天，按商品来源筛选""")
     @pytest.mark.parametrize('platform',platform[:5])
     @pytest.mark.parametrize('day_type', day_type)
-    @allure.title("选品库日期:{times[1]},商品来源：{platform}")
+    @allure.title("选品库日期:day_type,商品来源：{platform}")
     def test_product_search_platform(self,get_token,get_host,day_type,platform):
         para={"keyword":"","keyword_type":"","page":1,"price":"","size":50,"filter_coupon":0,"has_live":0,"has_video":0,"tb_max_commission_rate":"","day_pv_count":"","duration_volume":"","big_category":"","first_category":"","second_category":"","platform":platform,"sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":-1,"most_aweme_volume":0,"most_live_volume":0}
         response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
@@ -97,7 +97,7 @@ class TestCase_Product_Search():
     @allure.description("""验证选品库昨日、7天、30天，按佣金比例筛选""")
     @pytest.mark.parametrize('tb_max_commission_rate',tb_max_commission_rate)
     @pytest.mark.parametrize('day_type', day_type)
-    @allure.title("选品库日期:{times[1]},佣金比例：{tb_max_commission_rate}")
+    @allure.title("选品库日期:day_type,佣金比例：{tb_max_commission_rate}")
     def test_product_search_commission_rate(self,get_token,get_host,day_type,tb_max_commission_rate):
         para={"keyword":"","keyword_type":"","page":1,"price":"","size":50,"filter_coupon":0,"has_live":0,"has_video":0,"tb_max_commission_rate":tb_max_commission_rate,"day_pv_count":"","duration_volume":"","big_category":"","first_category":"","second_category":"","platform":"","sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":-1,"most_aweme_volume":0,"most_live_volume":0}
         response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
@@ -110,7 +110,7 @@ class TestCase_Product_Search():
     @allure.description("""验证选品库昨日、7天、30天，按抖音销量筛选""")
     @pytest.mark.parametrize('duration_volume',duration_volume)
     @pytest.mark.parametrize('day_type', day_type)
-    @allure.title("选品库日期:{times[1]},抖音销量：{duration_volume}")
+    @allure.title("选品库日期:day_type,抖音销量：{duration_volume}")
     def test_product_search_duration_volume(self,get_token,get_host,day_type,duration_volume):
         para={"keyword":"","keyword_type":"","page":1,"price":"","size":50,"filter_coupon":0,"has_live":0,"has_video":0,"tb_max_commission_rate":"","day_pv_count":"","duration_volume":duration_volume,"big_category":"","first_category":"","second_category":"","platform":"","sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":-1,"most_aweme_volume":0,"most_live_volume":0}
         response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
@@ -123,7 +123,7 @@ class TestCase_Product_Search():
     @allure.description("""验证选品库昨日、7天、30天，按昨日抖音浏览量筛选""")
     @pytest.mark.parametrize('day_pv_count',day_pv_count)
     @pytest.mark.parametrize('day_type', day_type)
-    @allure.title("选品库日期:{times[1]},昨日抖音浏览量：{day_pv_count}")
+    @allure.title("选品库日期:day_type,昨日抖音浏览量：{day_pv_count}")
     def test_product_search_duration_volume(self,get_token,get_host,day_type,day_pv_count):
         para={"keyword":"","keyword_type":"","page":1,"price":"","size":50,"filter_coupon":0,"has_live":0,"has_video":0,"tb_max_commission_rate":"","day_pv_count":day_pv_count,"duration_volume":"","big_category":"","first_category":"","second_category":"","platform":"","sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":-1,"most_aweme_volume":0,"most_live_volume":0}
         response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
@@ -136,7 +136,7 @@ class TestCase_Product_Search():
     @allure.description("""验证选品库昨日、7天、30天，按价格区间筛选""")
     @pytest.mark.parametrize('price',price)
     @pytest.mark.parametrize('day_type', day_type)
-    @allure.title("选品库日期:{times[1]},价格区间：{price}")
+    @allure.title("选品库日期:day_type,价格区间：{price}")
     def test_product_search_commission_rate(self,get_token,get_host,day_type,price):
         para={"keyword":"","keyword_type":"","page":1,"price":price,"size":50,"filter_coupon":0,"has_live":0,"has_video":0,"tb_max_commission_rate":"","day_pv_count":"","duration_volume":"","big_category":"","first_category":"","second_category":"","platform":"","sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":-1,"most_aweme_volume":0,"most_live_volume":0}
         response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
@@ -150,7 +150,7 @@ class TestCase_Product_Search():
     @allure.description("""验证选品库昨日、7天、30天，按是否有优惠券筛选""")
     @pytest.mark.parametrize('filter_coupon',[1])
     @pytest.mark.parametrize('day_type', day_type)
-    @allure.title("选品库日期:{times[1]}按有优惠券搜索")
+    @allure.title("选品库日期:day_type，按有优惠券搜索")
     def test_product_search_commission_rate(self,get_token,get_host,day_type,filter_coupon):
         para={"keyword":"","keyword_type":"","page":1,"price":"","size":50,"filter_coupon":filter_coupon,"has_live":0,"has_video":0,"tb_max_commission_rate":"","day_pv_count":"","duration_volume":"","big_category":"","first_category":"","second_category":"","platform":"","sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":-1,"most_aweme_volume":0,"most_live_volume":0}
         response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
