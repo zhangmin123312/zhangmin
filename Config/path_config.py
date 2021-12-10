@@ -50,6 +50,9 @@ class PathMessage:
     #小店详情页
     shop_detail_info = ["/v1/shop/detail/info"]
 
+    #选品库
+    product_search = ["/v2/product/search"]
+    
     #品牌库
     brand_search = ["/v2/home/brand/search"]
 
