@@ -13,7 +13,7 @@ import os,jsonpath
 
 @allure.feature('全天销量榜')
 # @pytest.mark.flaky(reruns=5, reruns_delay=1)
-class TestCase_Rank_allDayRank():
+class TestCase_Rank_AllDayRank():
 
     @allure.description("""验证全天销量榜单是否按今日累计销量排序""")
     @allure.title("全天销量榜按今日累计销量排序")

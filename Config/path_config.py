@@ -44,6 +44,9 @@ class PathMessage:
     #全天销量榜
     rank_allDayRank = ["/v1/home/rank/allDayRank"]
 
+    #选品库
+    product_search = ["/v2/product/search"]
+
 
 
 

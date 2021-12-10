@@ -20,4 +20,4 @@ user_agent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:89.0) Gecko/20100
 commission_rate = ['10-', '20-', '30-', '40-', '50-', '60-']
 
 # 商品来源
-platform = ['jinritemai','taobao','tmall','jd','kaola','suning','weipinhui','yanxuan']
+platform = ['jinritemai','taobao','tmall','jd','suning','kaola','weipinhui','yanxuan']
