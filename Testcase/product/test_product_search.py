@@ -158,3 +158,27 @@ class TestCase_Product_Search():
         assert response["status_code"] == 200
         assert len(response["response_body"]["data"]["list"]) > 0
         assert all(value for value in have_coupon_list)
+
+    @allure.description("""验证选品库昨日、7天、30天，按视频带货为主筛选""")
+    @pytest.mark.parametrize('most_aweme_volume',[51])
+    @pytest.mark.parametrize('day_type', day_type)
+    @allure.title("选品库日期:day_type，按视频带货为主搜索")
+    def test_product_search_most_aweme_volume(self,get_token,get_host,day_type,most_aweme_volume):
+        para={"keyword":"","keyword_type":"","page":1,"price":"","size":50,"filter_coupon":"","has_live":0,"has_video":0,"tb_max_commission_rate":"","day_pv_count":"","duration_volume":"","big_category":"","first_category":"","second_category":"","platform":"","sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":1,"most_aweme_volume":most_aweme_volume,"most_live_volume":0}
+        response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
+        aweme_volume_list = jsonpath.jsonpath(response["response_body"], '$.data.list[*].duration_aweme_volume')
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]["list"]) > 0
+        assert all(value>0 for value in aweme_volume_list)
+
+    @allure.description("""验证选品库昨日、7天、30天，按直播带货为主筛选""")
+    @pytest.mark.parametrize('most_live_volume',[51])
+    @pytest.mark.parametrize('day_type', day_type)
+    @allure.title("选品库日期:day_type，按直播带货为主搜索")
+    def test_product_search_most_live_volume(self,get_token,get_host,day_type,most_live_volume):
+        para={"keyword":"","keyword_type":"","page":1,"price":"","size":50,"filter_coupon":"","has_live":0,"has_video":0,"tb_max_commission_rate":"","day_pv_count":"","duration_volume":"","big_category":"","first_category":"","second_category":"","platform":"","sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":2,"most_aweme_volume":0,"most_live_volume":most_live_volume}
+        response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
+        aweme_live_list = jsonpath.jsonpath(response["response_body"], '$.data.list[*].duration_live_volume')
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]["list"]) > 0
+        assert all(value>0 for value in aweme_live_list)
