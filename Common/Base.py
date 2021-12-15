@@ -122,11 +122,12 @@ class base():
 
 
     @staticmethod
-    def return_product_types(host,type):
+    def return_product_types(host,type,product_type='all'):
         """
         返回商品分类
         """
-        responce = base().return_request(method="get",path=PathMessage.product_path,hosts=host)['response_body']['data']
+        para= f"type={product_type}"
+        responce = base().return_request(method="get",path=PathMessage.product_path,hosts=host,data=para)['response_body']['data']
         category_big_types_list = []
         category_first_types_list = []
         # category_two_types_list = []
@@ -281,7 +282,8 @@ class base():
         return time_list
 
 
-
+if __name__ == "__main__":
+    print(base.return_Filter_date(1, 7))
 
 
 
