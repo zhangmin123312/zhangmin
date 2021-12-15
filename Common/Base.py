@@ -231,6 +231,42 @@ class base():
             raise False
 
 
+    @staticmethod
+    def return_city(host,type):
+        """
+        返回省份和城市
+        type: 1返回省份列表，2返回省份和城市组合列表
+        """
+        responce = base().return_request(method="get",path=PathMessage.common_area, hosts=host)['response_body']['data']
+
+        city_list = []
+
+        province_list = []
+
+        for i in responce:
+            province_list.append(i["name"])
+            for a in i["children"]:
+                city_list.append([i["name"], a["name"]])
+
+        if type == 1:
+
+            return province_list
+
+        elif type == 2:
+
+            return city_list
+
+        else:
+            print("类别输入有误")
+            raise False
+
+
+
+
+
+
+
+
 
 
 
@@ -243,7 +279,7 @@ class base():
 
 if __name__ == '__main__':
 
-    print(base.return_product_types("https://api-service.chanmama.com",2))
+    print(base.return_time_message()[1:3])
 
 
 
