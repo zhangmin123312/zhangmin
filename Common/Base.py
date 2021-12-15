@@ -260,13 +260,14 @@ class base():
             print("类别输入有误")
             raise False
 
+    @staticmethod
+    def return_Filter_date(is_include_today,timelen=7):
+        """
+        返回今日/昨日、近7天、近15天、近30天、近3个月(近90天)、近180天(近半年)的开始日期和结束日期
 
-
-
-
-
-
-
+        参数说明：
+         is_include_today：是否包含今日
+         timelen：时间区间有7天或8天
 
         """
         time_list=[]
@@ -278,17 +279,6 @@ class base():
             start_date = now - datetime.timedelta(days=t+timelen-7+1-is_include_today-1)
             time_list.append((start_date.strftime('%Y-%m-%d'),end_date.strftime('%Y-%m-%d')))
         return time_list
-
-
-
-
-
-
-
-
-
-
-    print(base.return_time_message()[1:3])
 
 
 
