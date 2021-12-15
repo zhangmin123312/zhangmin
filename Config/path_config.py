@@ -12,7 +12,7 @@ class PathMessage:
     token = ["/v1/access/token"]
 
     #商品分类路径
-    product_path = ["/v1/product/category?type=all"]
+    product_path = ["/v1/product/category"]
 
     # 达人分类路径
     star_category = ["/v1/common/starCategory"]
@@ -82,6 +82,9 @@ class PathMessage:
 
     # 热门视频榜
     rank_hotAweme = ["/v1/home/rank/hotAweme"]
+
+    # 直播-今日带货榜
+    rank_official_daily = ["/v1/douyin/live/rank/official/daily"]
 
 
 
