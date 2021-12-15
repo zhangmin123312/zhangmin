@@ -77,20 +77,11 @@ class PathMessage:
     #达人榜
     authorRank_bangNew = ["/v1/authorRank/bangNew"]
 
+    # 带货视频榜
+    rank_productAweme = ['/v1/home/rank/productAweme']
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    # 热门视频榜
+    rank_hotAweme = ["/v1/home/rank/hotAweme"]
 
 
 
@@ -103,6 +94,4 @@ class PathMessage:
 if __name__ == '__main__':
 
     pass
-
-# print(da_ren_xiang_qing)
 
