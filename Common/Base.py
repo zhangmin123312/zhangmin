@@ -268,6 +268,16 @@ class base():
 
 
 
+        """
+        time_list=[]
+        now = datetime.datetime.now().date()
+        end_date = now - datetime.timedelta(days=1 - is_include_today)
+        time_list.append((end_date.strftime('%Y-%m-%d'),end_date.strftime('%Y-%m-%d')))
+        time_type=[7,15,30,90,180]
+        for t in time_type:
+            start_date = now - datetime.timedelta(days=t+timelen-7+1-is_include_today-1)
+            time_list.append((start_date.strftime('%Y-%m-%d'),end_date.strftime('%Y-%m-%d')))
+        return time_list
 
 
 
@@ -277,7 +287,6 @@ class base():
 
 
 
-if __name__ == '__main__':
 
     print(base.return_time_message()[1:3])
 
