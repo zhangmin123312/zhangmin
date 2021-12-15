@@ -17,17 +17,11 @@ class PathMessage:
     # 达人分类路径
     star_category = ["/v1/common/starCategory"]
 
-    # 选品库
-    xuan_ping_ku = ["/v1/product/search"]
-
-    #抖音销量榜
-    quan_tian_xiao_liang_bang = ["/v1/douyin/live/star/live/widget"]
+    # 地域分类
+    common_area = ["/v1/common/area"]
 
     #成长达人榜
     cheng_zhang_da_ren_bang = ["/v1/authorRank/bangNew"]
-
-    #行业达人榜
-    hang_ye_da_ren_bang = ["/v1/authorRank/bangNew"]
 
     #商品品牌榜
     brand_rank = ["/v1/brand/rank"]
@@ -67,6 +61,26 @@ class PathMessage:
 
     #全天销量榜
     rank_allDayRank = ["/v1/home/rank/allDayRank"]
+
+    #涨粉达人榜
+    author_rank_fans = ["/v1/home/author/rank/fans"]
+
+    #达人详情页info
+    author_detail_info = ["/v1/author/detail/info"]
+
+    # 商品分享日榜
+    authorRank_starDailyRank = ["/v1/authorRank/starDailyRank"]
+
+    # 商品分享周榜和月榜
+    authorRank_starRank = ["/v1/authorRank/starRank"]
+
+    #达人榜
+    authorRank_bangNew = ["/v1/authorRank/bangNew"]
+
+
+
+
+
 
 
 
