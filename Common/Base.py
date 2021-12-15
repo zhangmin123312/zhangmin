@@ -232,17 +232,41 @@ class base():
 
 
     @staticmethod
-    def return_Filter_date(is_include_today,timelen=7):
+    def return_city(host,type):
         """
-        返回今日/昨日、近7天、近15天、近30天、近3个月(近90天)、近180天(近半年)的开始日期和结束日期
+        返回省份和城市
+        type: 1返回省份列表，2返回省份和城市组合列表
+        """
+        responce = base().return_request(method="get",path=PathMessage.common_area, hosts=host)['response_body']['data']
 
-        参数说明：
-         is_include_today：是否包含今日
-         timelen：时间区间有7天或8天
+        city_list = []
 
-         例1 商品详情：传入（1，7），表示时间区间有7天且包含今天，返回：[('2021-12-15', '2021-12-15'), ('2021-12-09', '2021-12-15')...]
-         例2 直播预热视频分析：传入（0，7），表示时间区间有7天且不包含今天，返回：[('2021-12-14', '2021-12-14'), ('2021-12-08', '2021-12-14')...]
-         例3 直播库：传入（1，8），表示时间区间有8天且包含今天，返回：[('2021-12-15', '2021-12-15'), ('2021-12-08', '2021-12-15')...]
+        province_list = []
+
+        for i in responce:
+            province_list.append(i["name"])
+            for a in i["children"]:
+                city_list.append([i["name"], a["name"]])
+
+        if type == 1:
+
+            return province_list
+
+        elif type == 2:
+
+            return city_list
+
+        else:
+            print("类别输入有误")
+            raise False
+
+
+
+
+
+
+
+
 
         """
         time_list=[]
@@ -264,8 +288,7 @@ class base():
 
 
 
-if __name__ == '__main__':
-    print(base.return_live_time(1, 8))
+    print(base.return_time_message()[1:3])
 
 
 
