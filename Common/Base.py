@@ -231,6 +231,29 @@ class base():
             raise False
 
 
+    @staticmethod
+    def return_Filter_date(is_include_today,timelen=7):
+        """
+        返回今日/昨日、近7天、近15天、近30天、近3个月(近90天)、近180天(近半年)的开始日期和结束日期
+
+        参数说明：
+         is_include_today：是否包含今日
+         timelen：时间区间有7天或8天
+
+         例1 商品详情：传入（1，7），表示时间区间有7天且包含今天，返回：[('2021-12-15', '2021-12-15'), ('2021-12-09', '2021-12-15')...]
+         例2 直播预热视频分析：传入（0，7），表示时间区间有7天且不包含今天，返回：[('2021-12-14', '2021-12-14'), ('2021-12-08', '2021-12-14')...]
+         例3 直播库：传入（1，8），表示时间区间有8天且包含今天，返回：[('2021-12-15', '2021-12-15'), ('2021-12-08', '2021-12-15')...]
+
+        """
+        time_list=[]
+        now = datetime.datetime.now().date()
+        end_date = now - datetime.timedelta(days=1 - is_include_today)
+        time_list.append((end_date.strftime('%Y-%m-%d'),end_date.strftime('%Y-%m-%d')))
+        time_type=[7,15,30,90,180]
+        for t in time_type:
+            start_date = now - datetime.timedelta(days=t+timelen-7+1-is_include_today-1)
+            time_list.append((start_date.strftime('%Y-%m-%d'),end_date.strftime('%Y-%m-%d')))
+        return time_list
 
 
 
@@ -242,8 +265,7 @@ class base():
 
 
 if __name__ == '__main__':
-
-    print(base.return_product_types("https://api-service.chanmama.com",2))
+    print(base.return_live_time(1, 8))
 
 
 
