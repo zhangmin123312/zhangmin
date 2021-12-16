@@ -7,8 +7,7 @@ import pytest
 
 from Common.Base import base
 from Config.path_config import PathMessage
-import os,jsonpath,datetime
-
+import os,jsonpath
 @allure.feature('带货小时榜')
 # @pytest.mark.flaky(reruns=5, reruns_delay=1)
 class TestCase_Rank_Official():
