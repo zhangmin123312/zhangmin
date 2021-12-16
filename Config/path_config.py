@@ -86,6 +86,12 @@ class PathMessage:
     # 直播-今日带货榜
     rank_official_daily = ["/v1/douyin/live/rank/official/daily"]
 
+    # 直播-带货小时榜
+    rank_official = ["/v1/douyin/live/rank/official"]
+
+    # 直播-带货小时榜-榜点
+    rank_official_hours = ["/v1/douyin/live/rank/official/hours"]
+
 
 
 
