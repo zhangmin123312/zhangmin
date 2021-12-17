@@ -95,6 +95,12 @@ class PathMessage:
     # 直播-直播实时热榜
     rank_top = ["/v1/douyin/live/rank/live/top"]
 
+    # 直播-抖音官方小时榜
+    rank_soundbyte = ["/v1/douyin/live/rank/soundbyte"]
+
+    # 直播-抖音官方小时榜-榜点
+    rank_soundbyte_hours = ["/v1/douyin/live/rank/soundbyte/hours"]
+
 
 
 
