@@ -101,6 +101,10 @@ class PathMessage:
     # 直播-抖音官方小时榜-榜点
     rank_soundbyte_hours = ["/v1/douyin/live/rank/soundbyte/hours"]
 
+    # 直播-预热视频分析
+    live_warm = ["/v1/douyin/live/warm"]
+
+
 
 
 
