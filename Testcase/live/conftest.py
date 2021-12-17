@@ -58,3 +58,11 @@ def soundbyte_last_timestamp():
     """
     timestamps_list=get_hours(PathMessage.rank_soundbyte_hours)
     return timestamps_list[-1]
+
+@pytest.fixture(scope="session", autouse=True)
+def get_Nearly_7_date():
+    """
+    获取预热视频分析近7天的日期
+    """
+    date_list=base.return_Filter_date(0,7)
+    return date_list[2]
