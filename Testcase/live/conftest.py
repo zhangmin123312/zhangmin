@@ -65,4 +65,4 @@ def get_Nearly_7_date():
     获取预热视频分析近7天的日期
     """
     date_list=base.return_Filter_date(0,7)
-    return date_list[2]
+    return date_list[1]
