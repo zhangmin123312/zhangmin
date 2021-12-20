@@ -104,6 +104,12 @@ class PathMessage:
     # 直播-预热视频分析
     live_warm = ["/v1/douyin/live/warm"]
 
+    # 直播-达人带货榜
+    rank_sales = ["/v1/douyin/live/rank/author/sales"]
+
+    # 达人详情-直播概览
+    author_liveAnalysisV2 = ["/v1/author/detail/liveAnalysisV2"]
+
 
 
 
