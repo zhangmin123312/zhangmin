@@ -110,6 +110,10 @@ class PathMessage:
     # 达人详情-直播概览
     author_liveAnalysisV2 = ["/v1/author/detail/liveAnalysisV2"]
 
+    # 直播-直播商品榜
+    rank_product = ["/v1/douyin/live/rank/product"]
+
+
 
 
 
