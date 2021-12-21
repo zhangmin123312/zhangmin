@@ -71,7 +71,7 @@ class TestCase_Rank_Sales():
     @allure.description("""验证达人带货榜日榜、周榜、月榜只看蓝V达人数据是否正确""")
     @pytest.mark.parametrize('times', base.return_time_message())
     @allure.title("达人带货榜日期：{times}只看蓝V达人")
-    def test_sales_first_category(self,get_token,get_host,times):
+    def test_sales_verification_type(self,get_token,get_host,times):
         para=f"day_type={times[0]}&day={times[1]}&big_category=&first_category=&second_category=&sort={self.sort[0]}&page=1&size=50&verification_type=2&is_brand_self_author=0&is_shop_author=0&dark_horse=0&first_rank=0&is_bomb=0"
         response = base().return_request(method="get", path=PathMessage.rank_sales, data=para,tokens=get_token,hosts=get_host, )
         assert response["status_code"] == 200
