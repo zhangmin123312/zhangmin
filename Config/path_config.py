@@ -119,6 +119,13 @@ class PathMessage:
     # 特殊的达人分类
     specialAuthorCategory = ["/v1/common/specialAuthorCategory"]
 
+    # 直播分享榜-周榜
+    rank_starDailyRank1 = ["/v1/authorRank/starDailyRank"]
+
+    # 直播分享榜-月榜
+    rank_starDailyRank2 = ["/v1/authorRank/starRank"]
+
+
 
 
 
