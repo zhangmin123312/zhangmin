@@ -113,6 +113,12 @@ class PathMessage:
     # 直播-直播商品榜
     rank_product = ["/v1/douyin/live/rank/product"]
 
+    # 直播-直播风车榜
+    rank_windmill = ["/v1/douyin/live/rank/windmill"]
+
+    # 特殊的达人分类
+    specialAuthorCategory = ["/v1/common/specialAuthorCategory"]
+
 
 
 
