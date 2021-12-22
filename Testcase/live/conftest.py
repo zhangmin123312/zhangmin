@@ -22,6 +22,15 @@ def get_product_category():
     product_category_list = jsonpath.jsonpath(response["response_body"], f'$.data.product_category[*].cat_name')
     return product_category_list
 
+def get_category():
+    """
+    返回直播风车榜的达人分类
+    """
+    para = f"type=all"
+    response = base().return_request(method="get", path=PathMessage.specialAuthorCategory, data=para ,hosts=os.environ["host"])
+    category_list = jsonpath.jsonpath(response["response_body"], f'$.data[*].category')
+    return category_list
+
 @pytest.fixture(params=get_hours(PathMessage.rank_official_hours))
 def timestamps(request):
     """
@@ -66,3 +75,10 @@ def get_Nearly_7_date():
     """
     date_list=base.return_Filter_date(0,7)
     return date_list[1]
+
+@pytest.fixture(params=get_category())
+def star_category(request):
+    """
+    获取直播-直播风车榜的达人分类
+    """
+    yield request.param
