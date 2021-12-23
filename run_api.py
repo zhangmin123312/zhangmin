@@ -9,7 +9,7 @@ from Common.Base import base
 
 
 if __name__ == "__main__":
-    args = ["./Testcase","-q","-s","-n","auto","--alluredir=./Report/allure-results","--clean-alluredir"]
+    args = ["./Testcase","-q","-s","--alluredir=./Report/allure-results","--clean-alluredir"]
     pytest.main(args)
     # base.dingding_suceces()
     # os.system(r"allure generate --clean ./Report/allure-results/ -o ./Report/html")
