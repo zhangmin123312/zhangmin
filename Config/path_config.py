@@ -12,7 +12,7 @@ class PathMessage:
     token = ["/v1/access/token"]
 
     #商品分类路径
-    product_path = ["/v1/product/category?type=all"]
+    product_path = ["/v1/product/category"]
 
     # 达人分类路径
     star_category = ["/v1/common/starCategory"]
@@ -103,6 +103,51 @@ class PathMessage:
 
     # 热门视频榜
     rank_hotAweme = ["/v1/home/rank/hotAweme"]
+
+    # 直播-今日带货榜
+    rank_official_daily = ["/v1/douyin/live/rank/official/daily"]
+
+    # 直播-带货小时榜
+    rank_official = ["/v1/douyin/live/rank/official"]
+
+    # 直播-带货小时榜-榜点
+    rank_official_hours = ["/v1/douyin/live/rank/official/hours"]
+
+    # 直播-直播实时热榜
+    rank_top = ["/v1/douyin/live/rank/live/top"]
+
+    # 直播-抖音官方小时榜
+    rank_soundbyte = ["/v1/douyin/live/rank/soundbyte"]
+
+    # 直播-抖音官方小时榜-榜点
+    rank_soundbyte_hours = ["/v1/douyin/live/rank/soundbyte/hours"]
+
+    # 直播-预热视频分析
+    live_warm = ["/v1/douyin/live/warm"]
+
+    # 直播-达人带货榜
+    rank_sales = ["/v1/douyin/live/rank/author/sales"]
+
+    # 达人详情-直播概览
+    author_liveAnalysisV2 = ["/v1/author/detail/liveAnalysisV2"]
+
+    # 直播-直播商品榜
+    rank_product = ["/v1/douyin/live/rank/product"]
+
+    # 直播-直播风车榜
+    rank_windmill = ["/v1/douyin/live/rank/windmill"]
+
+    # 特殊的达人分类
+    specialAuthorCategory = ["/v1/common/specialAuthorCategory"]
+
+    # 直播分享榜-周榜
+    rank_starDailyRank1 = ["/v1/authorRank/starDailyRank"]
+
+    # 直播分享榜-月榜
+    rank_starDailyRank2 = ["/v1/authorRank/starRank"]
+
+
+
 
 
 

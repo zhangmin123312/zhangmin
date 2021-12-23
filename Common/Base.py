@@ -122,11 +122,12 @@ class base():
 
 
     @staticmethod
-    def return_product_types(host,type):
+    def return_product_types(host,type,product_type='all'):
         """
         返回商品分类
         """
-        responce = base().return_request(method="get",path=PathMessage.product_path,hosts=host)['response_body']['data']
+        para= f"type={product_type}"
+        responce = base().return_request(method="get",path=PathMessage.product_path,hosts=host,data=para)['response_body']['data']
         category_big_types_list = []
         category_first_types_list = []
         # category_two_types_list = []
@@ -260,9 +261,25 @@ class base():
             print("类别输入有误")
             raise False
 
+    @staticmethod
+    def return_Filter_date(is_include_today,timelen=7):
+        """
+        返回今日/昨日、近7天、近15天、近30天、近3个月(近90天)、近180天(近半年)的开始日期和结束日期
 
+        参数说明：
+         is_include_today：是否包含今日,包含今日传入1，不包含今日传入0
+         timelen：时间区间有7天或8天
 
-
+        """
+        time_list=[]
+        now = datetime.datetime.now().date()
+        end_date = now - datetime.timedelta(days=1 - is_include_today)
+        time_list.append((end_date.strftime('%Y-%m-%d'),end_date.strftime('%Y-%m-%d')))
+        time_type=[7,15,30,90,180]
+        for t in time_type:
+            start_date = now - datetime.timedelta(days=t+timelen-7+1-is_include_today-1)
+            time_list.append((start_date.strftime('%Y-%m-%d'),end_date.strftime('%Y-%m-%d')))
+        return time_list
 
 
 
@@ -284,6 +301,8 @@ if __name__ == '__main__':
 
 
 
+if __name__ == "__main__":
+    print(base.return_Filter_date(1, 7))
 
 
 
