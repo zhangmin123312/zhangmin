@@ -9,7 +9,6 @@ pytest-html==3.1.1
 pytest-metadata==1.11.0
 pytest-rerunfailures==9.1.1
 pytest-xdist==1.30.0
-<<<<<<< Updated upstream
 pytest-parallel==0.1.1
 jsonpath==0.82
 pytest-parallel-0.1.1

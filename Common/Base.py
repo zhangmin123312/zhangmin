@@ -294,20 +294,6 @@ class base():
 
 
 
-if __name__ == '__main__':
-
-    print(base.return_time_message()[1:3])
-    print(base.return_product_types("https://api-service.chanmama.com",2))
-
-
-
-if __name__ == "__main__":
-    print(base.return_Filter_date(1, 7))
-
-
-
-
-
 
 
 

@@ -49,7 +49,6 @@ class TestCase_Rank_PromotionAweme():
             times[0], times[1], sort)
         responce = base().return_request(method="get", path=PathMessage.rank_productAweme, data=para, tokens=get_token,
                               hosts=get_host, )["response_body"]["data"]
-        print(responce)
 
         total_amount = float("inf")
         total_volume = float("inf")
