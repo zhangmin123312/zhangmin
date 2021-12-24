@@ -13,3 +13,5 @@ pytest-parallel==0.1.1
 jsonpath==0.82
 pytest-parallel-0.1.1
 pytest-assume-2.4.3
+pytest-parallel-0.1.1
+pytest-assume-2.4.3
