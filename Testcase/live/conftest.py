@@ -2,7 +2,7 @@ import pytest
 
 from Common.Base import base
 from Config.path_config import PathMessage
-import datetime,os,jsonpath
+import datetime,os,jsonpath,json
 
 
 def get_hours(path):
@@ -17,8 +17,8 @@ def get_product_category():
     """
     返回带货小时榜的商品分类
     """
-    para = f"star_category=&product_category=&order=desc&orderby=amount&timestamp={get_hours(PathMessage.rank_official_hours)[-1]}&page=1&size=50"
-    response = base().return_request(method="get", path=PathMessage.rank_official, data=para ,hosts=os.environ["host"])
+    para = f"star_category=&product_category=&order=desc&orderby=score&timestamp={get_hours(PathMessage.rank_official_hours)[-1]}&page=1&size=50"
+    response = base().return_request(method="get", path=PathMessage.rank_official, data=para,hosts=os.environ["host"])
     product_category_list = jsonpath.jsonpath(response["response_body"], f'$.data.product_category[*].cat_name')
     return product_category_list
 
@@ -82,3 +82,11 @@ def star_category(request):
     获取直播-直播风车榜的达人分类
     """
     yield request.param
+
+@pytest.fixture(scope="session", autouse=True)
+def get_7_date():
+    """
+    获取直播库近7天的日期
+    """
+    date_list=base.return_Filter_date(1,7)
+    return date_list[1]
