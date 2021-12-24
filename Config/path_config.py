@@ -125,7 +125,8 @@ class PathMessage:
     # 直播分享榜-月榜
     rank_starDailyRank2 = ["/v1/authorRank/starRank"]
 
-
+    # 直播分享榜-月榜
+    live_search = ["/v2/douyin/live/search"]
 
 
 
