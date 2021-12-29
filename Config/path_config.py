@@ -149,6 +149,12 @@ class PathMessage:
     # 直播分享榜-月榜
     live_search = ["/v2/douyin/live/search"]
 
+    # 视频库
+    aweme_search = ["/v2/home/aweme/search"]
+
+    # 视频详情，观众分析
+    aweme_personas = ["/v1/aweme/personas"]
+
 
 
 
