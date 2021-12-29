@@ -15,7 +15,7 @@ import os,jsonpath
 
 @allure.feature('视频库')
 # @pytest.mark.flaky(reruns=5, reruns_delay=1)
-class TestCase_aweme_search():
+class TestCase_Aweme_Search():
 
     sort=['digg_count','comment_count','share_count']
     time=['24h','6h','12h','3d','7d','15d','30d','90d']
@@ -26,7 +26,7 @@ class TestCase_aweme_search():
 
     @allure.description("""验证视频库是否会排序规则排序""")
     @pytest.mark.parametrize('sort', sort)
-    @allure.title("视频库日期按{sort}排序")
+    @allure.title("视频库按{sort}排序")
     def test_aweme_search_sort(self,get_token,get_host,sort):
         para=f"gender_type=-1&age_types=&province=&page=1&star_category=&star_sub_category=&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort={sort}&time={self.time[0]}&size=50&goods_relatived=0&fans_hottest=0&group_buy_relatived=0&filter_delete=1&order_by=desc"
         response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
@@ -37,7 +37,7 @@ class TestCase_aweme_search():
 
     @allure.description("""验证视频库遍历达人一级分类是否有返回数据""")
     @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv("host"),1))
-    @allure.title("视频库按商品一级分类：{star_category}")
+    @allure.title("视频库按达人一级分类：{star_category}")
     def test_aweme_search_star_category(self,get_token,get_host,star_category):
         para=f"gender_type=-1&age_types=&province=&page=1&star_category={star_category[0]}&star_sub_category=&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort={self.sort[0]}&time={self.time[0]}&size=50&goods_relatived=0&fans_hottest=0&group_buy_relatived=0&filter_delete=1&order_by=desc"
         response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
