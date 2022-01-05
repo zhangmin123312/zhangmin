@@ -29,27 +29,6 @@ class PathMessage:
     #抖音销量榜
     rank_yesterdaySaleRank = ["/v1/home/rank/yesterdaySaleRank"]
 
-    #抖音小店榜
-    rank_specialtyToday = ["/v1/home/rank/specialtyToday"]
-
-    #小店库
-    shop_search = ["/v2/shop/search"]
-
-    #小店详情页
-    shop_detail_info = ["/v1/shop/detail/info"]
-
-    #品牌库
-    brand_search = ["/v2/home/brand/search"]
-
-    #品牌详情页
-    brand_detail_info = ["/v1/brand/detail/info"]
-
-    #品牌详情页-小店分析
-    brand_detail_chart = ["/v1/brand/detail/chart"]
-
-    #品牌详情页-观众分析
-    brand_detail_authorFansAnalysis = ["/v2/brand/detail/authorFansAnalysis"]
-
     #抖音热推榜
     rank_yesterdayHotRank = ["/v1/home/rank/yesterdayHotRank"]
 
@@ -154,6 +133,12 @@ class PathMessage:
 
     # 视频详情，观众分析
     aweme_personas = ["/v1/aweme/personas"]
+
+    #达人库
+    author_search = ["/v2/home/author/search"]
+
+    #达人视频指数或潜力榜
+    rank_officialStarRank = ["/v1/home/rank/officialStarRank"]
 
 
 

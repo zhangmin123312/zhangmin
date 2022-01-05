@@ -1,5 +1,25 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "children" : [ ],
-  "name" : "timeline"
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "chandashideMacBook-Pro-7.local",
+    "children" : [ {
+      "name" : "3207-MainThread",
+      "children" : [ {
+        "name" : "test_rank_officialStarRank_6",
+        "uid" : "57878bb7aa4a50bf",
+        "parentUid" : "9101112e745805ae089bace8f8367cf0",
+        "status" : "passed",
+        "time" : {
+          "start" : 1641373984999,
+          "stop" : 1641373985326,
+          "duration" : 327
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9101112e745805ae089bace8f8367cf0"
+    } ],
+    "uid" : "e00b280caaf9495df66cd54cc7d331b2"
+  } ]
 }

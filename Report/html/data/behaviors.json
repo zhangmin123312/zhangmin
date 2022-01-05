@@ -1,5 +1,21 @@
 {
   "uid" : "b1a8273437954620fa374b796ffaacdd",
-  "children" : [ ],
-  "name" : "behaviors"
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "视频传播指数榜",
+    "children" : [ {
+      "name" : "test_rank_officialStarRank_6",
+      "uid" : "57878bb7aa4a50bf",
+      "parentUid" : "19230a1e28fee9a5b56f5ad0ee0cee2f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1641373984999,
+        "stop" : 1641373985326,
+        "duration" : 327
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "19230a1e28fee9a5b56f5ad0ee0cee2f"
+  } ]
 }
