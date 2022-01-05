@@ -1,0 +1,2 @@
+"Status","Name","Duration in ms","Description"
+"passed","Testcase.author.test_rank_officialStarRank_6.TestCase_Rank_OfficialStarRank_6#test_rank_officialStarRank_6","327","验证视频达人指数榜返回的数据是否大于20条"

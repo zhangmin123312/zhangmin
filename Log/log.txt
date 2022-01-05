@@ -33,16 +33,31 @@
 2021-12-01 19:45:31,347 - INFO - Value for header {X-Monitor-Sign: {'X-Inner-Service-Sign': 'f0d0c874cfdab37fde240da24fb14ec2', 'X-Inner-Service-Timestamp': '1638359131', 'X-Inner-Service-Type': 'test-unit'}} must be of type str or bytes, not <class 'dict'>
 2021-12-01 19:48:59,863 - INFO - Value for header {X-Monitor-Sign: {'X-Inner-Service-Sign': 'd80514bcfc3462fb5695e424a42c66f5', 'X-Inner-Service-Timestamp': '1638359339', 'X-Inner-Service-Type': 'test-unit'}} must be of type str or bytes, not <class 'dict'>
 2021-12-01 19:50:01,735 - INFO - Value for header {X-Monitor-Sign: {'X-Inner-Service-Sign': 'e6a9337346854f7b16461c581195f778', 'X-Inner-Service-Timestamp': '1638359401', 'X-Inner-Service-Type': 'test-unit'}} must be of type str or bytes, not <class 'dict'>
-2021-12-02 16:10:49,351 - ERROR - 获取token失败
-2021-12-06 20:48:46,067 - INFO - HTTPSConnectionPool(host='api-service.chanmama.com', port=443): Max retries exceeded with url: /v1/common/starCategory (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x103ea5160>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
-2021-12-06 20:48:46,264 - INFO - HTTPSConnectionPool(host='api-service.chanmama.com', port=443): Max retries exceeded with url: /v1/product/category?type=all (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x103e94070>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
-2021-12-06 20:49:33,700 - INFO - HTTPSConnectionPool(host='api-service.chanmama.com', port=443): Max retries exceeded with url: /v1/common/starCategory (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1059b10d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
-2021-12-06 20:49:33,884 - INFO - HTTPSConnectionPool(host='api-service.chanmama.com', port=443): Max retries exceeded with url: /v1/product/category?type=all (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x1059c9df0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
-2021-12-06 20:50:45,054 - INFO - HTTPSConnectionPool(host='api-service.chanmama.com', port=443): Max retries exceeded with url: /v1/common/starCategory (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10ae7e4c0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
-2021-12-06 20:51:53,937 - INFO - HTTPSConnectionPool(host='api-service.chanmama.com', port=443): Max retries exceeded with url: /v1/common/starCategory (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10fcd89a0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
-<<<<<<< Updated upstream
-
-=======
-2021-12-09 14:53:47,475 - ERROR - 获取token失败
-2021-12-09 20:17:28,928 - INFO - HTTPSConnectionPool(host='api-service.chanmama.com', port=443): Max retries exceeded with url: /v2/brand/detail/authorFansAnalysis?brand_code=0353216337847&start_time=2021-11-09&end_time=2021-12-08 (Caused by NewConnectionError('<urllib3.connection.VerifiedHTTPSConnection object at 0x10ec0b790>: Failed to establish a new connection: [Errno 60] Operation timed out'))
->>>>>>> Stashed changes
+2022-01-04 16:21:52,640 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,734 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,748 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,762 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,777 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,791 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,804 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,817 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,829 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,841 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,854 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,866 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,879 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:21:52,891 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,099 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,202 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,224 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,250 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,273 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,290 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,314 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,330 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,346 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,360 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,375 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,390 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,405 - INFO - too many values to unpack (expected 2)
+2022-01-04 16:22:37,417 - INFO - too many values to unpack (expected 2)
