@@ -4,7 +4,6 @@
 # @File    : test_live_search.py
 import allure
 import pytest
-
 from Common.Base import base
 from Config.path_config import PathMessage
 import os,jsonpath,json
