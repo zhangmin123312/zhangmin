@@ -152,6 +152,9 @@ class PathMessage:
     # 视频探测器七日榜
     aweme_hotspot_week = ["/v1/aweme/hotspot/week"]
 
+    # 音乐库
+    music_search = ["/v2/music/search"]
+
 
 
 
