@@ -10,11 +10,13 @@ import shutil
 import hashlib
 import datetime
 from datetime import timedelta
-import time
+import time,json,os
 from dingtalkchatbot.chatbot import DingtalkChatbot
 from Common.request import Request
 from Config.Consts import user_agent
 from Config.path_config import PathMessage
+from Config.Consts import API_ENVIRONMENT,telephone,user_agent
+from Common.mylog import Mylog
 
 
 
@@ -281,10 +283,62 @@ class base():
             time_list.append((start_date.strftime('%Y-%m-%d'),end_date.strftime('%Y-%m-%d')))
         return time_list
 
+    @staticmethod
+    def return_hotspot_time(get_host,data_type='',include_today=1):
+        """
+        返回视频探测器的时间倒计时间/日期，以及近7天的日期
+        """
+        time_list = []
+        day = 7
+        if data_type=='hour':
+            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=base().return_token(get_host),hosts=get_host)['response_body']['data']
+            end_time=int(deadline_response['deadline'][-2:])
+            while end_time:
+                time_list.append(deadline_response['deadline'][:-2]+str(end_time-1)+'-'+deadline_response['deadline'][:-2]+str(end_time))
+                end_time=end_time-1
+        elif data_type=='day':
+            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=base().return_token(get_host),hosts=get_host)['response_body']['data']
+            while day:
+                day = day - 1
+                time_list.append((datetime.datetime.strptime(deadline_response['deadline'], '%Y%m%d')- datetime.timedelta(days=day)).strftime('%Y-%m-%d'))
+        else:
+            now = datetime.datetime.now().date()
+            while day:
+                day = day - 1
+                time_list.append((now - datetime.timedelta(days=day+1-include_today)).strftime('%Y-%m-%d'))
+
+        return time_list
+
+    def return_token(self,host):
+
+        data = {
+            "username": str(telephone),
+            "timeStamp": "1620637379378",
+            "appId": "10004",
+            "grant_type": "password",
+            "password": "e10adc3949ba59abbe56e057f20f883e"}
+
+        data = json.dumps(data)
+
+        header = {"User-Agent": user_agent, }
+
+        try:
+
+            token = \
+            Request.post_request(url=host + PathMessage.token[0], headers=header, data=data)['response_body']["data"][
+                "token"]
+
+        except:
+            print("获取token失败")
+            Mylog.error("获取token失败")
+            raise False
+
+        return token
 
 
-
-
+if __name__ == "__main__":
+    get_token, get_host=1,2
+    base().return_hotspot_time(get_host,include_today=0)
 
 
 
