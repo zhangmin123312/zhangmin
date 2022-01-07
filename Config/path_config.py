@@ -140,6 +140,12 @@ class PathMessage:
     #达人视频指数或潜力榜
     rank_officialStarRank = ["/v1/home/rank/officialStarRank"]
 
+    # 视频探测器榜点
+    aweme_hotspot_deadline = ["/v1/aweme/hotspot/deadline"]
+
+    # 视频探测器小时榜
+    aweme_hotspot_hour = ["/v1/aweme/hotspot/hour"]
+
 
 
 
