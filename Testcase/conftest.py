@@ -12,6 +12,7 @@ from Common.mylog import Mylog
 from Config.request_config import HostMessage
 from Config.Consts import API_ENVIRONMENT,telephone,user_agent
 from Config.path_config import PathMessage
+from Common.Base import base
 
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -36,29 +37,32 @@ os.environ["host"] = host
 
 @pytest.fixture(scope="session", autouse=True)
 def get_token():
+	"""
+	备注：获取token方法已迁移至common/base.py,此处仅调用
+	"""
 
+	#
+	# data = {
+	# "username": str(telephone),
+	# "timeStamp": "1620637379378",
+	# "appId": "10004",
+	# "grant_type": "password",
+	# "password": "e10adc3949ba59abbe56e057f20f883e"}
+	#
+	# data = json.dumps(data)
+	#
+	# header = {"User-Agent": user_agent,}
+	#
+	# try:
+	#
+	# 	token = Request.post_request(url=host + PathMessage.token[0], headers=header, data=data)['response_body']["data"]["token"]
+	#
+	# except:
+	# 	print("获取token失败")
+	# 	Mylog.error("获取token失败")
+	# 	raise False
 
-	data = {
-	"username": str(telephone),
-	"timeStamp": "1620637379378",
-	"appId": "10004",
-	"grant_type": "password",
-	"password": "e10adc3949ba59abbe56e057f20f883e"}
-
-	data = json.dumps(data)
-
-	header = {"User-Agent": user_agent,}
-
-	try:
-
-		token = Request.post_request(url=host + PathMessage.token[0], headers=header, data=data)['response_body']["data"]["token"]
-
-	except:
-		print("获取token失败")
-		Mylog.error("获取token失败")
-		raise False
-
-	return token
+	return base().return_token(host)
 
 
 @pytest.fixture(scope="session", autouse=True)
