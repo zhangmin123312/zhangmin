@@ -146,6 +146,11 @@ class PathMessage:
     # 视频探测器小时榜
     aweme_hotspot_hour = ["/v1/aweme/hotspot/hour"]
 
+    # 视频探测器每日榜
+    aweme_hotspot_day = ["/v1/aweme/hotspot/day"]
+
+    # 视频探测器七日榜
+    aweme_hotspot_week = ["/v1/aweme/hotspot/week"]
 
 
 
