@@ -155,6 +155,14 @@ class PathMessage:
     # 音乐库
     music_search = ["/v2/music/search"]
 
+    # 本地生活榜地区
+    poi_rank_area = ["/v1/douyin/poi/rank/area"]
+
+    # 本地生活榜标签
+    poi_rank_label = ["/v1/douyin/poi/rank/label"]
+
+    # 本地生活榜
+    poi_rank = ["/v1/douyin/poi/rank"]
 
 
 

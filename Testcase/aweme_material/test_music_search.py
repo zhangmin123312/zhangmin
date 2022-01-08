@@ -10,7 +10,7 @@ from Config.path_config import PathMessage
 import os,jsonpath
 @allure.feature('音乐库')
 # @pytest.mark.flaky(reruns=5, reruns_delay=1)
-class TestCase_music_search():
+class TestCase_Music_Search():
 
     orderby=['user_incr','user_count']
     incr_type=['yesterday','3d','7d']
