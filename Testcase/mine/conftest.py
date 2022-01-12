@@ -46,3 +46,25 @@ def add_subAccount(get_token):
     addSubAccount_response = base().return_request(method="post", path=PathMessage.subuser_addSubAccount,data=json.dumps(addSubAccount_para),tokens=get_token, hosts=os.environ["host"])
 
     return sub_user_id
+
+@pytest.fixture(scope='session')
+def add_productMine(get_token):
+    """
+    添加商品收藏
+    """
+    # 获取商品id
+    product_search_para = {}
+    product_search_response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(product_search_para),tokens=get_token, hosts=os.environ["host"])
+    promotion_id=product_search_response['response_body']['data']['list'][0]['promotion_id']
+    title=product_search_response['response_body']['data']['list'][0]['title']
+
+    # 商品收藏
+    add_para = {"promotion_id": promotion_id}
+    add_response = base().return_request(method="post", path=PathMessage.productMine_add,data=json.dumps(add_para),tokens=get_token, hosts=os.environ["host"])
+
+    # 获取商品分类
+    catList_para = f"account={str(sub_telephone)}"
+    catList_response = base().return_request(method="get", path=PathMessage.productMine_catList,
+                                                   data=catList_para, tokens=get_token, hosts=os.environ["host"])
+    key = catList_response['response_body']['data'][0]['key']
+    return promotion_id,title,key
