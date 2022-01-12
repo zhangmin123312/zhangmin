@@ -11,7 +11,5 @@ pytest-rerunfailures==9.1.1
 pytest-xdist==1.30.0
 pytest-parallel==0.1.1
 jsonpath==0.82
-pytest-parallel-0.1.1
-pytest-assume-2.4.3
-pytest-parallel-0.1.1
-pytest-assume-2.4.3
+pytest-assume==2.4.3
+pytest-ordering==0.6

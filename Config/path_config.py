@@ -164,11 +164,35 @@ class PathMessage:
     # 本地生活榜
     poi_rank = ["/v1/douyin/poi/rank"]
 
+    # 达人收藏-搜索达人
+    v1_author_search = ["/v1/author/search"]
 
+    # 添加达人收藏
+    authorMine_addMine = ["/v1/authorMine/addMine"]
 
+    # 取消达人收藏
+    author_fav = ["/v1/author/fav"]
 
+    # 达人收藏列表
+    authorMine_listsV2 = ["/v1/authorMine/listsV2"]
 
+    # 达人收藏分类
+    authorMine_getLabels = ["/v1/authorMine/getLabels"]
 
+    # 达人收藏添加分组
+    authorMine_addGroup = ["/v1/authorMine/addGroup"]
+
+    # 达人转移到分组
+    authorMine_changeGroup = ["/v1/authorMine/changeGroup"]
+
+    # 删除达人分组
+    authorMine_delGroup = ["/v1/authorMine/delGroup"]
+
+    # 查找子账号
+    subuser_searchAccount = ["/v1/vip/subuser/searchAccount"]
+
+    # 添加子账号
+    subuser_addSubAccount = ["/v1/vip/subuser/addSubAccount"]
 
 
 if __name__ == '__main__':
