@@ -194,6 +194,17 @@ class PathMessage:
     # 添加子账号
     subuser_addSubAccount = ["/v1/vip/subuser/addSubAccount"]
 
+    # 商品收藏列表
+    productMine_listsV2 = ["/v1/productMine/listV2"]
+
+    # 添加商品收藏
+    productMine_add = ["/v1/productMine/add"]
+
+    # 获取商品分类
+    productMine_catList = ["/v1/productMine/catList"]
+
+    # 取消商品收藏
+    product_fav = ["/v1/product/fav"]
 
 if __name__ == '__main__':
 

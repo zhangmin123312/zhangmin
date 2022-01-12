@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# @Time    : 2022/1/11
+# @Time    : 2022/1/12
 # @Author  : linchenzhen
 # @File    : test_authorMine.py
 
@@ -17,7 +17,7 @@ class TestCase_AuthorMine():
 
     @pytest.mark.run(order=1)
     @allure.description("""验证添加达人，达人收藏列表是否正确显示""")
-    @allure.title("添加达人{add_author}，收藏列表正确显示")
+    @allure.title("添加达人{nickname}，收藏列表正确显示")
     def test_authorMine_list(self,get_token,get_host,add_author):
         author_id, nickname, label,group_id=add_author
         para=f"page=1&page_size=50&star_category=&group_id=&sub_user_id=0&keyword="
@@ -66,7 +66,7 @@ class TestCase_AuthorMine():
     @pytest.mark.run(order=1)
     @allure.description("""验证子账号达人收藏列表是否正确显示""")
     @allure.title("子账号收藏列表正确显示")
-    def test_authorMine_group_id(self,get_token,get_host,add_subAccount):
+    def test_authorMine_sub_user_id(self,get_token,get_host,add_subAccount):
         para=f"page=1&page_size=50&star_category=&group_id=&sub_user_id={add_subAccount}&keyword="
         response = base().return_request(method="get", path=PathMessage.authorMine_listsV2, data=para, tokens=get_token,hosts=get_host)
         assert response["status_code"] == 200
@@ -105,7 +105,7 @@ class TestCase_AuthorMine():
     @pytest.mark.run(order=3)
     @allure.description("""验证取消达人收藏，达人收藏列表是否正确显示""")
     @allure.title("取消收藏达人，收藏列表正确显示")
-    def test_authorMine_list(self,get_token,get_host,add_author):
+    def test_authorMine_fav(self,get_token,get_host,add_author):
         author_id, nickname, label,group_id=add_author
         # 取消达人收藏
         fav_para = {"author_id": author_id}
