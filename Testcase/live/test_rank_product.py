@@ -15,7 +15,6 @@ import os,jsonpath
 class TestCase_Rank_Product():
 
     sort=['sales','sales_volume','price','commission_rate','room_num']
-    platform=['淘宝','天猫','京东','小店','洋码头','严选']
 
     @allure.description("""验证直播商品榜单日榜、周榜、月榜是否会排序规则排序""")
     @pytest.mark.parametrize('sort', sort)
@@ -52,15 +51,6 @@ class TestCase_Rank_Product():
         assert response["status_code"] == 200
         assert len(response["response_body"]["data"]["list"]) > 0
 
-    # @allure.description("""验证直播商品榜日榜、周榜、月榜按商品来源筛选，数据是否正确""")
-    # @pytest.mark.parametrize('platform', platform)
-    # @pytest.mark.parametrize('times', base.return_time_message())
-    # @allure.title("直播商品榜日期：{times}，按商品来源筛选")
-    # def test_product_platform(self,get_token,get_host,times,platform):
-    #     para=f"keyword=&day_type={times[0]}&platform={platform}&day={times[1]}&big_category=&first_category=&second_category=&sort={self.sort[0]}&page=1&size=50"
-    #     response = base().return_request(method="get", path=PathMessage.rank_product, data=para,tokens=get_token,hosts=get_host, )
-    #     assert response["status_code"]==200
-    #     assert len(response["response_body"]["data"]["list"]) > 0
 
 
 
