@@ -206,6 +206,10 @@ class PathMessage:
     # 取消商品收藏
     product_fav = ["/v1/product/fav"]
 
+    #话题榜
+    rank_subject=["/v1/subject/rank"]
+
+
 
 
 if __name__ == '__main__':
