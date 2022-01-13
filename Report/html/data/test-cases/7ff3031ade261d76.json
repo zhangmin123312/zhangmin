@@ -1,0 +1,97 @@
+{
+  "uid" : "7ff3031ade261d76",
+  "name" : "排序为inc_follower，按desc",
+  "fullName" : "Testcase.author.test_author_search.TestCase_Author_Search#test_author_search_sort",
+  "historyId" : "ef2144d615ed9f79073bd656ce5473f9",
+  "time" : {
+    "start" : 1642043729426,
+    "stop" : 1642043729727,
+    "duration" : 301
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642043729240,
+      "stop" : 1642043729424,
+      "duration" : 184
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642043729239,
+      "stop" : 1642043729239,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "达人库库"
+  }, {
+    "name" : "story",
+    "value" : "验证达人库排序是否正确"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_author_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Author_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "6828-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_author_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "order_by",
+    "value" : "'desc'"
+  }, {
+    "name" : "sort",
+    "value" : "'inc_follower'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "7ff3031ade261d76.json",
+  "parameterValues" : [ "'desc'", "'inc_follower'" ]
+}

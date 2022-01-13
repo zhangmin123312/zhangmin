@@ -206,6 +206,8 @@ class PathMessage:
     # 取消商品收藏
     product_fav = ["/v1/product/fav"]
 
+
+
 if __name__ == '__main__':
 
     pass
