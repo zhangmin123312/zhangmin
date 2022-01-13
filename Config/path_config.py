@@ -209,6 +209,9 @@ class PathMessage:
     #话题榜
     rank_subject=["/v1/subject/rank"]
 
+    #mcn榜
+    mcn_rank = ["/v1/mcn/rank"]
+
 
 
 
