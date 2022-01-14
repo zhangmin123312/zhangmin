@@ -16,6 +16,7 @@ class TestCase_AuthorRank_StarRank():
     @allure.story('验证商品分享榜日榜数据是否大于20条')
     def test_authorRank_starRank_day_data(self, get_token, get_host,):
         para = "date={}&page=1&size=50&share_type=0&star_category=&province=".format(base.return_time_message()[0][1])
+        print(para)
         responce = base().return_request(method="get", path=PathMessage.authorRank_starDailyRank, data=para, tokens=get_token,
                                          hosts=get_host, )
 

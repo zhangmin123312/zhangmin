@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "6aab437ad27b080cc88668e62747e7ae",
-    "name" : "Testcase.author",
+    "uid" : "bda94db7083e06adccfd814b9df8b765",
+    "name" : "Testcase.aweme_material",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 1001,
+      "passed" : 7,
       "unknown" : 0,
-      "total" : 1001
+      "total" : 7
     }
   } ]
 }

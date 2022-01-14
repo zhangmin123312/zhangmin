@@ -9,7 +9,7 @@ from Common.Base import base
 from Config.path_config import PathMessage
 import os
 @allure.feature('七日探测榜')
-# @pytest.mark.flaky(reruns=5, reruns_delay=1)
+@pytest.mark.flaky(reruns=5, reruns_delay=1)
 class TestCase_Aweme_Hotspot_week():
 
 

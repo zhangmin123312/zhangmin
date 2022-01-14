@@ -15,8 +15,9 @@ from dingtalkchatbot.chatbot import DingtalkChatbot
 from Common.request import Request
 from Config.Consts import user_agent
 from Config.path_config import PathMessage
-from Config.Consts import API_ENVIRONMENT,telephone,user_agent
+from Config.Consts import API_ENVIRONMENT,telephone,user_agent,sub_telephone
 from Common.mylog import Mylog
+import os
 
 
 
@@ -122,7 +123,6 @@ class base():
 
 
 
-
     @staticmethod
     def return_product_types(host,type,product_type='all'):
         """
@@ -182,9 +182,6 @@ class base():
         else:
             print("类别输入有误")
             raise False
-
-
-
 
 
 
@@ -284,20 +281,20 @@ class base():
         return time_list
 
     @staticmethod
-    def return_hotspot_time(get_host,data_type='',include_today=1):
+    def return_hotspot_time(get_tokens,get_host,data_type='',include_today=1):
         """
         返回视频探测器的时间倒计时间/日期，以及近7天的日期
         """
         time_list = []
         day = 7
         if data_type=='hour':
-            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=base().return_token(get_host),hosts=get_host)['response_body']['data']
+            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=get_tokens,hosts=get_host)['response_body']['data']
             end_time=int(deadline_response['deadline'][-2:])
             while end_time:
                 time_list.append(deadline_response['deadline'][:-2]+str(end_time-1)+'-'+deadline_response['deadline'][:-2]+str(end_time))
                 end_time=end_time-1
         elif data_type=='day':
-            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=base().return_token(get_host),hosts=get_host)['response_body']['data']
+            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=get_tokens,hosts=get_host)['response_body']['data']
             while day:
                 day = day - 1
                 time_list.append((datetime.datetime.strptime(deadline_response['deadline'], '%Y%m%d')- datetime.timedelta(days=day)).strftime('%Y-%m-%d'))
@@ -323,11 +320,33 @@ class base():
         header = {"User-Agent": user_agent, }
 
         try:
-
             token = \
             Request.post_request(url=host + PathMessage.token[0], headers=header, data=data)['response_body']["data"][
                 "token"]
+        except:
+            print("获取token失败")
+            Mylog.error("获取token失败")
+            raise False
+        return token
 
+
+    def return_token2(self,host):
+
+        data = {
+            "username": str(sub_telephone),
+            "timeStamp": "1620637379378",
+            "appId": "10004",
+            "grant_type": "password",
+            "password": "e10adc3949ba59abbe56e057f20f883e"}
+
+        data = json.dumps(data)
+
+        header = {"User-Agent": user_agent, }
+
+        try:
+            token = \
+            Request.post_request(url=host + PathMessage.token[0], headers=header, data=data)['response_body']["data"][
+                "token"]
         except:
             print("获取token失败")
             Mylog.error("获取token失败")

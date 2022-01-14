@@ -1,0 +1,93 @@
+{
+  "uid" : "2e35e558348b193",
+  "name" : "每日探测榜查看榜点：2022-01-11",
+  "fullName" : "Testcase.aweme_material.test_aweme_hotspot_day.TestCase_Aweme_Hotspot_day#test_hotspot_day_list_date",
+  "historyId" : "f27ea79bfe7291dc6635db2b3e22208c",
+  "time" : {
+    "start" : 1642153295690,
+    "stop" : 1642153296276,
+    "duration" : 586
+  },
+  "description" : "验证每日探测榜遍历所有榜点是否有返回数据",
+  "descriptionHtml" : "<p>验证每日探测榜遍历所有榜点是否有返回数据</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642153295323,
+      "stop" : 1642153295323,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642153295323,
+      "stop" : 1642153295689,
+      "duration" : 366
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "hasContent" : false,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "每日探测榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_aweme_hotspot_day"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Aweme_Hotspot_day"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "18161-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_aweme_hotspot_day"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "list_date",
+    "value" : "'2022-01-11'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2e35e558348b193.json",
+  "parameterValues" : [ "'2022-01-11'" ]
+}

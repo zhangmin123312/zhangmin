@@ -13,10 +13,9 @@ from Config.request_config import HostMessage
 from Config.Consts import API_ENVIRONMENT,telephone,user_agent
 from Config.path_config import PathMessage
 from Common.Base import base
-
-
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.append(BASE_DIR)
+
 
 if API_ENVIRONMENT == "release":
 	host = HostMessage.release_host
@@ -30,9 +29,9 @@ if API_ENVIRONMENT == "stage":
 #设置全局host变量
 os.environ["host"] = host
 
-
-
-
+#获取初始token
+if os.getenv("token") is None:
+	os.environ["token"] = base().return_token(host)
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -41,7 +40,6 @@ def get_token():
 	备注：获取token方法已迁移至common/base.py,此处仅调用
 	"""
 
-	#
 	# data = {
 	# "username": str(telephone),
 	# "timeStamp": "1620637379378",
@@ -62,7 +60,9 @@ def get_token():
 	# 	Mylog.error("获取token失败")
 	# 	raise False
 
-	return base().return_token(host)
+	token = base().return_token(host)
+	return token
+
 
 
 @pytest.fixture(scope="session", autouse=True)

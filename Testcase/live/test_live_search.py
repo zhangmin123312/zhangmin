@@ -40,14 +40,14 @@ class TestCase_Live_Search():
         assert response["status_code"]==200
         assert len(response["response_body"]["data"]["list"]) > 0
 
-    @allure.description("""验证直播库遍历达人二级分类是否有返回数据""")
-    @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv("host"),2))
-    @allure.title("直播库达人二级分类：{star_category}")
-    def test_live_search_star_category(self,get_token,get_host,star_category,get_7_date):
-        para={"search_type":0,"keyword_type":0,"province":"","page":1,"star_category":star_category[0],"star_sub_category":star_category[1],"multi_product_category":[],"keyword":"","follower_count":"","volume":"","sort":self.sort[3],"order_by":self.order_by[0],"size":50,"is_take_product":0,"has_search_aweme":0,"live_state":-1,"live_begin_time":get_7_date[0],"live_end_time":get_7_date[1]}
-        response = base().return_request(method="post", path=PathMessage.live_search, data=json.dumps(para),tokens=get_token,hosts=get_host)
-        assert response["status_code"]==200
-        assert len(response["response_body"]["data"]["list"]) > 0
+    # @allure.description("""验证直播库遍历达人二级分类是否有返回数据""")
+    # @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv("host"),2))
+    # @allure.title("直播库达人二级分类：{star_category}")
+    # def test_live_search_star_category(self,get_token,get_host,star_category,get_7_date):
+    #     para={"search_type":0,"keyword_type":0,"province":"","page":1,"star_category":star_category[0],"star_sub_category":star_category[1],"multi_product_category":[],"keyword":"","follower_count":"","volume":"","sort":self.sort[3],"order_by":self.order_by[0],"size":50,"is_take_product":0,"has_search_aweme":0,"live_state":-1,"live_begin_time":get_7_date[0],"live_end_time":get_7_date[1]}
+    #     response = base().return_request(method="post", path=PathMessage.live_search, data=json.dumps(para),tokens=get_token,hosts=get_host)
+    #     assert response["status_code"]==200
+    #     assert len(response["response_body"]["data"]["list"]) > 0
         
     @allure.description("""验证直播库近7天遍历商品一级分类是否有返回数据""")
     @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),1))
@@ -58,14 +58,14 @@ class TestCase_Live_Search():
         assert response["status_code"]==200
         assert len(response["response_body"]["data"]["list"]) > 0
 
-    @allure.description("""验证直播库近7天遍历商品二级分类是否有返回数据""")
-    @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
-    @allure.title("直播库近7天商品二级分类：{product_type}")
-    def test_live_search_first_category(self,get_token,get_host,product_type,get_7_date):
-        para={"search_type":0,"keyword_type":0,"province":"","page":1,"star_category":"","star_sub_category":"","multi_product_category":[product_type],"keyword":"","follower_count":"","volume":"","sort":self.sort[0],"order_by":self.order_by[0],"size":50,"is_take_product":0,"has_search_aweme":0,"live_state":-1,"live_begin_time":get_7_date[0],"live_end_time":get_7_date[1]}
-        response = base().return_request(method="post", path=PathMessage.live_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
-        assert response["status_code"] == 200
-        assert len(response["response_body"]["data"]["list"]) > 0
+    # @allure.description("""验证直播库近7天遍历商品二级分类是否有返回数据""")
+    # @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
+    # @allure.title("直播库近7天商品二级分类：{product_type}")
+    # def test_live_search_first_category(self,get_token,get_host,product_type,get_7_date):
+    #     para={"search_type":0,"keyword_type":0,"province":"","page":1,"star_category":"","star_sub_category":"","multi_product_category":[product_type],"keyword":"","follower_count":"","volume":"","sort":self.sort[0],"order_by":self.order_by[0],"size":50,"is_take_product":0,"has_search_aweme":0,"live_state":-1,"live_begin_time":get_7_date[0],"live_end_time":get_7_date[1]}
+    #     response = base().return_request(method="post", path=PathMessage.live_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
+    #     assert response["status_code"] == 200
+    #     assert len(response["response_body"]["data"]["list"]) > 0
 
     @allure.description("""验证直播库按日期筛选""")
     @pytest.mark.parametrize('live_time',base.return_Filter_date(1,7))
