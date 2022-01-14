@@ -1,15 +1,15 @@
 {
   "total" : 1,
   "items" : [ {
-    "uid" : "ac4d6c9f13d89f5a4e611fe277681cb7",
-    "name" : "每日探测榜",
+    "uid" : "41b765a2248c5a967270e43bb3ca0ba1",
+    "name" : "达人库库",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 7,
+      "passed" : 8,
       "unknown" : 0,
-      "total" : 7
+      "total" : 8
     }
   } ]
 }

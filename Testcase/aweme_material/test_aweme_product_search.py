@@ -14,7 +14,7 @@ import os,jsonpath
 
 
 @allure.feature('带货视频库')
-@pytest.mark.flaky(reruns=5, reruns_delay=1)
+# @pytest.mark.flaky(reruns=5, reruns_delay=1)
 class TestCase_Aweme_Product_Search():
 
     sort=['product_volume','product_amount','digg_count']
@@ -57,7 +57,7 @@ class TestCase_Aweme_Product_Search():
     @allure.description("""验证带货视频库遍历商品一级分类是否有返回数据""")
     @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),1))
     @allure.title("带货视频库按商品一级分类：{product_type}")
-    def test_aweme_product_search_star_category(self,get_token,get_host,product_type):
+    def test_aweme_product_big_category(self,get_token,get_host,product_type):
         para=f"search_type=aweme&goods_relatived=1&page=1&hour_ranges=&star_category=&star_sub_category=&big_category={product_type[0]}&first_category=&second_category=&keyword=&digg=&follower_count=&durations=&product_amount=&product_volume=&sort={self.sort[0]}&time={self.time[0]}&size=50&rank_type=1&filter_delete=1&order_by=desc"
         response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
         assert response["status_code"]==200
@@ -66,7 +66,7 @@ class TestCase_Aweme_Product_Search():
     # @allure.description("""验证带货视频库遍历商品二级分类是否有返回数据""")
     # @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
     # @allure.title("带货视频库商品二级分类：{product_type}")
-    # def test_aweme_product_search_star_sub_category(self,get_token,get_host,product_type):
+    # def test_aweme_product_search_first_category(self,get_token,get_host,product_type):
     #     para=f"search_type=aweme&goods_relatived=1&page=1&hour_ranges=&star_category=&star_sub_category=&big_category={product_type[0]}&first_category={product_type[1]}&second_category=&keyword=&digg=&follower_count=&durations=&product_amount=&product_volume=&sort={self.sort[0]}&time={self.time[0]}&size=50&rank_type=1&filter_delete=1&order_by=desc"
     #     response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
     #     assert response["status_code"] == 200

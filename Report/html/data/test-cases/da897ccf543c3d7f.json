@@ -1,0 +1,97 @@
+{
+  "uid" : "da897ccf543c3d7f",
+  "name" : "达人一级分类：['时尚'],商品一级分类：['鲜花绿植']",
+  "fullName" : "Testcase.author.test_author_search.TestCase_Author_Search#test_author_search_star_product_category",
+  "historyId" : "3436f50a0955c3125b02c41b82a8b486",
+  "time" : {
+    "start" : 1642043742033,
+    "stop" : 1642043742290,
+    "duration" : 257
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642043729240,
+      "stop" : 1642043729424,
+      "duration" : 184
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642043729239,
+      "stop" : 1642043729239,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证达人库遍历达人和商品一级分类是否有返回数据"
+  }, {
+    "name" : "feature",
+    "value" : "达人库库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_author_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Author_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "6828-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_author_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_category",
+    "value" : "['鲜花绿植']"
+  }, {
+    "name" : "star_category",
+    "value" : "['时尚']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "da897ccf543c3d7f.json",
+  "parameterValues" : [ "['鲜花绿植']", "['时尚']" ]
+}

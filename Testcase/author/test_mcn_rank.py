@@ -22,6 +22,7 @@ class TestCase_Mcn_Rank():
         para = "day_type={}&date={}&sort_type={}&page=1&size=50".format(times[0], times[1],sort)
         responce = base().return_request(method="get", path=PathMessage.mcn_rank, data=para, tokens=get_token,
                                          hosts=get_host, )
+
         sort_list = jsonpath.jsonpath(responce["response_body"], f'$.data.list[*].{sort}')
         assert responce["status_code"] == 200
         assert len(responce["response_body"]["data"]['list']) > 0
