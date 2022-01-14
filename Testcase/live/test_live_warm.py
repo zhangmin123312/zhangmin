@@ -42,14 +42,14 @@ class TestCase_Live_Warm():
         assert response["status_code"]==200
         assert len(response["response_body"]["data"]["list"]) > 0
 
-    @allure.description("""验证预热视频分析近7天遍历商品二级分类是否有返回数据""")
-    @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
-    @allure.title("预热视频分析近7天商品二级分类：{product_type}")
-    def test_warm_first_category(self,get_token,get_host,product_type,get_Nearly_7_date):
-        para={"search_type":0,"keyword_type":0,"page":1,"star_category":"","star_sub_category":"","multi_category":[product_type],"keyword":"","sort":self.sort[0],"order_by":self.order_by[0],"size":50,"live_begin_time":get_Nearly_7_date[0],"live_end_time":get_Nearly_7_date[1]}
-        response = base().return_request(method="post", path=PathMessage.live_warm, data=json.dumps(para),tokens=get_token,hosts=get_host, )
-        assert response["status_code"] == 200
-        assert len(response["response_body"]["data"]["list"]) > 0
+    # @allure.description("""验证预热视频分析近7天遍历商品二级分类是否有返回数据""")
+    # @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
+    # @allure.title("预热视频分析近7天商品二级分类：{product_type}")
+    # def test_warm_first_category(self,get_token,get_host,product_type,get_Nearly_7_date):
+    #     para={"search_type":0,"keyword_type":0,"page":1,"star_category":"","star_sub_category":"","multi_category":[product_type],"keyword":"","sort":self.sort[0],"order_by":self.order_by[0],"size":50,"live_begin_time":get_Nearly_7_date[0],"live_end_time":get_Nearly_7_date[1]}
+    #     response = base().return_request(method="post", path=PathMessage.live_warm, data=json.dumps(para),tokens=get_token,hosts=get_host, )
+    #     assert response["status_code"] == 200
+    #     assert len(response["response_body"]["data"]["list"]) > 0
 
     @allure.description("""验证预热视频分析近7天遍历达人一级分类是否有返回数据""")
     @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv("host"),1))
@@ -60,11 +60,11 @@ class TestCase_Live_Warm():
         assert response["status_code"]==200
         assert len(response["response_body"]["data"]["list"]) > 0
 
-    @allure.description("""验证预热视频分析近7天遍历达人二级分类是否有返回数据""")
-    @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv("host"),2))
-    @allure.title("预热视频分析近7天达人二级分类：{star_category}")
-    def test_warm_star_sub_category(self,get_token,get_host,star_category,get_Nearly_7_date):
-        para={"search_type":0,"keyword_type":0,"page":1,"star_category":star_category[0],"star_sub_category":star_category[1],"multi_category":[],"keyword":"","sort":self.sort[0],"order_by":self.order_by[0],"size":50,"live_begin_time":get_Nearly_7_date[0],"live_end_time":get_Nearly_7_date[1]}
-        response = base().return_request(method="post", path=PathMessage.live_warm, data=json.dumps(para),tokens=get_token,hosts=get_host, )
-        assert response["status_code"]==200
-        assert len(response["response_body"]["data"]["list"]) > 0
+    # @allure.description("""验证预热视频分析近7天遍历达人二级分类是否有返回数据""")
+    # @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv("host"),2))
+    # @allure.title("预热视频分析近7天达人二级分类：{star_category}")
+    # def test_warm_star_sub_category(self,get_token,get_host,star_category,get_Nearly_7_date):
+    #     para={"search_type":0,"keyword_type":0,"page":1,"star_category":star_category[0],"star_sub_category":star_category[1],"multi_category":[],"keyword":"","sort":self.sort[0],"order_by":self.order_by[0],"size":50,"live_begin_time":get_Nearly_7_date[0],"live_end_time":get_Nearly_7_date[1]}
+    #     response = base().return_request(method="post", path=PathMessage.live_warm, data=json.dumps(para),tokens=get_token,hosts=get_host, )
+    #     assert response["status_code"]==200
+    #     assert len(response["response_body"]["data"]["list"]) > 0

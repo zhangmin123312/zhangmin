@@ -36,15 +36,15 @@ class TestCase_Rank_YesterdaySaleRank():
         assert response["status_code"]==200
         assert len(response["response_body"]["data"]) > 20
 
-    @allure.description("""验证抖音销量榜日榜、周榜、月榜遍历商品二级分类是否有返回数据""")
-    @pytest.mark.parametrize('times',base.return_time_message())
-    @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
-    @allure.title("抖音销量榜日期:{times[1]},类目：{product_type}")
-    def test_yesterdaySaleRank_first_category(self,get_token,get_host,times,product_type):
-        para=f"big_category={product_type[0]}&first_category={product_type[1]}&second_category=&platform={platform[0]}&page=1&size=50&commission_rate=&date={times[1]}&day_type={times[0]}"
-        response = base().return_request(method="get", path=PathMessage.rank_yesterdaySaleRank, data=para,tokens=get_token,hosts=get_host, )
-        assert response["status_code"] == 200
-        assert len(response["response_body"]["data"]) > 0
+    # @allure.description("""验证抖音销量榜日榜、周榜、月榜遍历商品二级分类是否有返回数据""")
+    # @pytest.mark.parametrize('times',base.return_time_message())
+    # @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
+    # @allure.title("抖音销量榜日期:{times[1]},类目：{product_type}")
+    # def test_yesterdaySaleRank_first_category(self,get_token,get_host,times,product_type):
+    #     para=f"big_category={product_type[0]}&first_category={product_type[1]}&second_category=&platform={platform[0]}&page=1&size=50&commission_rate=&date={times[1]}&day_type={times[0]}"
+    #     response = base().return_request(method="get", path=PathMessage.rank_yesterdaySaleRank, data=para,tokens=get_token,hosts=get_host, )
+    #     assert response["status_code"] == 200
+    #     assert len(response["response_body"]["data"]) > 0
 
     @allure.description("""验证抖音销量榜日榜、周榜、月榜，按佣金比例筛选""")
     @pytest.mark.parametrize('commission_rate',commission_rate)

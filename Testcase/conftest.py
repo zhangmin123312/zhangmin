@@ -30,6 +30,9 @@ if API_ENVIRONMENT == "stage":
 #设置全局host变量
 os.environ["host"] = host
 
+if os.getenv("token")==None:
+	os.environ["token"] = base().return_token(host)
+
 
 
 

@@ -36,14 +36,14 @@ class TestCase_Rank_Official_Daily():
         assert response["status_code"]==200
         assert len(response["response_body"]["data"]) > 0
 
-    @allure.description("""验证今日带货榜遍历商品二级分类是否有返回数据""")
-    @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2,'sales'))
-    @allure.title("今日带货榜商品二级分类：{product_type}")
-    def test_official_daily_first_category(self,get_token,get_host,product_type):
-        para=f"star_category=&big_category={product_type[0]}&first_category={product_type[1]}&second_category=&order=desc&orderby={self.orderby[0]}&page=1&size=50&dark_horse=0&first_on_list=0&is_brand_self=0&low_fans=0"
-        response = base().return_request(method="get", path=PathMessage.rank_official_daily, data=para,tokens=get_token,hosts=get_host, )
-        assert response["status_code"] == 200
-        assert len(response["response_body"]["data"]) > 0
+    # @allure.description("""验证今日带货榜遍历商品二级分类是否有返回数据""")
+    # @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2,'sales'))
+    # @allure.title("今日带货榜商品二级分类：{product_type}")
+    # def test_official_daily_first_category(self,get_token,get_host,product_type):
+    #     para=f"star_category=&big_category={product_type[0]}&first_category={product_type[1]}&second_category=&order=desc&orderby={self.orderby[0]}&page=1&size=50&dark_horse=0&first_on_list=0&is_brand_self=0&low_fans=0"
+    #     response = base().return_request(method="get", path=PathMessage.rank_official_daily, data=para,tokens=get_token,hosts=get_host, )
+    #     assert response["status_code"] == 200
+    #     assert len(response["response_body"]["data"]) > 0
 
     @allure.description("""验证今日带货榜遍历达人一级分类是否有返回数据""")
     @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv("host"),1))

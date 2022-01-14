@@ -38,15 +38,15 @@ class TestCase_Rank_Sales():
         assert response["status_code"]==200
         assert len(response["response_body"]["data"]["list"]) > 0
 
-    @allure.description("""验证达人带货榜日榜、周榜、月榜遍历商品二级分类是否有返回数据""")
-    @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2,'sales'))
-    @pytest.mark.parametrize('times', base.return_time_message())
-    @allure.title("达人带货榜日期：{times}，商品二级分类：{product_type}")
-    def test_sales_first_category(self,get_token,get_host,product_type,times):
-        para=f"day_type={times[0]}&day={times[1]}&big_category={product_type[0]}&first_category={product_type[1]}&second_category=&sort={self.sort[0]}&page=1&size=50&verification_type=&is_brand_self_author=0&is_shop_author=0&dark_horse=0&first_rank=0&is_bomb=0"
-        response = base().return_request(method="get", path=PathMessage.rank_sales, data=para,tokens=get_token,hosts=get_host, )
-        assert response["status_code"] == 200
-        assert len(response["response_body"]["data"]["list"]) > 0
+    # @allure.description("""验证达人带货榜日榜、周榜、月榜遍历商品二级分类是否有返回数据""")
+    # @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2,'sales'))
+    # @pytest.mark.parametrize('times', base.return_time_message())
+    # @allure.title("达人带货榜日期：{times}，商品二级分类：{product_type}")
+    # def test_sales_first_category(self,get_token,get_host,product_type,times):
+    #     para=f"day_type={times[0]}&day={times[1]}&big_category={product_type[0]}&first_category={product_type[1]}&second_category=&sort={self.sort[0]}&page=1&size=50&verification_type=&is_brand_self_author=0&is_shop_author=0&dark_horse=0&first_rank=0&is_bomb=0"
+    #     response = base().return_request(method="get", path=PathMessage.rank_sales, data=para,tokens=get_token,hosts=get_host, )
+    #     assert response["status_code"] == 200
+    #     assert len(response["response_body"]["data"]["list"]) > 0
 
     @allure.description("""验证达人带货榜日榜、周榜、月榜按低粉爆款达人筛选，数据是否正确""")
     @pytest.mark.parametrize('times', base.return_time_message())

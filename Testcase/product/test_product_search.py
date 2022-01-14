@@ -72,15 +72,15 @@ class TestCase_Product_Search():
         assert response["status_code"]==200
         assert len(response["response_body"]["data"]["list"]) > 0
 
-    @allure.description("""验证选品库遍历商品二级分类是否有返回数据""")
-    @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
-    @pytest.mark.parametrize('day_type', day_type)
-    @allure.title("选品库日期：{day_type},商品二级分类：{product_type}")
-    def test_product_search_big_category(self,get_token,get_host,product_type,day_type):
-        para={"keyword":"","keyword_type":"","page":1,"price":"","size":50,"filter_coupon":0,"has_live":0,"has_video":0,"tb_max_commission_rate":"","day_pv_count":"","duration_volume":"","big_category":product_type[0],"first_category":product_type[1],"second_category":"","platform":"","sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":-1,"most_aweme_volume":0,"most_live_volume":0}
-        response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
-        assert response["status_code"]==200
-        assert len(response["response_body"]["data"]["list"]) > 0
+    # @allure.description("""验证选品库遍历商品二级分类是否有返回数据""")
+    # @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
+    # @pytest.mark.parametrize('day_type', day_type)
+    # @allure.title("选品库日期：{day_type},商品二级分类：{product_type}")
+    # def test_product_search_big_category(self,get_token,get_host,product_type,day_type):
+    #     para={"keyword":"","keyword_type":"","page":1,"price":"","size":50,"filter_coupon":0,"has_live":0,"has_video":0,"tb_max_commission_rate":"","day_pv_count":"","duration_volume":"","big_category":product_type[0],"first_category":product_type[1],"second_category":"","platform":"","sort":self.sort[0],"order_by":self.order_by[0],"day_type":day_type,"most_volume":-1,"most_aweme_volume":0,"most_live_volume":0}
+    #     response = base().return_request(method="post", path=PathMessage.product_search, data=json.dumps(para),tokens=get_token,hosts=get_host, )
+    #     assert response["status_code"]==200
+    #     assert len(response["response_body"]["data"]["list"]) > 0
 
     @allure.description("""验证选品库昨日、7天、30天，按商品来源筛选""")
     @pytest.mark.parametrize('platform',platform[:5])

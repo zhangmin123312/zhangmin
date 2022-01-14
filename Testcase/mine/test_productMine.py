@@ -29,7 +29,7 @@ class TestCase_ProductMine():
 
     @pytest.mark.run(order=1)
     @allure.description("""验证搜索商品，商品收藏列表是否正确显示""")
-    @allure.title("搜索商品昵称{title}，收藏列表正确显示")
+    @allure.title("搜索商品昵称，收藏列表正确显示")
     def test_productMine_keyword(self,get_token,get_host,add_productMine):
         promotion_id,title,key=add_productMine
         para=f"page=1&keyword={title}&sub_user_id=0&label=&page_size=50"
