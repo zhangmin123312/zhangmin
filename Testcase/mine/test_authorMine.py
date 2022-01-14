@@ -17,7 +17,7 @@ class TestCase_AuthorMine():
 
     @pytest.mark.run(order=1)
     @allure.description("""验证添加达人，达人收藏列表是否正确显示""")
-    @allure.title("添加达人{nickname}，收藏列表正确显示")
+    @allure.title("添加达人，收藏列表正确显示")
     def test_authorMine_list(self,get_token,get_host,add_author):
         author_id, nickname, label,group_id=add_author
         para=f"page=1&page_size=50&star_category=&group_id=&sub_user_id=0&keyword="
@@ -29,7 +29,7 @@ class TestCase_AuthorMine():
 
     @pytest.mark.run(order=1)
     @allure.description("""验证搜索达人昵称，达人收藏列表是否正确显示""")
-    @allure.title("搜索达人昵称{nickname}，收藏列表正确显示")
+    @allure.title("搜索达人昵称，收藏列表正确显示")
     def test_authorMine_keyword(self,get_token,get_host,add_author):
         author_id, nickname, label,group_id=add_author
         para=f"page=1&page_size=50&star_category=&group_id=&sub_user_id=0&keyword={nickname}"
@@ -41,7 +41,7 @@ class TestCase_AuthorMine():
 
     @pytest.mark.run(order=1)
     @allure.description("""验证按达人分类筛选，达人收藏列表是否正确显示""")
-    @allure.title("搜索达人分类{label}，收藏列表正确显示")
+    @allure.title("搜索达人分类，收藏列表正确显示")
     def test_authorMine_star_category(self,get_token,get_host,add_author):
         author_id, nickname, tag,group_id=add_author
         para=f"page=1&page_size=50&star_category={tag}&group_id=&sub_user_id=0&keyword="

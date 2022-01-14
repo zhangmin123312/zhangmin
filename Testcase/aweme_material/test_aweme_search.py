@@ -44,14 +44,14 @@ class TestCase_Aweme_Search():
         assert response["status_code"]==200
         assert len(response["response_body"]["data"]["list"]) > 0
 
-    @allure.description("""验证视频库遍历达人二级分类是否有返回数据""")
-    @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv("host"),2))
-    @allure.title("视频库达人二级分类：{star_category}")
-    def test_aweme_search_star_sub_category(self,get_token,get_host,star_category):
-        para=f"gender_type=-1&age_types=&province=&page=1&star_category={star_category[0]}&star_sub_category={star_category[1]}&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort={self.sort[0]}&time={self.time[0]}&size=50&goods_relatived=0&fans_hottest=0&group_buy_relatived=0&filter_delete=1&order_by=desc"
-        response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
-        assert response["status_code"] == 200
-        assert len(response["response_body"]["data"]["list"]) > 0
+    # @allure.description("""验证视频库遍历达人二级分类是否有返回数据""")
+    # @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv("host"),2))
+    # @allure.title("视频库达人二级分类：{star_category}")
+    # def test_aweme_search_star_sub_category(self,get_token,get_host,star_category):
+    #     para=f"gender_type=-1&age_types=&province=&page=1&star_category={star_category[0]}&star_sub_category={star_category[1]}&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort={self.sort[0]}&time={self.time[0]}&size=50&goods_relatived=0&fans_hottest=0&group_buy_relatived=0&filter_delete=1&order_by=desc"
+    #     response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
+    #     assert response["status_code"] == 200
+    #     assert len(response["response_body"]["data"]["list"]) > 0
 
     @allure.description("""验证视频库按视频点赞数筛选，数据是否正确""")
     @pytest.mark.parametrize('digg', digg)
@@ -142,7 +142,7 @@ class TestCase_Aweme_Search():
 
     @allure.description("""验证视频库按观众年龄筛选，数据是否正确""")
     @pytest.mark.parametrize('age_type', age_types.keys())
-    @allure.title("视频库按观众性别{age_types}筛选")
+    @allure.title("视频库按观众性别{age_type}筛选")
     def test_aweme_search_age_types(self,get_token,get_host,age_type):
         para=f"gender_type=&age_types={age_type}&province=&page=1&star_category=&star_sub_category=&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort={self.sort[0]}&time={self.time[0]}&size=50&goods_relatived=0&fans_hottest=0&group_buy_relatived=0&filter_delete=1&order_by=desc"
         response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )

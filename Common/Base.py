@@ -284,20 +284,20 @@ class base():
         return time_list
 
     @staticmethod
-    def return_hotspot_time(get_host,data_type='',include_today=1):
+    def return_hotspot_time(get_token,get_host,data_type='',include_today=1):
         """
         返回视频探测器的时间倒计时间/日期，以及近7天的日期
         """
         time_list = []
         day = 7
         if data_type=='hour':
-            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=base().return_token(get_host),hosts=get_host)['response_body']['data']
+            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=get_token,hosts=get_host)['response_body']['data']
             end_time=int(deadline_response['deadline'][-2:])
             while end_time:
                 time_list.append(deadline_response['deadline'][:-2]+str(end_time-1)+'-'+deadline_response['deadline'][:-2]+str(end_time))
                 end_time=end_time-1
         elif data_type=='day':
-            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=base().return_token(get_host),hosts=get_host)['response_body']['data']
+            deadline_response = base().return_request(method="get",path=PathMessage.aweme_hotspot_deadline,data=f"data_type={data_type}", tokens=get_token,hosts=get_host)['response_body']['data']
             while day:
                 day = day - 1
                 time_list.append((datetime.datetime.strptime(deadline_response['deadline'], '%Y%m%d')- datetime.timedelta(days=day)).strftime('%Y-%m-%d'))
