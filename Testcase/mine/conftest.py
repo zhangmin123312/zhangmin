@@ -70,6 +70,22 @@ def add_productMine(get_token):
     key = catList_response['response_body']['data'][0]['key']
     return promotion_id,title,key
 
+@pytest.fixture(scope='session')
+def add_shop_list(get_token):
+    """
+    添加小店收藏
+    """
+    # 获取小店id
+    shop_search_para ="page=1&big_category=&first_category=&keyword=&sort=volume&orderby=desc&size=50&has_aweme=0&has_live=0&avg_price=&avg_amount=&expr_score="
+    shop_search_response = base().return_request(method="get", path=PathMessage.shop_search, data=shop_search_para,tokens=get_token, hosts=os.environ["host"])
+    shop_id=shop_search_response['response_body']['data']['list'][1]['shop_id']
+    category_big=shop_search_response['response_body']['data']['list'][1]['category_arr'][0]['big']
+
+    # 小店收藏
+    add_para = {"shop_id": shop_id}
+    add_response = base().return_request(method="post", path=PathMessage.shop_detail_fav_add,data=json.dumps(add_para),tokens=get_token, hosts=os.environ["host"])
+
+    return shop_id,category_big
 
 @pytest.fixture(scope='session')
 def add_aweme_fav(get_token):

@@ -212,7 +212,32 @@ class PathMessage:
     #mcn榜
     mcn_rank = ["/v1/mcn/rank"]
 
+    # 小店收藏列表
+    shop_detail_fav_list = ["/v1/shop/detail/fav/list"]
 
+    # 添加小店收藏
+    shop_detail_fav_add = ["/v1/shop/detail/fav/add"]
+
+    # 取消小店收藏
+    shop_detail_fav_cancel = ["/v1/shop/detail/fav/cancel"]
+
+    # 视频收藏列表
+    aweme_favLists = ["/v1/aweme/favLists"]
+
+    # 获取视频收藏分类
+    aweme_favListCat = ["/v1/aweme/favListCat"]
+
+    # 添加视频收藏分组
+    aweme_favGroupAdd = ["/v1/aweme/favGroupAdd"]
+
+    # 添加视频收藏
+    aweme_fav = ["/v1/aweme/fav"]
+
+    # 删除视频收藏分组
+    aweme_favGroupDel = ["/v1/aweme/favGroupDel"]
+
+    # 取消视频收藏
+    aweme_favCancel = ["/v1/aweme/favCancel"]
 
 
 if __name__ == '__main__':
