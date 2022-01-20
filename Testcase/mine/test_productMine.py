@@ -52,8 +52,8 @@ class TestCase_ProductMine():
     @pytest.mark.run(order=1)
     @allure.description("""验证子账号商品收藏列表是否正确显示""")
     @allure.title("子账号商品收藏列表正确显示")
-    def test_productMine_subAccount(self,get_token,get_host,add_subAccount):
-        para=f"page=1&keyword=&sub_user_id={add_subAccount}&label=&page_size=50"
+    def test_productMine_subAccount(self,get_token,get_host,common_init):
+        para=f"page=1&keyword=&sub_user_id={common_init}&label=&page_size=50"
         response = base().return_request(method="get", path=PathMessage.productMine_listsV2, data=para, tokens=get_token,hosts=get_host)
         assert response["status_code"] == 200
         assert len(response["response_body"]["data"]["list"]) > 0

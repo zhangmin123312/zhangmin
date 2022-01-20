@@ -66,8 +66,8 @@ class TestCase_AuthorMine():
     @pytest.mark.run(order=1)
     @allure.description("""验证子账号达人收藏列表是否正确显示""")
     @allure.title("子账号收藏列表正确显示")
-    def test_authorMine_sub_user_id(self,get_token,get_host,add_subAccount):
-        para=f"page=1&page_size=50&star_category=&group_id=&sub_user_id={add_subAccount}&keyword="
+    def test_authorMine_sub_user_id(self,get_token,get_host,common_init):
+        para=f"page=1&page_size=50&star_category=&group_id=&sub_user_id={common_init}&keyword="
         response = base().return_request(method="get", path=PathMessage.authorMine_listsV2, data=para, tokens=get_token,hosts=get_host)
         assert response["status_code"] == 200
         assert len(response["response_body"]["data"]["list"]) > 0
