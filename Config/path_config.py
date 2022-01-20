@@ -206,23 +206,14 @@ class PathMessage:
     # 取消商品收藏
     product_fav = ["/v1/product/fav"]
 
-    # 获取视频收藏列表
-    aweme_favLists = ["/v1/aweme/favLists"]
+    #话题榜
+    rank_subject=["/v1/subject/rank"]
 
-    # 获取视频分类
-    aweme_favListCat = ["/v1/aweme/favListCat"]
+    #mcn榜
+    mcn_rank = ["/v1/mcn/rank"]
 
-    # 新增视频收藏分组
-    aweme_favGroupAdd = ["/v1/aweme/favGroupAdd"]
 
-    # 新增视频收藏
-    aweme_fav = ["/v1/aweme/fav"]
 
-    # 取消视频收藏
-    aweme_favCancel = ["/v1/aweme/favCancel"]
-
-    # 删除视频收藏的分组
-    aweme_favGroupDel = ["/v1/aweme/favGroupDel"]
 
 if __name__ == '__main__':
 
