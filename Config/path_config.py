@@ -239,6 +239,15 @@ class PathMessage:
     # 取消视频收藏
     aweme_favCancel = ["/v1/aweme/favCancel"]
 
+    # 音乐收藏列表
+    music_favLists = ["/v1/music/favLists"]
+
+    # 添加/取消音乐收藏
+    music_fav = ["/v1/music/fav"]
+
+
+
+
 
 if __name__ == '__main__':
 

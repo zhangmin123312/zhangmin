@@ -116,9 +116,6 @@ def add_aweme_fav(get_token):
     favCancel_para = {"aweme_id": aweme_id,"sub_user_id": 0}
     favCancel_response = base().return_request(method="post", path=PathMessage.aweme_favCancel,data=json.dumps(favCancel_para),tokens=get_token, hosts=os.environ["host"])
 
-
-
-
 @pytest.fixture(scope="session")
 def common_init(tmp_path_factory, worker_id,get_token):
 
@@ -151,4 +148,19 @@ def common_init(tmp_path_factory, worker_id,get_token):
         os.environ['sub_user_id'] = str(sub_user_id)
     return sub_user_id
 
+@pytest.fixture(scope='session')
+def add_music_favLists(get_token):
+    """
+    添加音乐收藏
+    """
+    # 获取音乐id
+    music_search_para ="keyword=&page=1&size=50&orderby=user_incr&incr_type=yesterday&order=desc"
+    music_search_response = base().return_request(method="get", path=PathMessage.music_search, data=music_search_para,tokens=get_token, hosts=os.environ["host"])
+    music_id=music_search_response['response_body']['data']['list'][0]['music_id']
+
+    # 音乐收藏
+    fav_para = {"music_id": music_id}
+    fav_response = base().return_request(method="post", path=PathMessage.music_fav,data=json.dumps(fav_para),tokens=get_token, hosts=os.environ["host"])
+
+    return music_id
 
