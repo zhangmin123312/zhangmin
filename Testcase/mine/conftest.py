@@ -120,32 +120,20 @@ def add_aweme_fav(get_token):
 def common_init(tmp_path_factory, worker_id,get_token):
 
     if worker_id == "master":
-
         sub_user_id = add_subAccount(get_token)
-
         os.environ['sub_user_id'] = str(sub_user_id)
-
-
         return sub_user_id
 
-
-    # 获取所有子节点共享的临时目录，无需修改【不可删除、修改】
     root_tmp_dir = tmp_path_factory.getbasetemp().parent
-    # 【不可删除、修改】
     fn = root_tmp_dir / "data.json"
-    # 【不可删除、修改】
     with FileLock(str(fn) + ".lock"):
-        # 【不可删除、修改】
         if fn.is_file():
-
             sub_user_id = json.loads(fn.read_text())
         else:
             sub_user_id = add_subAccount(get_token)
-
-            # 【不可删除、修改】
             fn.write_text(json.dumps(sub_user_id))
-
         os.environ['sub_user_id'] = str(sub_user_id)
+
     return sub_user_id
 
 @pytest.fixture(scope='session')
@@ -164,3 +152,19 @@ def add_music_favLists(get_token):
 
     return music_id
 
+@pytest.fixture(scope='session')
+def add_subject_favList(get_token):
+    """
+    添加话题收藏
+    """
+    # 获取话题id
+    date=datetime.datetime.now().date()- datetime.timedelta(days=1)
+    rank_subject_para =f"day_type=day&date={date}&order=aweme_count_inc&page=1&size=50"
+    rank_subject_response = base().return_request(method="get", path=PathMessage.rank_subject, data=rank_subject_para,tokens=get_token, hosts=os.environ["host"])
+    subject_id=rank_subject_response['response_body']['data']['list'][0]['subject_id']
+
+    # 话题收藏
+    fav_para = {"subject_id": subject_id}
+    fav_response = base().return_request(method="post", path=PathMessage.subject_fav,data=json.dumps(fav_para),tokens=get_token, hosts=os.environ["host"])
+
+    return subject_id
