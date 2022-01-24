@@ -245,6 +245,12 @@ class PathMessage:
     # 添加/取消音乐收藏
     music_fav = ["/v1/music/fav"]
 
+    # 话题收藏列表
+    subject_favList = ["/v1/subject/favList"]
+
+    # 添加/取消话题收藏
+    subject_fav = ["/v1/subject/fav"]
+
 
 
 
