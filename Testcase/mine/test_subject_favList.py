@@ -27,6 +27,17 @@ class TestCase_Subject_FavList():
         subject_id_list = jsonpath.jsonpath(response["response_body"], f'$.data.list[*].subject_id')
         assert subject_id in subject_id_list
 
+
+    @pytest.mark.run(order=1)
+    @allure.description("""验证子账号话题收藏列表是否正确显示""")
+    @allure.title("子账号话题收藏列表正确显示")
+    def test_subject_favList_subAccount(self,get_token,get_host,common_init):
+        para=f"page=1&page_size=50&sub_id={common_init}"
+        response = base().return_request(method="get", path=PathMessage.subject_favList, data=para, tokens=get_token,hosts=get_host)
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]["list"]) > 0
+
+
     @pytest.mark.run(order=2)
     @allure.description("""验证取消话题收藏，话题收藏列表是否正确显示""")
     @allure.title("取消收藏话题，收藏列表正确显示")
