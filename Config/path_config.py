@@ -251,8 +251,23 @@ class PathMessage:
     # 添加/取消话题收藏
     subject_fav = ["/v1/subject/fav"]
 
+    # 直播监控列表
+    live_monitor_list = ["/v1/douyin/live/monitor/list"]
 
+    # 直播监控搜索达人
+    author_multiSearch = ["/v1/author/multiSearch"]
 
+    # 添加直播监控
+    live_monitor_add = ["/v1/douyin/live/monitor/add"]
+
+    # 删除直播监控
+    live_monitor_delete = ["/v1/douyin/live/monitor/delete"]
+
+    # 直播监控置顶
+    live_monitor_topSwitch = ["/v1/douyin/live/monitor/topSwitch"]
+
+    # 取消直播监控
+    live_monitor_cancel = ["/v1/douyin/live/monitor/cancel"]
 
 
 if __name__ == '__main__':
