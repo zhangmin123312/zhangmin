@@ -1,0 +1,150 @@
+{
+  "uid" : "b797f5467d43433e",
+  "name" : "今日带货榜按低粉达人筛选",
+  "fullName" : "Testcase.live.test_rank_official_daily.TestCase_Rank_Official_Daily#test_official_daily_low_fans",
+  "historyId" : "ea4e7eff00846758f8e37389317a5755",
+  "time" : {
+    "start" : 1642577178602,
+    "stop" : 1642577178819,
+    "duration" : 217
+  },
+  "description" : "验证今日带货榜按低粉达人筛选，数据是否正确",
+  "descriptionHtml" : "<p>验证今日带货榜按低粉达人筛选，数据是否正确</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_7_date",
+    "time" : {
+      "start" : 1642577130056,
+      "stop" : 1642577130056,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_Nearly_7_date",
+    "time" : {
+      "start" : 1642577130056,
+      "stop" : 1642577130056,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "last_timestamp",
+    "time" : {
+      "start" : 1642577130056,
+      "stop" : 1642577130230,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960985,
+      "stop" : 1642576960985,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "soundbyte_last_timestamp",
+    "time" : {
+      "start" : 1642577130230,
+      "stop" : 1642577130493,
+      "duration" : 263
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960985,
+      "stop" : 1642576960985,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "今日带货榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.live"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_official_daily"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_Official_Daily"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19236-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.live.test_rank_official_daily"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b797f5467d43433e.json",
+  "parameterValues" : [ ]
+}

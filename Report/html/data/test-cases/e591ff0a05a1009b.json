@@ -1,0 +1,97 @@
+{
+  "uid" : "e591ff0a05a1009b",
+  "name" : "达人一级分类：['美妆'],商品一级分类：['礼品文创']",
+  "fullName" : "Testcase.author.test_author_search.TestCase_Author_Search#test_author_search_star_product_category",
+  "historyId" : "e109fb1ebe6569ac26d63bf1f1eae3ac",
+  "time" : {
+    "start" : 1642577046190,
+    "stop" : 1642577046714,
+    "duration" : 524
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "达人库"
+  }, {
+    "name" : "story",
+    "value" : "验证达人库遍历达人和商品一级分类是否有返回数据"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_author_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Author_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19233-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_author_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_category",
+    "value" : "['礼品文创']"
+  }, {
+    "name" : "star_category",
+    "value" : "['美妆']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e591ff0a05a1009b.json",
+  "parameterValues" : [ "['礼品文创']", "['美妆']" ]
+}

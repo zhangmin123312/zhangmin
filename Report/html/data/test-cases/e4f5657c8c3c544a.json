@@ -1,0 +1,96 @@
+{
+  "uid" : "e4f5657c8c3c544a",
+  "name" : "抖音小店库商品体验分区间：4.5-5.0",
+  "fullName" : "Testcase.shop_brand.test_shop_search.TestCase_Shop_Search#test_shop_search_expr_score",
+  "historyId" : "1314204182a4d4195a9750275481133b",
+  "time" : {
+    "start" : 1642577234456,
+    "stop" : 1642577234643,
+    "duration" : 187
+  },
+  "description" : "验证抖音小店库商品体验分筛选校验",
+  "descriptionHtml" : "<p>验证抖音小店库商品体验分筛选校验</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证抖音小店库商品体验分筛选校验"
+  }, {
+    "name" : "feature",
+    "value" : "抖音小店库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.shop_brand"
+  }, {
+    "name" : "suite",
+    "value" : "test_shop_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Shop_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19240-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.shop_brand.test_shop_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expr_score",
+    "value" : "'4.5-5.0'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e4f5657c8c3c544a.json",
+  "parameterValues" : [ "'4.5-5.0'" ]
+}

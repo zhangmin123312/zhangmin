@@ -1,0 +1,97 @@
+{
+  "uid" : "d734483365563474",
+  "name" : "行业达人榜日期:['month', '202112'],类目：['母婴亲子']",
+  "fullName" : "Testcase.author.test_authorRank_bangNew_A.TestCase_AuthorRank_BangNew_A#test_authorRank_bangNew_A_star_type",
+  "historyId" : "c444d097cd501cc8cebd5df433d9a9ea",
+  "time" : {
+    "start" : 1642576963850,
+    "stop" : 1642576964411,
+    "duration" : 561
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证行业达人榜日榜、周榜、月榜遍历商品大类返回的数据是否大于20条"
+  }, {
+    "name" : "feature",
+    "value" : "行业达人榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_authorRank_bangNew_A"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_AuthorRank_BangNew_A"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19240-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_authorRank_bangNew_A"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "star_type",
+    "value" : "['母婴亲子']"
+  }, {
+    "name" : "times",
+    "value" : "['month', '202112']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d734483365563474.json",
+  "parameterValues" : [ "['母婴亲子']", "['month', '202112']" ]
+}

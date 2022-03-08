@@ -1,0 +1,96 @@
+{
+  "uid" : "478de82c9aa2e6db",
+  "name" : "选品库日期：30,商品一级分类：['日用百货']",
+  "fullName" : "Testcase.product.test_product_search.TestCase_Product_Search#test_product_search_big_category",
+  "historyId" : "8096a301e1c21014c0f114a939cca62e",
+  "time" : {
+    "start" : 1642577194632,
+    "stop" : 1642577195075,
+    "duration" : 443
+  },
+  "description" : "验证选品库遍历商品一级分类是否有返回数据",
+  "descriptionHtml" : "<p>验证选品库遍历商品一级分类是否有返回数据</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "选品库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Product_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19246-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_product_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "day_type",
+    "value" : "30"
+  }, {
+    "name" : "product_type",
+    "value" : "['日用百货']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "478de82c9aa2e6db.json",
+  "parameterValues" : [ "30", "['日用百货']" ]
+}

@@ -1,0 +1,96 @@
+{
+  "uid" : "c5a6f0063380f559",
+  "name" : "抖音热推榜日期:202112,佣金比例：10-",
+  "fullName" : "Testcase.product.test_rank_yesterdayHotRank.TestCase_Rank_YesterdayHotRank#test_yesterdayHotRank_commission_rate",
+  "historyId" : "a7e10b1af9d84227abd953a5d780eebd",
+  "time" : {
+    "start" : 1642577215795,
+    "stop" : 1642577216214,
+    "duration" : 419
+  },
+  "description" : "验证抖音热推榜日榜、周榜、月榜，按佣金比例筛选",
+  "descriptionHtml" : "<p>验证抖音热推榜日榜、周榜、月榜，按佣金比例筛选</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音热推榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_yesterdayHotRank"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_YesterdayHotRank"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19234-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_rank_yesterdayHotRank"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "commission_rate",
+    "value" : "'10-'"
+  }, {
+    "name" : "times",
+    "value" : "['month', '202112']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c5a6f0063380f559.json",
+  "parameterValues" : [ "'10-'", "['month', '202112']" ]
+}

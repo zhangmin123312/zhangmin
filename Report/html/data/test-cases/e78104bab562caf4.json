@@ -1,0 +1,97 @@
+{
+  "uid" : "e78104bab562caf4",
+  "name" : "抖音小店榜日期:['day', '2022-01-18'],类目：['母婴用品']",
+  "fullName" : "Testcase.shop_brand.test_rank_specialtyToday.TestCase_Rank_SpecialtyToday#test_rank_specialtyToday_product_type",
+  "historyId" : "52d7802d96323a79ac7cb59e326a9ff0",
+  "time" : {
+    "start" : 1642577226236,
+    "stop" : 1642577226622,
+    "duration" : 386
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音小店榜"
+  }, {
+    "name" : "story",
+    "value" : "验证抖音小店榜日榜、周榜、月榜遍历商品大类返回的数据是否大于20条"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.shop_brand"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_specialtyToday"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_SpecialtyToday"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19233-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.shop_brand.test_rank_specialtyToday"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_type",
+    "value" : "['母婴用品']"
+  }, {
+    "name" : "times",
+    "value" : "['day', '2022-01-18']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e78104bab562caf4.json",
+  "parameterValues" : [ "['母婴用品']", "['day', '2022-01-18']" ]
+}

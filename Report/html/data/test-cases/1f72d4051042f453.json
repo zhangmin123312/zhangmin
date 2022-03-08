@@ -1,0 +1,94 @@
+{
+  "uid" : "1f72d4051042f453",
+  "name" : "抖音品牌库请求类目：['3C数码']",
+  "fullName" : "Testcase.shop_brand.test_brand_search.TestCase_Brand_Search#test_brand_search_product_type",
+  "historyId" : "4b587dbbee23bda9fc130bfb33cccba3",
+  "time" : {
+    "start" : 1642577224916,
+    "stop" : 1642577225107,
+    "duration" : 191
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证抖音品牌库遍历商品大类返回的数据是否大于20条"
+  }, {
+    "name" : "feature",
+    "value" : "抖音品牌库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.shop_brand"
+  }, {
+    "name" : "suite",
+    "value" : "test_brand_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Brand_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19246-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.shop_brand.test_brand_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_type",
+    "value" : "['3C数码']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1f72d4051042f453.json",
+  "parameterValues" : [ "['3C数码']" ]
+}

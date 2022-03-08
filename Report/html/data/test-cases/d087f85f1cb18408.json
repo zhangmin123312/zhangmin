@@ -1,0 +1,153 @@
+{
+  "uid" : "d087f85f1cb18408",
+  "name" : "今日带货榜达人一级分类：['家居家装']",
+  "fullName" : "Testcase.live.test_rank_official_daily.TestCase_Rank_Official_Daily#test_official_daily_star_category",
+  "historyId" : "16c5b85ad1ae01938361bbb492bb28bd",
+  "time" : {
+    "start" : 1642577177434,
+    "stop" : 1642577177659,
+    "duration" : 225
+  },
+  "description" : "验证今日带货榜遍历达人一级分类是否有返回数据",
+  "descriptionHtml" : "<p>验证今日带货榜遍历达人一级分类是否有返回数据</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_7_date",
+    "time" : {
+      "start" : 1642577130056,
+      "stop" : 1642577130056,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_Nearly_7_date",
+    "time" : {
+      "start" : 1642577130056,
+      "stop" : 1642577130056,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "last_timestamp",
+    "time" : {
+      "start" : 1642577130056,
+      "stop" : 1642577130230,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960985,
+      "stop" : 1642576960985,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "soundbyte_last_timestamp",
+    "time" : {
+      "start" : 1642577130230,
+      "stop" : 1642577130493,
+      "duration" : 263
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960985,
+      "stop" : 1642576960985,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "今日带货榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.live"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_official_daily"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_Official_Daily"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19236-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.live.test_rank_official_daily"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "star_category",
+    "value" : "['家居家装']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d087f85f1cb18408.json",
+  "parameterValues" : [ "['家居家装']" ]
+}

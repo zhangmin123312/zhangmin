@@ -1,0 +1,97 @@
+{
+  "uid" : "ff81ba1a29b1ce48",
+  "name" : "带货视频日期:['month', '202112'],类目：['财经投资']",
+  "fullName" : "Testcase.aweme_material.test_rank_hotAweme.TestCase_Rank_HotAweme#test_rank_hotAweme_big_type",
+  "historyId" : "c76d3a5e5665c0b10306a8dbcad6107a",
+  "time" : {
+    "start" : 1642577097706,
+    "stop" : 1642577098317,
+    "duration" : 611
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证热门视频日、周、月榜遍历达人大类返回的数据是否大于0条"
+  }, {
+    "name" : "feature",
+    "value" : "热门视频榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_hotAweme"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_HotAweme"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19234-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_rank_hotAweme"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "star_type",
+    "value" : "['财经投资']"
+  }, {
+    "name" : "times",
+    "value" : "['month', '202112']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff81ba1a29b1ce48.json",
+  "parameterValues" : [ "['财经投资']", "['month', '202112']" ]
+}

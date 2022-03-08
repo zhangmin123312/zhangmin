@@ -1,0 +1,90 @@
+{
+  "uid" : "e219f0ddfd416021",
+  "name" : "test_rank_officialStarRank_4",
+  "fullName" : "Testcase.author.test_rank_officialStarRank_4.TestCase_Rank_OfficialStarRank_4#test_rank_officialStarRank_4",
+  "historyId" : "35ff560edce6de2a164efc78d80d6283",
+  "time" : {
+    "start" : 1642577163486,
+    "stop" : 1642577163646,
+    "duration" : 160
+  },
+  "description" : "验证视频种草指数榜返回的数据是否大于20条",
+  "descriptionHtml" : "<p>验证视频种草指数榜返回的数据是否大于20条</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "视频种草指数榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_officialStarRank_4"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_OfficialStarRank_4"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19238-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_rank_officialStarRank_4"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e219f0ddfd416021.json",
+  "parameterValues" : [ ]
+}

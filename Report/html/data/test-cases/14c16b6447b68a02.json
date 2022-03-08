@@ -1,0 +1,94 @@
+{
+  "uid" : "14c16b6447b68a02",
+  "name" : "抖音品牌库请求类目：['鞋靴箱包']",
+  "fullName" : "Testcase.shop_brand.test_brand_search.TestCase_Brand_Search#test_brand_search_product_type",
+  "historyId" : "b3650f27447b90d81767f13e685b4a9b",
+  "time" : {
+    "start" : 1642577224755,
+    "stop" : 1642577224913,
+    "duration" : 158
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音品牌库"
+  }, {
+    "name" : "story",
+    "value" : "验证抖音品牌库遍历商品大类返回的数据是否大于20条"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.shop_brand"
+  }, {
+    "name" : "suite",
+    "value" : "test_brand_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Brand_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19238-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.shop_brand.test_brand_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_type",
+    "value" : "['鞋靴箱包']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "14c16b6447b68a02.json",
+  "parameterValues" : [ "['鞋靴箱包']" ]
+}

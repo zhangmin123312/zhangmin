@@ -1,0 +1,96 @@
+{
+  "uid" : "9b97aaa13b5cc377",
+  "name" : "选品库日期：1,商品一级分类：['本地生活']",
+  "fullName" : "Testcase.product.test_product_search.TestCase_Product_Search#test_product_search_big_category",
+  "historyId" : "aa475d8003215cfc7bda73b4ee1a7a9f",
+  "time" : {
+    "start" : 1642577194914,
+    "stop" : 1642577195462,
+    "duration" : 548
+  },
+  "description" : "验证选品库遍历商品一级分类是否有返回数据",
+  "descriptionHtml" : "<p>验证选品库遍历商品一级分类是否有返回数据</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "选品库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Product_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19240-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_product_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "day_type",
+    "value" : "1"
+  }, {
+    "name" : "product_type",
+    "value" : "['本地生活']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9b97aaa13b5cc377.json",
+  "parameterValues" : [ "1", "['本地生活']" ]
+}

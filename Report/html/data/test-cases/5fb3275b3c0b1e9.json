@@ -1,0 +1,93 @@
+{
+  "uid" : "5fb3275b3c0b1e9",
+  "name" : "抖音本地生活榜按('丽人', 'NEW_POI_RANK_130400_BEAUTY_MEIFA_REXIAO')查看",
+  "fullName" : "Testcase.aweme_material.test_poi_rank.TestCase_Poi_Rank#test_poi_rank_get_label",
+  "historyId" : "68ff178bae60f93f73ae0159f617fc71",
+  "time" : {
+    "start" : 1642577127651,
+    "stop" : 1642577127821,
+    "duration" : 170
+  },
+  "description" : "验证抖音本地生活榜查看任意分类",
+  "descriptionHtml" : "<p>验证抖音本地生活榜查看任意分类</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音本地生活榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_poi_rank"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Poi_Rank"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19244-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_poi_rank"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "get_label",
+    "value" : "('丽人', 'NEW_POI_RANK_130400_BEAUTY_MEIFA_REXIAO')"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5fb3275b3c0b1e9.json",
+  "parameterValues" : [ "('丽人', 'NEW_POI_RANK_130400_BEAUTY_MEIFA_REXIAO')" ]
+}

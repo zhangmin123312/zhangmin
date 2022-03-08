@@ -1,0 +1,97 @@
+{
+  "uid" : "b8fabe2745d124f3",
+  "name" : "抖音小店库筛选类型：volume,排序类型:desc",
+  "fullName" : "Testcase.shop_brand.test_shop_search.TestCase_Shop_Search#test_shop_search_sort",
+  "historyId" : "8621c5587164ea9290df9a8c13ca218a",
+  "time" : {
+    "start" : 1642577234231,
+    "stop" : 1642577234463,
+    "duration" : 232
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音小店库"
+  }, {
+    "name" : "story",
+    "value" : "验证抖音小店库、销量、销售额、升序、降序排序是否正确"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.shop_brand"
+  }, {
+    "name" : "suite",
+    "value" : "test_shop_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Shop_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19234-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.shop_brand.test_shop_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "orderby",
+    "value" : "'desc'"
+  }, {
+    "name" : "sort",
+    "value" : "'volume'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "b8fabe2745d124f3.json",
+  "parameterValues" : [ "'desc'", "'volume'" ]
+}

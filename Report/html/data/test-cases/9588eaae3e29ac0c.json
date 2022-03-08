@@ -1,0 +1,97 @@
+{
+  "uid" : "9588eaae3e29ac0c",
+  "name" : "抖音小店库筛选类型：expr_score,排序类型:desc",
+  "fullName" : "Testcase.shop_brand.test_shop_search.TestCase_Shop_Search#test_shop_search_sort",
+  "historyId" : "6efd266c1fc25ea3b599d97017255071",
+  "time" : {
+    "start" : 1642577234100,
+    "stop" : 1642577234375,
+    "duration" : 275
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音小店库"
+  }, {
+    "name" : "story",
+    "value" : "验证抖音小店库、销量、销售额、升序、降序排序是否正确"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.shop_brand"
+  }, {
+    "name" : "suite",
+    "value" : "test_shop_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Shop_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19246-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.shop_brand.test_shop_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "orderby",
+    "value" : "'desc'"
+  }, {
+    "name" : "sort",
+    "value" : "'expr_score'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9588eaae3e29ac0c.json",
+  "parameterValues" : [ "'desc'", "'expr_score'" ]
+}

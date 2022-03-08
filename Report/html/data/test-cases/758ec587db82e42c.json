@@ -1,0 +1,99 @@
+{
+  "uid" : "758ec587db82e42c",
+  "name" : "验证选品库日期类型：1，按duration_pv、asc排序是否正确",
+  "fullName" : "Testcase.product.test_product_search.TestCase_Product_Search#test_product_search_sort",
+  "historyId" : "18573de8c898eb99d3ad74720824576e",
+  "time" : {
+    "start" : 1642577196793,
+    "stop" : 1642577197050,
+    "duration" : 257
+  },
+  "description" : "验证选品库昨日、7天、30天按分类升序降序，排序结果是否正确",
+  "descriptionHtml" : "<p>验证选品库昨日、7天、30天按分类升序降序，排序结果是否正确</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "选品库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Product_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19234-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_product_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "day_type",
+    "value" : "1"
+  }, {
+    "name" : "order_by",
+    "value" : "'asc'"
+  }, {
+    "name" : "sort",
+    "value" : "'duration_pv'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "758ec587db82e42c.json",
+  "parameterValues" : [ "1", "'asc'", "'duration_pv'" ]
+}

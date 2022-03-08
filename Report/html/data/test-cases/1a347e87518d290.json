@@ -1,0 +1,97 @@
+{
+  "uid" : "1a347e87518d290",
+  "name" : "带货视频日期:12-18,类目：['时尚']",
+  "fullName" : "Testcase.aweme_material.test_rank_hotAweme.TestCase_Rank_HotAweme#test_rank_hotAweme_hour_big_type",
+  "historyId" : "249e7e6b877bc5bc326c531cb182ef39",
+  "time" : {
+    "start" : 1642577129525,
+    "stop" : 1642577129876,
+    "duration" : 351
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "热门视频榜"
+  }, {
+    "name" : "story",
+    "value" : "验证热门视频小时榜遍历达人大类返回的数据是否大于0条"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_hotAweme"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_HotAweme"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19233-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_rank_hotAweme"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "star_type",
+    "value" : "['时尚']"
+  }, {
+    "name" : "times",
+    "value" : "'12-18'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1a347e87518d290.json",
+  "parameterValues" : [ "['时尚']", "'12-18'" ]
+}

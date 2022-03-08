@@ -1,0 +1,94 @@
+{
+  "uid" : "1d26ded4ffadc613",
+  "name" : "带货视频日期:12-18,排序：点赞排序",
+  "fullName" : "Testcase.aweme_material.test_rank_hotAweme.TestCase_Rank_HotAweme#test_rank_hotAweme_hour_sort",
+  "historyId" : "f524aba4402360b3e9e6bb836420a5d6",
+  "time" : {
+    "start" : 1642577114077,
+    "stop" : 1642577114474,
+    "duration" : 397
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证热门视频小时榜排序验证"
+  }, {
+    "name" : "feature",
+    "value" : "热门视频榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_hotAweme"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_HotAweme"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19240-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_rank_hotAweme"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "times",
+    "value" : "'12-18'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1d26ded4ffadc613.json",
+  "parameterValues" : [ "'12-18'" ]
+}

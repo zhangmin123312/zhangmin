@@ -1,0 +1,97 @@
+{
+  "uid" : "710e9aa69ec8a48c",
+  "name" : "带货视频日期:6-12,类目：['二次元']",
+  "fullName" : "Testcase.aweme_material.test_rank_hotAweme.TestCase_Rank_HotAweme#test_rank_hotAweme_hour_big_type",
+  "historyId" : "64dd41857c834e47f0360eb60837694d",
+  "time" : {
+    "start" : 1642577106860,
+    "stop" : 1642577107870,
+    "duration" : 1010
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证热门视频小时榜遍历达人大类返回的数据是否大于0条"
+  }, {
+    "name" : "feature",
+    "value" : "热门视频榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_hotAweme"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_HotAweme"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19240-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_rank_hotAweme"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "star_type",
+    "value" : "['二次元']"
+  }, {
+    "name" : "times",
+    "value" : "'6-12'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "710e9aa69ec8a48c.json",
+  "parameterValues" : [ "['二次元']", "'6-12'" ]
+}

@@ -1,0 +1,97 @@
+{
+  "uid" : "2df38f264b5f1ad",
+  "name" : "涨粉达人榜日期:['day', '2022-01-18'],类目：['音乐']",
+  "fullName" : "Testcase.author.test_author_rank_fans.TestCase_Author_Rank_Fans#test_author_rank_product_type",
+  "historyId" : "d3d7a38ae9f8e9772256c8d4657f5acb",
+  "time" : {
+    "start" : 1642576983899,
+    "stop" : 1642576984315,
+    "duration" : 416
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "涨粉达人榜"
+  }, {
+    "name" : "story",
+    "value" : "验证涨粉达人榜日榜、周榜、月榜遍历商品大类返回的数据是否大于20条"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_author_rank_fans"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Author_Rank_Fans"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19244-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_author_rank_fans"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_type",
+    "value" : "['音乐']"
+  }, {
+    "name" : "times",
+    "value" : "['day', '2022-01-18']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2df38f264b5f1ad.json",
+  "parameterValues" : [ "['音乐']", "['day', '2022-01-18']" ]
+}

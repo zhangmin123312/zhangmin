@@ -1,0 +1,102 @@
+{
+  "uid" : "6ef5250ba52f8c07",
+  "name" : "抖音销量榜日期:20220110-20220116,佣金比例：60-",
+  "fullName" : "Testcase.product.test_rank_yesterdaySaleRank.TestCase_Rank_YesterdaySaleRank#test_yesterdaySaleRank_commission_rate",
+  "historyId" : "d10a7a006427a28202f6a988c834efec",
+  "time" : {
+    "start" : 1642577218651,
+    "stop" : 1642577218852,
+    "duration" : 201
+  },
+  "description" : "验证抖音销量榜日榜、周榜、月榜，按佣金比例筛选",
+  "descriptionHtml" : "<p>验证抖音销量榜日榜、周榜、月榜，按佣金比例筛选</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 0 > 0\n +  where 0 = len([])",
+  "statusTrace" : "self = <test_rank_yesterdaySaleRank.TestCase_Rank_YesterdaySaleRank object at 0x1123a8340>\nget_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6MTAwMDQsImV4cGlyZV90aW1lIjoxNjQ1MTI0NDAwLCJpYXQiOjE2NDI1NzY5MzgsImlkIjoxMTIyNTE4fQ.mrGK8j7hRsM09PdPVupSMUaTKTWMRKtQPXKGlET6t_8'\nget_host = 'https://api-service.chanmama.com'\ntimes = ['week', '20220110-20220116'], commission_rate = 60\n\n    @allure.description(\"\"\"验证抖音销量榜日榜、周榜、月榜，按佣金比例筛选\"\"\")\n    @pytest.mark.parametrize('commission_rate',commission_rate)\n    @pytest.mark.parametrize('times',base.return_time_message())\n    @allure.title(\"抖音销量榜日期:{times[1]},佣金比例：{commission_rate}\")\n    def test_yesterdaySaleRank_commission_rate(self,get_token,get_host,times,commission_rate):\n        para=f\"big_category=&first_category=&second_category=&platform={platform[0]}&page=1&size=50&commission_rate={commission_rate}&date={times[1]}&day_type={times[0]}\"\n        response = base().return_request(method=\"get\", path=PathMessage.rank_yesterdaySaleRank, data=para,tokens=get_token,hosts=get_host, )\n        commission_list=jsonpath.jsonpath(response[\"response_body\"],'$.data[*].rate')\n        commission_rate=int(commission_rate.replace('-',''))\n        assert response[\"status_code\"] == 200\n>       assert len(response[\"response_body\"][\"data\"]) > 0\nE       assert 0 > 0\nE        +  where 0 = len([])\n\nTestcase/product/test_rank_yesterdaySaleRank.py:59: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音销量榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_yesterdaySaleRank"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_YesterdaySaleRank"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19238-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_rank_yesterdaySaleRank"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "commission_rate",
+    "value" : "'60-'"
+  }, {
+    "name" : "times",
+    "value" : "['week', '20220110-20220116']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "6ef5250ba52f8c07.json",
+  "parameterValues" : [ "'60-'", "['week', '20220110-20220116']" ]
+}

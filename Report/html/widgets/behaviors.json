@@ -1,15 +1,114 @@
 {
-  "total" : 1,
+  "total" : 44,
   "items" : [ {
-    "uid" : "41b765a2248c5a967270e43bb3ca0ba1",
-    "name" : "达人库库",
+    "uid" : "332f6ac0e7ab5406f6e00131d36d2470",
+    "name" : "视频库",
+    "statistic" : {
+      "failed" : 19,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 75,
+      "unknown" : 0,
+      "total" : 94
+    }
+  }, {
+    "uid" : "ef23a64b262a91784b4ae55fa7199e66",
+    "name" : "带货小时榜",
+    "statistic" : {
+      "failed" : 10,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 51,
+      "unknown" : 0,
+      "total" : 61
+    }
+  }, {
+    "uid" : "58a5f990c47228a9802b78d0ea2ec224",
+    "name" : "抖音官方小时榜",
+    "statistic" : {
+      "failed" : 10,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 35,
+      "unknown" : 0,
+      "total" : 45
+    }
+  }, {
+    "uid" : "b5ff4da201d25a1181f9624f1d47d16a",
+    "name" : "直播实时热榜",
+    "statistic" : {
+      "failed" : 9,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 19,
+      "unknown" : 0,
+      "total" : 28
+    }
+  }, {
+    "uid" : "555c3383c1bd810ed385660609d62a3b",
+    "name" : "抖音销量榜",
+    "statistic" : {
+      "failed" : 5,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 108,
+      "unknown" : 0,
+      "total" : 113
+    }
+  }, {
+    "uid" : "d9d888213611ae5c8ff074eba6719f3e",
+    "name" : "抖音热推榜",
+    "statistic" : {
+      "failed" : 3,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 85,
+      "unknown" : 0,
+      "total" : 88
+    }
+  }, {
+    "uid" : "6872c571c3f4dc5738b88b1e1d58e41f",
+    "name" : "达人带货榜",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 83,
+      "unknown" : 0,
+      "total" : 84
+    }
+  }, {
+    "uid" : "1e9f0c768e9ba31c176f71ff8f8fc47e",
+    "name" : "实时销量榜",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 29,
+      "unknown" : 0,
+      "total" : 30
+    }
+  }, {
+    "uid" : "66c010caa14fce4a9137eae1e84d6bd0",
+    "name" : "选品库",
     "statistic" : {
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 8,
+      "passed" : 162,
       "unknown" : 0,
-      "total" : 8
+      "total" : 162
+    }
+  }, {
+    "uid" : "5c9e6568d03413e2d1e7c651a516ef5b",
+    "name" : "抖音本地生活榜",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 141,
+      "unknown" : 0,
+      "total" : 141
     }
   } ]
 }

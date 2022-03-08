@@ -1,0 +1,183 @@
+{
+  "uid" : "70fbc151ee77d71c",
+  "name" : "带货小时榜查看榜点：1642539600",
+  "fullName" : "Testcase.live.test_rank_official.TestCase_Rank_Official#test_official_timestamp",
+  "historyId" : "24ede5b1ce4e5ae7f37ef8061a45d738",
+  "time" : {
+    "start" : 1642577152292,
+    "stop" : 1642577152612,
+    "duration" : 320
+  },
+  "description" : "验证带货小时榜遍历所有的小时榜点是否有返回数据",
+  "descriptionHtml" : "<p>验证带货小时榜遍历所有的小时榜点是否有返回数据</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "timestamps",
+    "time" : {
+      "start" : 1642577152291,
+      "stop" : 1642577152291,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_Nearly_7_date",
+    "time" : {
+      "start" : 1642577146651,
+      "stop" : 1642577146651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "last_timestamp",
+    "time" : {
+      "start" : 1642577146651,
+      "stop" : 1642577146804,
+      "duration" : 153
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_7_date",
+    "time" : {
+      "start" : 1642577146651,
+      "stop" : 1642577146651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "soundbyte_last_timestamp",
+    "time" : {
+      "start" : 1642577146804,
+      "stop" : 1642577146933,
+      "duration" : 129
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "timestamps::0",
+    "time" : {
+      "start" : 1642577152613,
+      "stop" : 1642577152613,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "带货小时榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.live"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_official"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_Official"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19233-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.live.test_rank_official"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "timestamps",
+    "value" : "1642539600"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "70fbc151ee77d71c.json",
+  "parameterValues" : [ "1642539600" ]
+}

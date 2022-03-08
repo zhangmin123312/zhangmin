@@ -1,0 +1,159 @@
+{
+  "uid" : "9bcce37832e9de54",
+  "name" : "达人带货榜日期：['day', '2022-01-18']，按低粉爆款达人筛选",
+  "fullName" : "Testcase.live.test_rank_sales.TestCase_Rank_Sales#test_sales_low_fans",
+  "historyId" : "a016cb27037d0e2ddccc62921121ec89",
+  "time" : {
+    "start" : 1642577180224,
+    "stop" : 1642577193716,
+    "duration" : 13492
+  },
+  "description" : "验证达人带货榜日榜、周榜、月榜按低粉爆款达人筛选，数据是否正确",
+  "descriptionHtml" : "<p>验证达人带货榜日榜、周榜、月榜按低粉爆款达人筛选，数据是否正确</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 43670.84 > 100000",
+  "statusTrace" : "self = <Testcase.live.test_rank_sales.TestCase_Rank_Sales object at 0x106896b50>\nget_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6MTAwMDQsImV4cGlyZV90aW1lIjoxNjQ1MTI0NDAwLCJpYXQiOjE2NDI1NzY5MzgsImlkIjoxMTIyNTE4fQ.mrGK8j7hRsM09PdPVupSMUaTKTWMRKtQPXKGlET6t_8'\nget_host = 'https://api-service.chanmama.com', times = ['day', '2022-01-18']\n\n    @allure.description(\"\"\"验证达人带货榜日榜、周榜、月榜按低粉爆款达人筛选，数据是否正确\"\"\")\n    @pytest.mark.parametrize('times', base.return_time_message())\n    @allure.title(\"达人带货榜日期：{times}，按低粉爆款达人筛选\")\n    def test_sales_low_fans(self,get_token,get_host,times):\n        para=f\"day_type={times[0]}&day={times[1]}&big_category=&first_category=&second_category=&sort={self.sort[0]}&page=1&size=50&verification_type=&is_brand_self_author=0&is_shop_author=0&dark_horse=0&first_rank=0&is_bomb=1\"\n        response = base().return_request(method=\"get\", path=PathMessage.rank_sales, data=para,tokens=get_token,hosts=get_host, )\n        follower_count_list = jsonpath.jsonpath(response[\"response_body\"], '$.data.[list][*].follower_count')\n        assert response[\"status_code\"]==200\n        assert len(response[\"response_body\"][\"data\"][\"list\"]) > 0\n        # 验证粉丝数小于10万\n        assert all(value < 1000000 for value in follower_count_list)\n        # 验证日均销售额10万以上\n        date_list = base.return_Filter_date(1, 7)\n        for info in response[\"response_body\"][\"data\"][\"list\"]:\n            day_avg_amount_para = f\"author_id={info['author_id']}&start_date={date_list[3][0]}&end_date={date_list[3][1]}\"\n            day_avg_amount_response = base().return_request(method=\"get\", path=PathMessage.author_liveAnalysisV2, data=day_avg_amount_para,\n                                             tokens=get_token, hosts=get_host, )\n            day_avg_amount=day_avg_amount_response[\"response_body\"][\"data\"][\"summary\"][\"day_avg_amount\"]\n>           assert day_avg_amount>100000\nE           assert 43670.84 > 100000\n\nTestcase/live/test_rank_sales.py:69: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_7_date",
+    "time" : {
+      "start" : 1642577130056,
+      "stop" : 1642577130056,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_Nearly_7_date",
+    "time" : {
+      "start" : 1642577130056,
+      "stop" : 1642577130056,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "last_timestamp",
+    "time" : {
+      "start" : 1642577130056,
+      "stop" : 1642577130230,
+      "duration" : 174
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960985,
+      "stop" : 1642576960985,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "soundbyte_last_timestamp",
+    "time" : {
+      "start" : 1642577130230,
+      "stop" : 1642577130493,
+      "duration" : 263
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960985,
+      "stop" : 1642576960985,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "达人带货榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.live"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_sales"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_Sales"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19236-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.live.test_rank_sales"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "times",
+    "value" : "['day', '2022-01-18']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "9bcce37832e9de54.json",
+  "parameterValues" : [ "['day', '2022-01-18']" ]
+}

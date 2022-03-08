@@ -1,0 +1,156 @@
+{
+  "uid" : "683ac7d50ec33aff",
+  "name" : "达人带货榜日期：['day', '2022-01-18']，按商品一级分类：['宠物用品']",
+  "fullName" : "Testcase.live.test_rank_sales.TestCase_Rank_Sales#test_sales_big_category",
+  "historyId" : "d608eb84a02f22194f363c3aeb5ddc5f",
+  "time" : {
+    "start" : 1642577173786,
+    "stop" : 1642577174420,
+    "duration" : 634
+  },
+  "description" : "验证达人带货榜日榜、周榜、月榜遍历商品一级分类是否有返回数据",
+  "descriptionHtml" : "<p>验证达人带货榜日榜、周榜、月榜遍历商品一级分类是否有返回数据</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_Nearly_7_date",
+    "time" : {
+      "start" : 1642577146651,
+      "stop" : 1642577146651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "last_timestamp",
+    "time" : {
+      "start" : 1642577146651,
+      "stop" : 1642577146804,
+      "duration" : 153
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_7_date",
+    "time" : {
+      "start" : 1642577146651,
+      "stop" : 1642577146651,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "soundbyte_last_timestamp",
+    "time" : {
+      "start" : 1642577146804,
+      "stop" : 1642577146933,
+      "duration" : 129
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "达人带货榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.live"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_sales"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_Sales"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19233-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.live.test_rank_sales"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_type",
+    "value" : "['宠物用品']"
+  }, {
+    "name" : "times",
+    "value" : "['day', '2022-01-18']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "683ac7d50ec33aff.json",
+  "parameterValues" : [ "['宠物用品']", "['day', '2022-01-18']" ]
+}

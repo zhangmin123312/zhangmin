@@ -1,0 +1,97 @@
+{
+  "uid" : "ecd2c2ceea6e3ace",
+  "name" : "达人一级分类：['汽车'],商品一级分类：['珠宝饰品']",
+  "fullName" : "Testcase.author.test_author_search.TestCase_Author_Search#test_author_search_star_product_category",
+  "historyId" : "409c41d08378301a9c5935d60a70d2fd",
+  "time" : {
+    "start" : 1642577094130,
+    "stop" : 1642577094460,
+    "duration" : 330
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960985,
+      "stop" : 1642576960985,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960985,
+      "stop" : 1642576960985,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证达人库遍历达人和商品一级分类是否有返回数据"
+  }, {
+    "name" : "feature",
+    "value" : "达人库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_author_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Author_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19236-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_author_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_category",
+    "value" : "['珠宝饰品']"
+  }, {
+    "name" : "star_category",
+    "value" : "['汽车']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ecd2c2ceea6e3ace.json",
+  "parameterValues" : [ "['珠宝饰品']", "['汽车']" ]
+}

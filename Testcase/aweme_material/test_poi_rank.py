@@ -31,7 +31,7 @@ class TestCase_Poi_Rank():
     area_list=get_area()
     # 地区总共有380个左右，每个地区有接近200个榜单，全部都跑体量太大，所以随机抽取部分城市来验证
     # num=random.randint(0,len(area_list)-1)
-    num = 6
+    num = 5
 
 
     @allure.description("""验证抖音本地生活榜查看任意分类""")

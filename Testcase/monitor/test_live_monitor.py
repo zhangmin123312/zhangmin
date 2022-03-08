@@ -6,7 +6,6 @@
 import allure
 import jsonpath
 import pytest
-
 from Common.Base import base
 from Config.path_config import PathMessage
 import os,json
@@ -101,3 +100,4 @@ class TestCase_live_monitor():
         assert len(response["response_body"]["data"]["list"]) > 0
         monitor_id_list = jsonpath.jsonpath(response["response_body"], f'$.data.list[*].id')
         assert monitor_id_Next not in monitor_id_list
+

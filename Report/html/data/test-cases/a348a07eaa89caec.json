@@ -1,0 +1,97 @@
+{
+  "uid" : "a348a07eaa89caec",
+  "name" : "商品品牌榜日期:['week', '20220110-20220116'],类目：['珠宝饰品']",
+  "fullName" : "Testcase.shop_brand.test_brand_rank.TestCase_Brand_Rank#test_brand_rank_product_type",
+  "historyId" : "a0f285b3a13b1b7f3deb467fe0278918",
+  "time" : {
+    "start" : 1642577218691,
+    "stop" : 1642577218858,
+    "duration" : 167
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证商品品牌榜日榜、周榜、月榜遍历商品大类返回的数据是否大于20条"
+  }, {
+    "name" : "feature",
+    "value" : "商品品牌榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.shop_brand"
+  }, {
+    "name" : "suite",
+    "value" : "test_brand_rank"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Brand_Rank"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19240-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.shop_brand.test_brand_rank"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_type",
+    "value" : "['珠宝饰品']"
+  }, {
+    "name" : "times",
+    "value" : "['week', '20220110-20220116']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a348a07eaa89caec.json",
+  "parameterValues" : [ "['珠宝饰品']", "['week', '20220110-20220116']" ]
+}
