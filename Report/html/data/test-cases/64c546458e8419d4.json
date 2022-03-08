@@ -1,0 +1,96 @@
+{
+  "uid" : "64c546458e8419d4",
+  "name" : "选品库日期：7,商品一级分类：['医药保健']",
+  "fullName" : "Testcase.product.test_product_search.TestCase_Product_Search#test_product_search_big_category",
+  "historyId" : "3ea846a43415248913aaeb75dcca8c43",
+  "time" : {
+    "start" : 1642577192162,
+    "stop" : 1642577192859,
+    "duration" : 697
+  },
+  "description" : "验证选品库遍历商品一级分类是否有返回数据",
+  "descriptionHtml" : "<p>验证选品库遍历商品一级分类是否有返回数据</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "选品库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Product_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19246-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_product_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "day_type",
+    "value" : "7"
+  }, {
+    "name" : "product_type",
+    "value" : "['医药保健']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "64c546458e8419d4.json",
+  "parameterValues" : [ "7", "['医药保健']" ]
+}

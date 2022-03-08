@@ -1,0 +1,97 @@
+{
+  "uid" : "5f0982ee3d63e5b4",
+  "name" : "涨粉达人榜日期:['month', '202112'],类目：['舞蹈']",
+  "fullName" : "Testcase.author.test_author_rank_fans.TestCase_Author_Rank_Fans#test_author_rank_product_type",
+  "historyId" : "1292e4f7e47ec60d69ab54c36a005b21",
+  "time" : {
+    "start" : 1642576985414,
+    "stop" : 1642576985702,
+    "duration" : 288
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证涨粉达人榜日榜、周榜、月榜遍历商品大类返回的数据是否大于20条"
+  }, {
+    "name" : "feature",
+    "value" : "涨粉达人榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_author_rank_fans"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Author_Rank_Fans"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19246-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_author_rank_fans"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_type",
+    "value" : "['舞蹈']"
+  }, {
+    "name" : "times",
+    "value" : "['month', '202112']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "5f0982ee3d63e5b4.json",
+  "parameterValues" : [ "['舞蹈']", "['month', '202112']" ]
+}

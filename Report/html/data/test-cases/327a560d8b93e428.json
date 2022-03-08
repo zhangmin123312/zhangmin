@@ -1,0 +1,97 @@
+{
+  "uid" : "327a560d8b93e428",
+  "name" : "行业达人榜日期:['week', '20220110-20220116'],类目：['测评']",
+  "fullName" : "Testcase.author.test_authorRank_bangNew_A.TestCase_AuthorRank_BangNew_A#test_authorRank_bangNew_A_star_type",
+  "historyId" : "7b88933f0b84237ca5210e3f9c40f0ef",
+  "time" : {
+    "start" : 1642576963239,
+    "stop" : 1642576963833,
+    "duration" : 594
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证行业达人榜日榜、周榜、月榜遍历商品大类返回的数据是否大于20条"
+  }, {
+    "name" : "feature",
+    "value" : "行业达人榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_authorRank_bangNew_A"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_AuthorRank_BangNew_A"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19242-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_authorRank_bangNew_A"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "star_type",
+    "value" : "['测评']"
+  }, {
+    "name" : "times",
+    "value" : "['week', '20220110-20220116']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "327a560d8b93e428.json",
+  "parameterValues" : [ "['测评']", "['week', '20220110-20220116']" ]
+}

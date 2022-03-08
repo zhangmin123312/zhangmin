@@ -1,0 +1,97 @@
+{
+  "uid" : "9b4829edef0b20cd",
+  "name" : "涨粉达人榜日期:['day', '2022-01-18'],筛选的地区：city",
+  "fullName" : "Testcase.author.test_author_rank_fans.TestCase_Author_Rank_Fans#test_author_rank_is_city",
+  "historyId" : "3e4dac2af17482bc74e66655de265a54",
+  "time" : {
+    "start" : 1642577019968,
+    "stop" : 1642577020368,
+    "duration" : 400
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证涨粉达人榜日榜、周榜、月榜地区筛选条件验证"
+  }, {
+    "name" : "feature",
+    "value" : "涨粉达人榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.author"
+  }, {
+    "name" : "suite",
+    "value" : "test_author_rank_fans"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Author_Rank_Fans"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19244-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.author.test_author_rank_fans"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "city",
+    "value" : "['广西壮族自治区', '河池市']"
+  }, {
+    "name" : "times",
+    "value" : "['day', '2022-01-18']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9b4829edef0b20cd.json",
+  "parameterValues" : [ "['广西壮族自治区', '河池市']", "['day', '2022-01-18']" ]
+}

@@ -1,0 +1,93 @@
+{
+  "uid" : "9adad313159b3fad",
+  "name" : "抖音销量榜日期:20220110-20220116，按昨日/周销量排序",
+  "fullName" : "Testcase.product.test_rank_yesterdaySaleRank.TestCase_Rank_YesterdaySaleRank#test_yesterdaySaleRank_day_order_count",
+  "historyId" : "6b4739fb76e040e46e3b50b26bc8e871",
+  "time" : {
+    "start" : 1642577210446,
+    "stop" : 1642577210728,
+    "duration" : 282
+  },
+  "description" : "验证抖音销量榜单日榜、周榜是否按昨日/周销量排序",
+  "descriptionHtml" : "<p>验证抖音销量榜单日榜、周榜是否按昨日/周销量排序</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音销量榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_yesterdaySaleRank"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_YesterdaySaleRank"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19238-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_rank_yesterdaySaleRank"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "times",
+    "value" : "['week', '20220110-20220116']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9adad313159b3fad.json",
+  "parameterValues" : [ "['week', '20220110-20220116']" ]
+}

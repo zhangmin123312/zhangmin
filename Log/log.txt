@@ -61,3 +61,4 @@
 2022-01-04 16:22:37,390 - INFO - too many values to unpack (expected 2)
 2022-01-04 16:22:37,405 - INFO - too many values to unpack (expected 2)
 2022-01-04 16:22:37,417 - INFO - too many values to unpack (expected 2)
+2022-02-17 11:22:00,105 - INFO - HTTPSConnectionPool(host='api-service.chanmama.com', port=443): Max retries exceeded with url: /v1/douyin/live/monitor/list?page=1&size=15&status=-1&keyword= (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10b3a3be0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))

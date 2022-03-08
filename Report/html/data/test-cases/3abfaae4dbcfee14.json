@@ -1,0 +1,96 @@
+{
+  "uid" : "3abfaae4dbcfee14",
+  "name" : "抖音热推榜日期:202112,类目：['厨卫家电']",
+  "fullName" : "Testcase.product.test_rank_yesterdayHotRank.TestCase_Rank_YesterdayHotRank#test_yesterdayHotRank_big_category",
+  "historyId" : "9fc12a20b665935c9acc1e45af536cf8",
+  "time" : {
+    "start" : 1642577210945,
+    "stop" : 1642577211259,
+    "duration" : 314
+  },
+  "description" : "验证抖音热推榜日榜、周榜、月榜遍历商品一级分类返回的数据是否大于20条",
+  "descriptionHtml" : "<p>验证抖音热推榜日榜、周榜、月榜遍历商品一级分类返回的数据是否大于20条</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音热推榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_yesterdayHotRank"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_YesterdayHotRank"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19233-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_rank_yesterdayHotRank"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_type",
+    "value" : "['厨卫家电']"
+  }, {
+    "name" : "times",
+    "value" : "['month', '202112']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3abfaae4dbcfee14.json",
+  "parameterValues" : [ "['厨卫家电']", "['month', '202112']" ]
+}

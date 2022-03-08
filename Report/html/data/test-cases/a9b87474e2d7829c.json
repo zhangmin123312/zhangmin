@@ -1,0 +1,96 @@
+{
+  "uid" : "a9b87474e2d7829c",
+  "name" : "小时探测榜2022-01-16发布的视频在2022011913-2022011914排榜情况",
+  "fullName" : "Testcase.aweme_material.test_aweme_hotspot_hour.TestCase_Aweme_Hotspot_Hour#test_hotspot_publish_time",
+  "historyId" : "e8b1e23114ddef1aebd005aad847b7a0",
+  "time" : {
+    "start" : 1642577078700,
+    "stop" : 1642577079048,
+    "duration" : 348
+  },
+  "description" : "验证小时探测榜按视频发布时间筛选是否有返回数据",
+  "descriptionHtml" : "<p>验证小时探测榜按视频发布时间筛选是否有返回数据</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "小时探测榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_aweme_hotspot_hour"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Aweme_Hotspot_Hour"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19246-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_aweme_hotspot_hour"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "hour_interval",
+    "value" : "'2022011913-2022011914'"
+  }, {
+    "name" : "publish_time",
+    "value" : "'2022-01-16'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "a9b87474e2d7829c.json",
+  "parameterValues" : [ "'2022011913-2022011914'", "'2022-01-16'" ]
+}

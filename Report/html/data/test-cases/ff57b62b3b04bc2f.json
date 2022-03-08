@@ -1,0 +1,96 @@
+{
+  "uid" : "ff57b62b3b04bc2f",
+  "name" : "选品库日期:day_type,昨日抖音浏览量：3000-",
+  "fullName" : "Testcase.product.test_product_search.TestCase_Product_Search#test_product_search_duration_volume",
+  "historyId" : "246c7a09bd37e9b6dd7216acb5d73a50",
+  "time" : {
+    "start" : 1642577196266,
+    "stop" : 1642577196903,
+    "duration" : 637
+  },
+  "description" : "验证选品库昨日、7天、30天，按昨日抖音浏览量筛选",
+  "descriptionHtml" : "<p>验证选品库昨日、7天、30天，按昨日抖音浏览量筛选</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "选品库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Product_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19238-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_product_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "day_pv_count",
+    "value" : "'3000-'"
+  }, {
+    "name" : "day_type",
+    "value" : "30"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ff57b62b3b04bc2f.json",
+  "parameterValues" : [ "'3000-'", "30" ]
+}

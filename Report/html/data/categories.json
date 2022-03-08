@@ -1,5 +1,789 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert '6-17' in '18-23岁、24-30岁居多'",
+      "children" : [ {
+        "name" : "视频库按观众性别0筛选",
+        "uid" : "680197ac3504abd",
+        "parentUid" : "ce0ccd14d20b1449769f90c0fa93550c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577136373,
+          "stop" : 1642577137119,
+          "duration" : 746
+        },
+        "flaky" : false,
+        "parameters" : [ "'0'" ]
+      } ],
+      "uid" : "ce0ccd14d20b1449769f90c0fa93550c"
+    }, {
+      "name" : "AssertionError: assert '18-24' in '24-30岁、18-23岁居多'",
+      "children" : [ {
+        "name" : "视频库按观众性别1筛选",
+        "uid" : "bfbb6540a41e14da",
+        "parentUid" : "3e2623195dbb2b77e5661b7b79e01004",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577137215,
+          "stop" : 1642577138477,
+          "duration" : 1262
+        },
+        "flaky" : false,
+        "parameters" : [ "'1'" ]
+      } ],
+      "uid" : "3e2623195dbb2b77e5661b7b79e01004"
+    }, {
+      "name" : "AssertionError: assert '25-30' in '31-40岁、41-50岁居多'",
+      "children" : [ {
+        "name" : "视频库按观众性别2筛选",
+        "uid" : "b243e13054c220f",
+        "parentUid" : "31f5b3ff2bff823a30e19b2f9a4a5b3f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577138496,
+          "stop" : 1642577139400,
+          "duration" : 904
+        },
+        "flaky" : false,
+        "parameters" : [ "'2'" ]
+      } ],
+      "uid" : "31f5b3ff2bff823a30e19b2f9a4a5b3f"
+    }, {
+      "name" : "AssertionError: assert '31-35' in '41-50岁、31-40岁居多'",
+      "children" : [ {
+        "name" : "视频库按观众性别3筛选",
+        "uid" : "45ad10083fa7591c",
+        "parentUid" : "49ab61c9e91cf186315bac482ea00ebd",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577139416,
+          "stop" : 1642577140275,
+          "duration" : 859
+        },
+        "flaky" : false,
+        "parameters" : [ "'3'" ]
+      } ],
+      "uid" : "49ab61c9e91cf186315bac482ea00ebd"
+    }, {
+      "name" : "AssertionError: assert '36-40' in '>50岁、31-40岁居多'",
+      "children" : [ {
+        "name" : "视频库按观众性别4筛选",
+        "uid" : "5d84f12277c32923",
+        "parentUid" : "d3a4d120a531d0241d95711e1a5f7905",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577140294,
+          "stop" : 1642577141950,
+          "duration" : 1656
+        },
+        "flaky" : false,
+        "parameters" : [ "'4'" ]
+      } ],
+      "uid" : "d3a4d120a531d0241d95711e1a5f7905"
+    }, {
+      "name" : "AssertionError: assert '>41' in '31-40岁、41-50岁居多'",
+      "children" : [ {
+        "name" : "视频库按观众性别5筛选",
+        "uid" : "94792c591970976d",
+        "parentUid" : "f0d4f1d81a52d7cdab44e2b5092301f8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577141965,
+          "stop" : 1642577143056,
+          "duration" : 1091
+        },
+        "flaky" : false,
+        "parameters" : [ "'5'" ]
+      } ],
+      "uid" : "f0d4f1d81a52d7cdab44e2b5092301f8"
+    }, {
+      "name" : "AssertionError: assert '北京' in '广东、河北、山西省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区北京市筛选",
+        "uid" : "4fe11e42597e29f6",
+        "parentUid" : "c0269f1be9ae5290e22040046cbc1f19",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577143070,
+          "stop" : 1642577150042,
+          "duration" : 6972
+        },
+        "flaky" : false,
+        "parameters" : [ "'北京市'" ]
+      } ],
+      "uid" : "c0269f1be9ae5290e22040046cbc1f19"
+    }, {
+      "name" : "AssertionError: assert '天津' in '山东、河北、河南省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区天津市筛选",
+        "uid" : "1c4a1fab2fc28889",
+        "parentUid" : "e1e7aa7e4696af1e54e32124934de7ed",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577150055,
+          "stop" : 1642577152405,
+          "duration" : 2350
+        },
+        "flaky" : false,
+        "parameters" : [ "'天津市'" ]
+      } ],
+      "uid" : "e1e7aa7e4696af1e54e32124934de7ed"
+    }, {
+      "name" : "AssertionError: assert 0 > 0\n +  where 0 = len([])",
+      "children" : [ {
+        "name" : "带货小时榜达人一级分类：['园艺']",
+        "uid" : "b931c99a1b0ae68",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577153473,
+          "stop" : 1642577154023,
+          "duration" : 550
+        },
+        "flaky" : false,
+        "parameters" : [ "['园艺']" ]
+      }, {
+        "name" : "带货小时榜达人一级分类：['三农']",
+        "uid" : "d76c71733bd6f0fb",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577154434,
+          "stop" : 1642577154684,
+          "duration" : 250
+        },
+        "flaky" : false,
+        "parameters" : [ "['三农']" ]
+      }, {
+        "name" : "带货小时榜达人一级分类：['运动健身']",
+        "uid" : "a10413364904aa36",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577164258,
+          "stop" : 1642577164489,
+          "duration" : 231
+        },
+        "flaky" : false,
+        "parameters" : [ "['运动健身']" ]
+      }, {
+        "name" : "带货小时榜达人一级分类：['财经投资']",
+        "uid" : "b3e2fb5c1a464878",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577164576,
+          "stop" : 1642577164726,
+          "duration" : 150
+        },
+        "flaky" : false,
+        "parameters" : [ "['财经投资']" ]
+      }, {
+        "name" : "带货小时榜达人一级分类：['萌宠']",
+        "uid" : "1d6f59a5ff6dda5a",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577164736,
+          "stop" : 1642577164904,
+          "duration" : 168
+        },
+        "flaky" : false,
+        "parameters" : [ "['萌宠']" ]
+      }, {
+        "name" : "带货小时榜达人一级分类：['舞蹈']",
+        "uid" : "1612d46439df6ad",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577165619,
+          "stop" : 1642577165784,
+          "duration" : 165
+        },
+        "flaky" : false,
+        "parameters" : [ "['舞蹈']" ]
+      }, {
+        "name" : "带货小时榜达人一级分类：['汽车']",
+        "uid" : "ee49441f629ff3f0",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577167112,
+          "stop" : 1642577167394,
+          "duration" : 282
+        },
+        "flaky" : false,
+        "parameters" : [ "['汽车']" ]
+      }, {
+        "name" : "带货小时榜达人一级分类：['旅行']",
+        "uid" : "e8069a4d35321a5a",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577167985,
+          "stop" : 1642577168283,
+          "duration" : 298
+        },
+        "flaky" : false,
+        "parameters" : [ "['旅行']" ]
+      }, {
+        "name" : "带货小时榜达人一级分类：['政务']",
+        "uid" : "c07db404a622b7f5",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577168572,
+          "stop" : 1642577168833,
+          "duration" : 261
+        },
+        "flaky" : false,
+        "parameters" : [ "['政务']" ]
+      }, {
+        "name" : "带货小时榜达人一级分类：['影视娱乐']",
+        "uid" : "8f77762435938627",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577171517,
+          "stop" : 1642577171758,
+          "duration" : 241
+        },
+        "flaky" : false,
+        "parameters" : [ "['影视娱乐']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['才艺技能']",
+        "uid" : "ddd12e3cd5f9d4c2",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577180742,
+          "stop" : 1642577181889,
+          "duration" : 1147
+        },
+        "flaky" : false,
+        "parameters" : [ "['才艺技能']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['家居家装']",
+        "uid" : "299cea49c621b55d",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577183102,
+          "stop" : 1642577183407,
+          "duration" : 305
+        },
+        "flaky" : false,
+        "parameters" : [ "['家居家装']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['园艺']",
+        "uid" : "e75037c617f95d94",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577183420,
+          "stop" : 1642577183941,
+          "duration" : 521
+        },
+        "flaky" : false,
+        "parameters" : [ "['园艺']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['二次元']",
+        "uid" : "8e5af9ef4ae63051",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577184222,
+          "stop" : 1642577184522,
+          "duration" : 300
+        },
+        "flaky" : false,
+        "parameters" : [ "['二次元']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['三农']",
+        "uid" : "3a8f95afcd7cb13c",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577184534,
+          "stop" : 1642577184773,
+          "duration" : 239
+        },
+        "flaky" : false,
+        "parameters" : [ "['三农']" ]
+      }, {
+        "name" : "直播实时热榜达人一级分类：['财经投资']",
+        "uid" : "2df4defdb13eda8c",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577185665,
+          "stop" : 1642577185822,
+          "duration" : 157
+        },
+        "flaky" : false,
+        "parameters" : [ "['财经投资']" ]
+      }, {
+        "name" : "直播实时热榜达人一级分类：['测评']",
+        "uid" : "f8abc2f6e77f1519",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577187463,
+          "stop" : 1642577187641,
+          "duration" : 178
+        },
+        "flaky" : false,
+        "parameters" : [ "['测评']" ]
+      }, {
+        "name" : "直播实时热榜达人一级分类：['母婴亲子']",
+        "uid" : "17ac5157da6e8bcf",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577187839,
+          "stop" : 1642577188018,
+          "duration" : 179
+        },
+        "flaky" : false,
+        "parameters" : [ "['母婴亲子']" ]
+      }, {
+        "name" : "直播实时热榜达人一级分类：['政务']",
+        "uid" : "6171c183407da186",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577188805,
+          "stop" : 1642577188966,
+          "duration" : 161
+        },
+        "flaky" : false,
+        "parameters" : [ "['政务']" ]
+      }, {
+        "name" : "直播实时热榜达人一级分类：['影视娱乐']",
+        "uid" : "32b1f4320510bd7a",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577189403,
+          "stop" : 1642577189548,
+          "duration" : 145
+        },
+        "flaky" : false,
+        "parameters" : [ "['影视娱乐']" ]
+      }, {
+        "name" : "直播实时热榜达人一级分类：['家居家装']",
+        "uid" : "1c0fc624bdb774da",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577189559,
+          "stop" : 1642577189810,
+          "duration" : 251
+        },
+        "flaky" : false,
+        "parameters" : [ "['家居家装']" ]
+      }, {
+        "name" : "直播实时热榜达人一级分类：['园艺']",
+        "uid" : "34c6d80b7061821d",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577189818,
+          "stop" : 1642577190030,
+          "duration" : 212
+        },
+        "flaky" : false,
+        "parameters" : [ "['园艺']" ]
+      }, {
+        "name" : "直播实时热榜达人一级分类：['二次元']",
+        "uid" : "ec4701fe1adaa7de",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577190352,
+          "stop" : 1642577190601,
+          "duration" : 249
+        },
+        "flaky" : false,
+        "parameters" : [ "['二次元']" ]
+      }, {
+        "name" : "直播实时热榜达人一级分类：['三农']",
+        "uid" : "1189951d03fb68fe",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577190609,
+          "stop" : 1642577190769,
+          "duration" : 160
+        },
+        "flaky" : false,
+        "parameters" : [ "['三农']" ]
+      }, {
+        "name" : "实时销量榜商品一级分类：['本地生活']",
+        "uid" : "921e893dc5f5b4b7",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577206019,
+          "stop" : 1642577206337,
+          "duration" : 318
+        },
+        "flaky" : false,
+        "parameters" : [ "['本地生活']" ]
+      }, {
+        "name" : "抖音热推榜日期:202112,佣金比例：60-",
+        "uid" : "561dc1d019e8760f",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577209953,
+          "stop" : 1642577210195,
+          "duration" : 242
+        },
+        "flaky" : false,
+        "parameters" : [ "'60-'", "['month', '202112']" ]
+      }, {
+        "name" : "抖音热推榜日期:2022-01-18,佣金比例：60-",
+        "uid" : "3d6918bd357b25cd",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577211240,
+          "stop" : 1642577211496,
+          "duration" : 256
+        },
+        "flaky" : false,
+        "parameters" : [ "'60-'", "['day', '2022-01-18']" ]
+      }, {
+        "name" : "抖音热推榜日期:20220110-20220116,佣金比例：60-",
+        "uid" : "dae78cd3c078d3fc",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577215506,
+          "stop" : 1642577215783,
+          "duration" : 277
+        },
+        "flaky" : false,
+        "parameters" : [ "'60-'", "['week', '20220110-20220116']" ]
+      }, {
+        "name" : "抖音销量榜日期:2022-01-18,佣金比例：60-",
+        "uid" : "64b5fadf8e6ada80",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577215623,
+          "stop" : 1642577215864,
+          "duration" : 241
+        },
+        "flaky" : false,
+        "parameters" : [ "'60-'", "['day', '2022-01-18']" ]
+      }, {
+        "name" : "抖音销量榜日期:2022-01-18,商品来源：yanxuan",
+        "uid" : "a5c63c27c90a953f",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577217188,
+          "stop" : 1642577217435,
+          "duration" : 247
+        },
+        "flaky" : false,
+        "parameters" : [ "'yanxuan'", "['day', '2022-01-18']" ]
+      }, {
+        "name" : "抖音销量榜日期:20220110-20220116,佣金比例：60-",
+        "uid" : "6ef5250ba52f8c07",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577218651,
+          "stop" : 1642577218852,
+          "duration" : 201
+        },
+        "flaky" : false,
+        "parameters" : [ "'60-'", "['week', '20220110-20220116']" ]
+      }, {
+        "name" : "抖音销量榜日期:202112,商品来源：yanxuan",
+        "uid" : "a1649d0768e6cce4",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577220688,
+          "stop" : 1642577221403,
+          "duration" : 715
+        },
+        "flaky" : false,
+        "parameters" : [ "'yanxuan'", "['month', '202112']" ]
+      }, {
+        "name" : "抖音销量榜日期:20220110-20220116,商品来源：yanxuan",
+        "uid" : "3a9b395f25607939",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577221599,
+          "stop" : 1642577221877,
+          "duration" : 278
+        },
+        "flaky" : false,
+        "parameters" : [ "'yanxuan'", "['week', '20220110-20220116']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['财经投资']",
+        "uid" : "49aadd50cceb66dc",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577241662,
+          "stop" : 1642577242107,
+          "duration" : 445
+        },
+        "flaky" : false,
+        "parameters" : [ "['财经投资']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['测评']",
+        "uid" : "4d5b5c39a194e34f",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577244578,
+          "stop" : 1642577244818,
+          "duration" : 240
+        },
+        "flaky" : false,
+        "parameters" : [ "['测评']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['汽车']",
+        "uid" : "9432976506d89dd8",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577244826,
+          "stop" : 1642577245107,
+          "duration" : 281
+        },
+        "flaky" : false,
+        "parameters" : [ "['汽车']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['旅行']",
+        "uid" : "ef7a5bbb0287d7aa",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577245837,
+          "stop" : 1642577246126,
+          "duration" : 289
+        },
+        "flaky" : false,
+        "parameters" : [ "['旅行']" ]
+      }, {
+        "name" : "抖音官方小时榜达人一级分类：['政务']",
+        "uid" : "9c52dcdf432ce1b3",
+        "parentUid" : "b2d16733366004f80e30f407f1a4d6a8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577246431,
+          "stop" : 1642577246770,
+          "duration" : 339
+        },
+        "flaky" : false,
+        "parameters" : [ "['政务']" ]
+      } ],
+      "uid" : "b2d16733366004f80e30f407f1a4d6a8"
+    }, {
+      "name" : "AssertionError: assert 43670.84 > 100000",
+      "children" : [ {
+        "name" : "达人带货榜日期：['day', '2022-01-18']，按低粉爆款达人筛选",
+        "uid" : "9bcce37832e9de54",
+        "parentUid" : "b52f98e2f06bafd9de39caec59447c4a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577180224,
+          "stop" : 1642577193716,
+          "duration" : 13492
+        },
+        "flaky" : false,
+        "parameters" : [ "['day', '2022-01-18']" ]
+      } ],
+      "uid" : "b52f98e2f06bafd9de39caec59447c4a"
+    }, {
+      "name" : "AssertionError: assert '内蒙' in '四川、山东、河南省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区内蒙古自治区筛选",
+        "uid" : "a339fed62f95e7e4",
+        "parentUid" : "b5a2483ebcb8189e569bab1420003394",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577189403,
+          "stop" : 1642577193158,
+          "duration" : 3755
+        },
+        "flaky" : false,
+        "parameters" : [ "'内蒙古自治区'" ]
+      } ],
+      "uid" : "b5a2483ebcb8189e569bab1420003394"
+    }, {
+      "name" : "AssertionError: assert '黑龙' in '伊万诺沃、海南、安徽省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区黑龙江省筛选",
+        "uid" : "7656cfaad348700d",
+        "parentUid" : "b2f734ba386e3b9c97a4e6514e0e6ed3",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577223018,
+          "stop" : 1642577227537,
+          "duration" : 4519
+        },
+        "flaky" : false,
+        "parameters" : [ "'黑龙江省'" ]
+      } ],
+      "uid" : "b2f734ba386e3b9c97a4e6514e0e6ed3"
+    }, {
+      "name" : "AssertionError: assert '上海' in '台湾、江苏、吉林省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区上海市筛选",
+        "uid" : "50c07f9a1963bab3",
+        "parentUid" : "ba6d9a3e6b1a10de406f3b56c4d33f0f",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577227559,
+          "stop" : 1642577230452,
+          "duration" : 2893
+        },
+        "flaky" : false,
+        "parameters" : [ "'上海市'" ]
+      } ],
+      "uid" : "ba6d9a3e6b1a10de406f3b56c4d33f0f"
+    }, {
+      "name" : "AssertionError: assert '安徽' in '河北、山西、宁夏省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区安徽省筛选",
+        "uid" : "c78503449c18b309",
+        "parentUid" : "171e2b1e1e72efd2ff713cdcae8b7b8c",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577258766,
+          "stop" : 1642577260826,
+          "duration" : 2060
+        },
+        "flaky" : false,
+        "parameters" : [ "'安徽省'" ]
+      } ],
+      "uid" : "171e2b1e1e72efd2ff713cdcae8b7b8c"
+    }, {
+      "name" : "AssertionError: assert '湖南' in '云南、湖北、广东省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区湖南省筛选",
+        "uid" : "51295c803eaef52e",
+        "parentUid" : "e65fb4e31494812f8af46c1c11bd059a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577340061,
+          "stop" : 1642577351853,
+          "duration" : 11792
+        },
+        "flaky" : false,
+        "parameters" : [ "'湖南省'" ]
+      } ],
+      "uid" : "e65fb4e31494812f8af46c1c11bd059a"
+    }, {
+      "name" : "AssertionError: assert '海南' in '山东、陕西、青海省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区海南省筛选",
+        "uid" : "f47649da7f9f7dd",
+        "parentUid" : "c9b06552fe3ddf916513631dde49ae0d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577376639,
+          "stop" : 1642577391029,
+          "duration" : 14390
+        },
+        "flaky" : false,
+        "parameters" : [ "'海南省'" ]
+      } ],
+      "uid" : "c9b06552fe3ddf916513631dde49ae0d"
+    }, {
+      "name" : "AssertionError: assert '贵州' in '福建、吉林、广东省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区贵州省筛选",
+        "uid" : "aa363a06d89d45a7",
+        "parentUid" : "64b3ef73791fcfe6d303a4d71ca1d372",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577424734,
+          "stop" : 1642577434541,
+          "duration" : 9807
+        },
+        "flaky" : false,
+        "parameters" : [ "'贵州省'" ]
+      } ],
+      "uid" : "64b3ef73791fcfe6d303a4d71ca1d372"
+    }, {
+      "name" : "AssertionError: assert '西藏' in '贵州、河南、重庆省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区西藏自治区筛选",
+        "uid" : "69c2e542eff402b1",
+        "parentUid" : "826738ac6b1388172adb0e144b78528a",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577449791,
+          "stop" : 1642577466150,
+          "duration" : 16359
+        },
+        "flaky" : false,
+        "parameters" : [ "'西藏自治区'" ]
+      } ],
+      "uid" : "826738ac6b1388172adb0e144b78528a"
+    }, {
+      "name" : "AssertionError: assert '甘肃' in '四川、黑龙江、广东省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区甘肃省筛选",
+        "uid" : "ac2f20224e6a8bad",
+        "parentUid" : "54f1df56005ec0fc5cb7360be64384f9",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577479701,
+          "stop" : 1642577488416,
+          "duration" : 8715
+        },
+        "flaky" : false,
+        "parameters" : [ "'甘肃省'" ]
+      } ],
+      "uid" : "54f1df56005ec0fc5cb7360be64384f9"
+    }, {
+      "name" : "AssertionError: assert '青海' in '湖北、西藏、云南省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区青海省筛选",
+        "uid" : "2a57e665d4ec73b9",
+        "parentUid" : "33c3aa9f92ac6af5187b2a933170ff89",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577488435,
+          "stop" : 1642577496863,
+          "duration" : 8428
+        },
+        "flaky" : false,
+        "parameters" : [ "'青海省'" ]
+      } ],
+      "uid" : "33c3aa9f92ac6af5187b2a933170ff89"
+    }, {
+      "name" : "AssertionError: assert '宁夏' in '南宽扎、江苏、浙江省居多'",
+      "children" : [ {
+        "name" : "视频库按观众地区宁夏回族自治区筛选",
+        "uid" : "3bcfcc74b2e966c3",
+        "parentUid" : "97331c26c9865eaf4e9665ad8f06de87",
+        "status" : "failed",
+        "time" : {
+          "start" : 1642577496882,
+          "stop" : 1642577503036,
+          "duration" : 6154
+        },
+        "flaky" : false,
+        "parameters" : [ "'宁夏回族自治区'" ]
+      } ],
+      "uid" : "97331c26c9865eaf4e9665ad8f06de87"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }

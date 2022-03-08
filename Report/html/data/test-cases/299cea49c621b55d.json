@@ -1,0 +1,159 @@
+{
+  "uid" : "299cea49c621b55d",
+  "name" : "抖音官方小时榜达人一级分类：['家居家装']",
+  "fullName" : "Testcase.live.test_rank_soundbyte.TestCase_Rank_Soundbyte#test_soundbyte_star_category",
+  "historyId" : "89a9f3c2bd846225bfbb2c8b80132fc7",
+  "time" : {
+    "start" : 1642577183102,
+    "stop" : 1642577183407,
+    "duration" : 305
+  },
+  "description" : "验证抖音官方小时榜遍历达人一级分类是否有返回数据",
+  "descriptionHtml" : "<p>验证抖音官方小时榜遍历达人一级分类是否有返回数据</p>\n",
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 0 > 0\n +  where 0 = len([])",
+  "statusTrace" : "self = <Testcase.live.test_rank_soundbyte.TestCase_Rank_Soundbyte object at 0x111f6de80>\nget_token = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcHBJZCI6MTAwMDQsImV4cGlyZV90aW1lIjoxNjQ1MTI0NDAwLCJpYXQiOjE2NDI1NzY5MzgsImlkIjoxMTIyNTE4fQ.mrGK8j7hRsM09PdPVupSMUaTKTWMRKtQPXKGlET6t_8'\nget_host = 'https://api-service.chanmama.com', star_category = ['家居家装']\nsoundbyte_last_timestamp = 1642575600\n\n    @allure.description(\"\"\"验证抖音官方小时榜遍历达人一级分类是否有返回数据\"\"\")\n    @pytest.mark.parametrize('star_category',base.return_star_category(os.getenv(\"host\"),1))\n    @allure.title(\"抖音官方小时榜达人一级分类：{star_category}\")\n    def test_soundbyte_star_category(self,get_token,get_host,star_category,soundbyte_last_timestamp):\n        para=f\"star_category={star_category[0]}&order=desc&orderby={self.orderby[0]}&timestamp={soundbyte_last_timestamp}&page=1&size=50\"\n        response = base().return_request(method=\"get\", path=PathMessage.rank_soundbyte, data=para,tokens=get_token,hosts=get_host)\n        assert response[\"status_code\"]==200\n>       assert len(response[\"response_body\"][\"data\"][\"list\"]) > 0\nE       assert 0 > 0\nE        +  where 0 = len([])\n\nTestcase/live/test_rank_soundbyte.py:43: AssertionError",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "last_timestamp",
+    "time" : {
+      "start" : 1642577180426,
+      "stop" : 1642577180598,
+      "duration" : 172
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_7_date",
+    "time" : {
+      "start" : 1642577180426,
+      "stop" : 1642577180426,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "soundbyte_last_timestamp",
+    "time" : {
+      "start" : 1642577180598,
+      "stop" : 1642577180740,
+      "duration" : 142
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_Nearly_7_date",
+    "time" : {
+      "start" : 1642577180426,
+      "stop" : 1642577180426,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音官方小时榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.live"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_soundbyte"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_Soundbyte"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19238-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.live.test_rank_soundbyte"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "star_category",
+    "value" : "['家居家装']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "299cea49c621b55d.json",
+  "parameterValues" : [ "['家居家装']" ]
+}

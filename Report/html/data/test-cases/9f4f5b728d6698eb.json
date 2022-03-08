@@ -1,0 +1,93 @@
+{
+  "uid" : "9f4f5b728d6698eb",
+  "name" : "小时探测榜查看榜点：202201197-202201198",
+  "fullName" : "Testcase.aweme_material.test_aweme_hotspot_hour.TestCase_Aweme_Hotspot_Hour#test_hotspot_hour_interval",
+  "historyId" : "d9e7dd9f0edf5341d3fa8797bf570e7b",
+  "time" : {
+    "start" : 1642577178972,
+    "stop" : 1642577179609,
+    "duration" : 637
+  },
+  "description" : "验证小时探测榜遍历所有的小时榜点是否有返回数据",
+  "descriptionHtml" : "<p>验证小时探测榜遍历所有的小时榜点是否有返回数据</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "小时探测榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_aweme_hotspot_hour"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Aweme_Hotspot_Hour"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19238-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_aweme_hotspot_hour"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "hour_interval",
+    "value" : "'202201197-202201198'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "9f4f5b728d6698eb.json",
+  "parameterValues" : [ "'202201197-202201198'" ]
+}

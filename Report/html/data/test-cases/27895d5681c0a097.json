@@ -1,0 +1,105 @@
+{
+  "uid" : "27895d5681c0a097",
+  "name" : "搜索商品分类，收藏列表正确显示",
+  "fullName" : "Testcase.mine.test_productMine.TestCase_ProductMine#test_productMine_star_category",
+  "historyId" : "42d219e1e43e4fab049b1d847301aea4",
+  "time" : {
+    "start" : 1642577182487,
+    "stop" : 1642577182715,
+    "duration" : 228
+  },
+  "description" : "验证按商品分类筛选，商品收藏列表是否正确显示",
+  "descriptionHtml" : "<p>验证按商品分类筛选，商品收藏列表是否正确显示</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "add_productMine",
+    "time" : {
+      "start" : 1642577180222,
+      "stop" : 1642577180991,
+      "duration" : 769
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "商品收藏"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.mine"
+  }, {
+    "name" : "suite",
+    "value" : "test_productMine"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_ProductMine"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19234-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.mine.test_productMine"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "27895d5681c0a097.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,93 @@
+{
+  "uid" : "4709066a2fe29b56",
+  "name" : "视频库按视频点赞数1000000-2000000筛选",
+  "fullName" : "Testcase.aweme_material.test_aweme_search.TestCase_Aweme_Search#test_aweme_search_digg",
+  "historyId" : "cb2ab5ccc63a9e6ae01fb62d3c806fc7",
+  "time" : {
+    "start" : 1642577089089,
+    "stop" : 1642577090104,
+    "duration" : 1015
+  },
+  "description" : "验证视频库按视频点赞数筛选，数据是否正确",
+  "descriptionHtml" : "<p>验证视频库按视频点赞数筛选，数据是否正确</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "视频库"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_aweme_search"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Aweme_Search"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19242-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_aweme_search"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "digg",
+    "value" : "'1000000-2000000'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4709066a2fe29b56.json",
+  "parameterValues" : [ "'1000000-2000000'" ]
+}

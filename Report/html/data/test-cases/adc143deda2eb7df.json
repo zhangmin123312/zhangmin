@@ -1,0 +1,97 @@
+{
+  "uid" : "adc143deda2eb7df",
+  "name" : "带货视频日期:0-6,类目：['萌宠']",
+  "fullName" : "Testcase.aweme_material.test_rank_hotAweme.TestCase_Rank_HotAweme#test_rank_hotAweme_hour_big_type",
+  "historyId" : "82fd2166eb4362b79eeebaba77c93b4a",
+  "time" : {
+    "start" : 1642577106645,
+    "stop" : 1642577107008,
+    "duration" : 363
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "热门视频榜"
+  }, {
+    "name" : "story",
+    "value" : "验证热门视频小时榜遍历达人大类返回的数据是否大于0条"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.aweme_material"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_hotAweme"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_HotAweme"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19233-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.aweme_material.test_rank_hotAweme"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "star_type",
+    "value" : "['萌宠']"
+  }, {
+    "name" : "times",
+    "value" : "'0-6'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "adc143deda2eb7df.json",
+  "parameterValues" : [ "['萌宠']", "'0-6'" ]
+}

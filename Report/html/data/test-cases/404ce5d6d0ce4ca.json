@@ -1,0 +1,97 @@
+{
+  "uid" : "404ce5d6d0ce4ca",
+  "name" : "抖音小店榜日期:['day', '2022-01-18'],排序类型：amount",
+  "fullName" : "Testcase.shop_brand.test_rank_specialtyToday.TestCase_Rank_SpecialtyToday#test_rank_specialtyToday_sort",
+  "historyId" : "785ebea78b6a2562936acf4beb32d692",
+  "time" : {
+    "start" : 1642577232023,
+    "stop" : 1642577232534,
+    "duration" : 511
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960983,
+      "stop" : 1642576960983,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证抖音小店榜日榜、周榜、月榜按销量和销售降序排序是否正确"
+  }, {
+    "name" : "feature",
+    "value" : "抖音小店榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.shop_brand"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_specialtyToday"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_SpecialtyToday"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19246-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.shop_brand.test_rank_specialtyToday"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "sort",
+    "value" : "'amount'"
+  }, {
+    "name" : "times",
+    "value" : "['day', '2022-01-18']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "404ce5d6d0ce4ca.json",
+  "parameterValues" : [ "'amount'", "['day', '2022-01-18']" ]
+}

@@ -1,0 +1,96 @@
+{
+  "uid" : "1e704fb10783b6d4",
+  "name" : "抖音热推榜日期:20220110-20220116,类目：['其他']",
+  "fullName" : "Testcase.product.test_rank_yesterdayHotRank.TestCase_Rank_YesterdayHotRank#test_yesterdayHotRank_big_category",
+  "historyId" : "88d7464ca54086bee29e6c8ccbe4f31e",
+  "time" : {
+    "start" : 1642577207747,
+    "stop" : 1642577208356,
+    "duration" : 609
+  },
+  "description" : "验证抖音热推榜日榜、周榜、月榜遍历商品一级分类返回的数据是否大于20条",
+  "descriptionHtml" : "<p>验证抖音热推榜日榜、周榜、月榜遍历商品一级分类返回的数据是否大于20条</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "get_host",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "get_token",
+    "time" : {
+      "start" : 1642576960982,
+      "stop" : 1642576960982,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "抖音热推榜"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Testcase.product"
+  }, {
+    "name" : "suite",
+    "value" : "test_rank_yesterdayHotRank"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestCase_Rank_YesterdayHotRank"
+  }, {
+    "name" : "host",
+    "value" : "chandashideMacBook-Pro-7.local"
+  }, {
+    "name" : "thread",
+    "value" : "19234-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "Testcase.product.test_rank_yesterdayHotRank"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "product_type",
+    "value" : "['其他']"
+  }, {
+    "name" : "times",
+    "value" : "['week', '20220110-20220116']"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "1e704fb10783b6d4.json",
+  "parameterValues" : [ "['其他']", "['week', '20220110-20220116']" ]
+}
