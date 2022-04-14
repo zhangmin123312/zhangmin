@@ -10,7 +10,7 @@ from Config.config import Config
 
 if __name__ == '__main__':
 
-    args = ["./Testcase/", '-s', '--alluredir=./Report/result_data', '--clean-alluredir']
-    # args = ["./Testcase/test_author.py",'-s', '-q']
+    args = ["./Testcase", "-q", "-s", "--alluredir=./Report/allure-results","--clean-alluredir"]
     pytest.main(args)
-    os.system(r"allure generate --clean ./Report/result_data -o ./Report/html ")
+    # args = ["./Testcase/", '-s', '--alluredir=./Report/result_data', '--clean-alluredir']
+    # os.system(r"allure generate --clean ./Report/result_data -o ./Report/html ")
