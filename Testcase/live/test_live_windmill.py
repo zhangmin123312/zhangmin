@@ -22,7 +22,7 @@ class TestCase_Rank_Windmill():
         para=f"category={star_category}&day_type={times[0]}&date={times[1]}&page=1&size=50"
         response = base().return_request(method="get", path=PathMessage.rank_windmill, data=para,tokens=get_token,hosts=get_host, )
         assert response["status_code"]==200
-        assert len(response["response_body"]["data"]["list"]) >= 0
+        assert len(response["response_body"]["data"]["list"]) >0
 
 
 

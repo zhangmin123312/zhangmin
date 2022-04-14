@@ -48,4 +48,4 @@ class TestCase_Rank_Official():
         para = f"star_category={star_category[0]}&product_category=&order=desc&orderby={self.orderby[0]}&timestamp={last_timestamp}&page=1&size=50"
         response = base().return_request(method="get", path=PathMessage.rank_official, data=para,tokens=get_token,hosts=get_host)
         assert response["status_code"]==200
-        assert len(response["response_body"]["data"]["list"]) >=0
+        assert len(response["response_body"]["data"]["list"]) >0

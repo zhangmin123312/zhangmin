@@ -45,31 +45,31 @@ class TestCase_Rank_YesterdaySaleRank():
     #     response = base().return_request(method="get", path=PathMessage.rank_yesterdaySaleRank, data=para,tokens=get_token,hosts=get_host, )
     #     assert response["status_code"] == 200
     #     assert len(response["response_body"]["data"]) > 0
-    #
-    # @allure.description("""验证抖音销量榜日榜、周榜、月榜，按佣金比例筛选""")
-    # @pytest.mark.parametrize('commission_rate',commission_rate)
-    # @pytest.mark.parametrize('times',base.return_time_message())
-    # @allure.title("抖音销量榜日期:{times[1]},佣金比例：{commission_rate}")
-    # def test_yesterdaySaleRank_commission_rate(self,get_token,get_host,times,commission_rate):
-    #     para=f"big_category=&first_category=&second_category=&platform={platform[0]}&page=1&size=50&commission_rate={commission_rate}&date={times[1]}&day_type={times[0]}"
-    #     response = base().return_request(method="get", path=PathMessage.rank_yesterdaySaleRank, data=para,tokens=get_token,hosts=get_host, )
-    #     commission_list=jsonpath.jsonpath(response["response_body"],'$.data[*].rate')
-    #     commission_rate=int(commission_rate.replace('-',''))
-    #     assert response["status_code"] == 200
-    #     assert len(response["response_body"]["data"]) > 0
-        # assert all(value >= commission_rate for value in commission_list)
 
-    # @allure.description("""验证抖音销量榜日榜、周榜、月榜，按商品来源筛选""")
-    # @pytest.mark.parametrize('platform',platform)
-    # @pytest.mark.parametrize('times',base.return_time_message())
-    # @allure.title("抖音销量榜日期:{times[1]},商品来源：{platform}")
-    # def test_yesterdaySaleRank_platform(self,get_token,get_host,times,platform):
-    #     para=f"big_category=&first_category=&second_category=&platform={platform}&page=1&size=50&commission_rate=&date={times[1]}&day_type={times[0]}"
-    #     response = base().return_request(method="get", path=PathMessage.rank_yesterdaySaleRank, data=para,tokens=get_token,hosts=get_host, )
-    #     platform_list = jsonpath.jsonpath(response["response_body"], '$.data[*].platform')
-    #     assert response["status_code"] == 200
-    #     assert len(response["response_body"]["data"]) > 0
-    #     assert all(value == platform for value in platform_list)
+    @allure.description("""验证抖音销量榜日榜、周榜、月榜，按佣金比例筛选""")
+    @pytest.mark.parametrize('commission_rate',commission_rate)
+    @pytest.mark.parametrize('times',base.return_time_message())
+    @allure.title("抖音销量榜日期:{times[1]},佣金比例：{commission_rate}")
+    def test_yesterdaySaleRank_commission_rate(self,get_token,get_host,times,commission_rate):
+        para=f"big_category=&first_category=&second_category=&platform={platform[0]}&page=1&size=50&commission_rate={commission_rate}&date={times[1]}&day_type={times[0]}"
+        response = base().return_request(method="get", path=PathMessage.rank_yesterdaySaleRank, data=para,tokens=get_token,hosts=get_host, )
+        commission_list=jsonpath.jsonpath(response["response_body"],'$.data[*].rate')
+        commission_rate=int(commission_rate.replace('-',''))
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]) > 0
+        assert all(value >= commission_rate for value in commission_list)
+
+    @allure.description("""验证抖音销量榜日榜、周榜、月榜，按商品来源筛选""")
+    @pytest.mark.parametrize('platform',platform)
+    @pytest.mark.parametrize('times',base.return_time_message())
+    @allure.title("抖音销量榜日期:{times[1]},商品来源：{platform}")
+    def test_yesterdaySaleRank_platform(self,get_token,get_host,times,platform):
+        para=f"big_category=&first_category=&second_category=&platform={platform}&page=1&size=50&commission_rate=&date={times[1]}&day_type={times[0]}"
+        response = base().return_request(method="get", path=PathMessage.rank_yesterdaySaleRank, data=para,tokens=get_token,hosts=get_host, )
+        platform_list = jsonpath.jsonpath(response["response_body"], '$.data[*].platform')
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]) > 0
+        assert all(value == platform for value in platform_list)
 
 
 
