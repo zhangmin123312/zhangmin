@@ -1,0 +1,221 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "children" : [ {
+    "name" : "验证搜索框搜索功能",
+    "children" : [ {
+      "name" : "test_search_author",
+      "uid" : "ebf2a1310daad5ff",
+      "parentUid" : "efa85c1ef18bccde9429764862506de9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829406617,
+        "stop" : 1649829421772,
+        "duration" : 15155
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "efa85c1ef18bccde9429764862506de9"
+  }, {
+    "name" : "验证商品分类筛选是否有数据",
+    "children" : [ {
+      "name" : "test_click_goods_type",
+      "uid" : "6aaa0781fbb49ecc",
+      "parentUid" : "8f2f2ecfb89582bf988554b52f0438de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829421775,
+        "stop" : 1649829510767,
+        "duration" : 88992
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8f2f2ecfb89582bf988554b52f0438de"
+  }, {
+    "name" : "验证达人分类筛选是否有数据",
+    "children" : [ {
+      "name" : "test_click_star_type",
+      "uid" : "a611e0ddf30f25b3",
+      "parentUid" : "3cf812997d7b5fde40ad2c54ac534fde",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829510770,
+        "stop" : 1649829612963,
+        "duration" : 102193
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "3cf812997d7b5fde40ad2c54ac534fde"
+  }, {
+    "name" : "验证品牌自播筛选是否有数据",
+    "children" : [ {
+      "name" : "test_click_Brand_self_broadcast",
+      "uid" : "7f75322f2fe4c2b2",
+      "parentUid" : "109f1810b2850781b7931cbea87322d4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829612966,
+        "stop" : 1649829628560,
+        "duration" : 15594
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "109f1810b2850781b7931cbea87322d4"
+  }, {
+    "name" : "验证店播筛选是否有数据",
+    "children" : [ {
+      "name" : "test_author_message_shop",
+      "uid" : "16d64d47a299d391",
+      "parentUid" : "8d6c67a5d8daca81d2fefefdf40ed65e",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829628563,
+        "stop" : 1649829643528,
+        "duration" : 14965
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "8d6c67a5d8daca81d2fefefdf40ed65e"
+  }, {
+    "name" : "验证达人播筛选是否有数据",
+    "children" : [ {
+      "name" : "test_talent_broadcast",
+      "uid" : "c12471bf5ccee2e3",
+      "parentUid" : "657bffc27634ca729330a4ba92ff5bbd",
+      "status" : "broken",
+      "time" : {
+        "start" : 1649829643531,
+        "stop" : 1649829663204,
+        "duration" : 19673
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "657bffc27634ca729330a4ba92ff5bbd"
+  }, {
+    "name" : "验证星图达人筛选是否有数据",
+    "children" : [ {
+      "name" : "test_author_message_star_map",
+      "uid" : "c87211f32ca67070",
+      "parentUid" : "2468b8b5c01d58fb45f167ebda1bae88",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829663578,
+        "stop" : 1649829678218,
+        "duration" : 14640
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "2468b8b5c01d58fb45f167ebda1bae88"
+  }, {
+    "name" : "验证黑马筛选是否有数据",
+    "children" : [ {
+      "name" : "test_author_message_dark_horse",
+      "uid" : "16b70eb14e242922",
+      "parentUid" : "0bbe6ff8b2821b082731fd8f754289a0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829678223,
+        "stop" : 1649829693204,
+        "duration" : 14981
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0bbe6ff8b2821b082731fd8f754289a0"
+  }, {
+    "name" : "验证商品橱窗筛选是否有数据",
+    "children" : [ {
+      "name" : "test_author_message_product_window",
+      "uid" : "dbdb864d205161c6",
+      "parentUid" : "ed28a3ac29a76a8dedeb40285c95b640",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829693207,
+        "stop" : 1649829707897,
+        "duration" : 14690
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_author_message_show_news",
+      "uid" : "ed95b646ded46a67",
+      "parentUid" : "ed28a3ac29a76a8dedeb40285c95b640",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829707902,
+        "stop" : 1649829723077,
+        "duration" : 15175
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_author_have_contact_information",
+      "uid" : "bbec151eb84423ed",
+      "parentUid" : "ed28a3ac29a76a8dedeb40285c95b640",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829723080,
+        "stop" : 1649829740347,
+        "duration" : 17267
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ed28a3ac29a76a8dedeb40285c95b640"
+  }, {
+    "name" : "验证密码登录",
+    "children" : [ {
+      "name" : "test_login",
+      "uid" : "822a5764062c3e87",
+      "parentUid" : "ee4c115238c5653fe3f0b05d3f097eab",
+      "status" : "passed",
+      "time" : {
+        "start" : 1649829742597,
+        "stop" : 1649829762775,
+        "duration" : 20178
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "ee4c115238c5653fe3f0b05d3f097eab"
+  }, {
+    "name" : "验证忘记密码",
+    "children" : [ {
+      "name" : "test_forget_password",
+      "uid" : "1bd8b637039f30b7",
+      "parentUid" : "20386c0981a36373a83ce3c673d6534b",
+      "status" : "broken",
+      "time" : {
+        "start" : 1649829764735,
+        "stop" : 1649829783357,
+        "duration" : 18622
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "20386c0981a36373a83ce3c673d6534b"
+  }, {
+    "name" : "验证验证码登录",
+    "children" : [ {
+      "name" : "test_code_login",
+      "uid" : "3a3eede72cbc311",
+      "parentUid" : "150a6f6c5d05011ee96baaa3659d751c",
+      "status" : "broken",
+      "time" : {
+        "start" : 1649829785338,
+        "stop" : 1649829797316,
+        "duration" : 11978
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "150a6f6c5d05011ee96baaa3659d751c"
+  } ],
+  "name" : "behaviors"
+}
