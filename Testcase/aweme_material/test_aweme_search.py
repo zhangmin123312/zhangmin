@@ -101,15 +101,15 @@ class TestCase_Aweme_Search():
         hour_range=hour_ranges.split("-")
         assert all(float(hour_range[0])<=float(value[0])<=float(hour_range[1]) for value in new_durations_list )
 
-    @allure.description("""验证视频库按关联商品筛选，数据是否正确""")
-    @allure.title("视频库按关联商品筛选")
-    def test_aweme_search_goods_relatived(self,get_token,get_host):
-        para=f"gender_type=-1&age_types=&province=&page=1&star_category=&star_sub_category=&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort={self.sort[0]}&time={self.time[0]}&size=50&goods_relatived=1&fans_hottest=0&group_buy_relatived=0&filter_delete=1&order_by=desc"
-        response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
-        assert response["status_code"] == 200
-        assert len(response["response_body"]["data"]["list"]) > 0
-        product_info_list = jsonpath.jsonpath(response["response_body"], '$.data.list[*].product_info.promotion_id')
-        assert all(value for value in product_info_list )
+    # @allure.description("""验证视频库按关联商品筛选，数据是否正确""")
+    # @allure.title("视频库按关联商品筛选")
+    # def test_aweme_search_goods_relatived(self,get_token,get_host):
+    #     para=f"gender_type=-1&age_types=&province=&page=1&star_category=&star_sub_category=&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort={self.sort[0]}&time={self.time[0]}&size=50&goods_relatived=1&fans_hottest=0&group_buy_relatived=0&filter_delete=1&order_by=desc"
+    #     response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
+    #     assert response["status_code"] == 200
+    #     assert len(response["response_body"]["data"]["list"]) > 0
+    #     product_info_list = jsonpath.jsonpath(response["response_body"], '$.data.list[*].product_info.promotion_id')
+    #     assert all(value for value in product_info_list )
 
     @allure.description("""验证视频库按低粉爆款筛选，数据是否正确""")
     @allure.title("视频库按低粉爆款筛选")

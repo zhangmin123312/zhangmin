@@ -44,19 +44,20 @@ class TestCase_Author_Rank_Fans():
                 assert i["commerce"] == 1
 
 
-    @allure.story('验证涨粉达人榜日榜、周榜、月榜地区筛选条件验证')
-    @pytest.mark.parametrize('times', base.return_time_message())
-    @pytest.mark.parametrize('city',base.return_city(os.getenv("host"),2))
-    @allure.title("涨粉达人榜日期:{times},筛选的地区：city")
-    def test_author_rank_is_city(self, get_token,get_host,times,city):
-        para = "star_category=&day_type={}&day={}&page=1&size=50&is_commerce=0&province={}&city={}".format(times[0], times[1],city[0],city[1])
-        responce = base().return_request(method="get", path=PathMessage.author_rank_fans, data=para, tokens=get_token,
-                                         hosts=get_host, )
-
-        assert responce["status_code"] == 200
-        for i in responce["response_body"]["data"]["list"]:
-            assert i["province"] in city[0]
-            assert i["city"] in city[1]
+    # @allure.story('验证涨粉达人榜日榜、周榜、月榜地区筛选条件验证')
+    # @pytest.mark.parametrize('times', base.return_time_message())
+    # @pytest.mark.parametrize('city',base.return_city(os.getenv("host"),2))
+    # @allure.title("涨粉达人榜日期:{times},筛选的地区：city")
+    # def test_author_rank_is_city(self, get_token,get_host,times,city):
+    #     para = "star_category=&day_type={}&day={}&page=1&size=50&is_commerce=0&province={}&city={}".format(times[0], times[1],city[0],city[1])
+    #     responce = base().return_request(method="get", path=PathMessage.author_rank_fans, data=para, tokens=get_token,
+    #                                      hosts=get_host, )
+    #
+    #     assert responce["status_code"] == 200
+    #     assert responce["data"]["list"] > 0
+        # for i in responce["response_body"]["data"]["list"]:
+        #     assert i["province"] in city[0]
+        #     assert i["city"] in city[1]
 
 
 

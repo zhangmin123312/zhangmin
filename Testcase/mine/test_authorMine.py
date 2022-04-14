@@ -39,17 +39,17 @@ class TestCase_AuthorMine():
         nickname_list = jsonpath.jsonpath(response["response_body"], f'$.data.list[*].author.nickname')
         assert nickname in nickname_list
 
-    @pytest.mark.run(order=1)
-    @allure.description("""验证按达人分类筛选，达人收藏列表是否正确显示""")
-    @allure.title("搜索达人分类，收藏列表正确显示")
-    def test_authorMine_star_category(self,get_token,get_host,add_author):
-        author_id, nickname, tag,group_id=add_author
-        para=f"page=1&page_size=50&star_category={tag}&group_id=&sub_user_id=0&keyword="
-        response = base().return_request(method="get", path=PathMessage.authorMine_listsV2, data=para, tokens=get_token,hosts=get_host)
-        assert response["status_code"] == 200
-        assert len(response["response_body"]["data"]["list"]) > 0
-        author_id_list = jsonpath.jsonpath(response["response_body"], f'$.data.list[*].author.author_id')
-        assert author_id in author_id_list
+    # @pytest.mark.run(order=1)
+    # @allure.description("""验证按达人分类筛选，达人收藏列表是否正确显示""")
+    # @allure.title("搜索达人分类，收藏列表正确显示")
+    # def test_authorMine_star_category(self,get_token,get_host,add_author):
+    #     author_id, nickname, tag,group_id=add_author
+    #     para=f"page=1&page_size=50&star_category={tag}&group_id=&sub_user_id=0&keyword="
+    #     response = base().return_request(method="get", path=PathMessage.authorMine_listsV2, data=para, tokens=get_token,hosts=get_host)
+    #     assert response["status_code"] == 200
+    #     assert len(response["response_body"]["data"]["list"]) > 0
+    #     author_id_list = jsonpath.jsonpath(response["response_body"], f'$.data.list[*].author.author_id')
+    #     assert author_id in author_id_list
 
     @pytest.mark.run(order=1)
     @allure.description("""验证添加达人后，达人分类正确是否正确显示""")
@@ -102,18 +102,19 @@ class TestCase_AuthorMine():
         author_id_list = jsonpath.jsonpath(response["response_body"], f'$.data.list[*].author.author_id')
         assert author_id in author_id_list
 
-    @pytest.mark.run(order=3)
-    @allure.description("""验证取消达人收藏，达人收藏列表是否正确显示""")
-    @allure.title("取消收藏达人，收藏列表正确显示")
-    def test_authorMine_fav(self,get_token,get_host,add_author):
-        author_id, nickname, label,group_id=add_author
-        # 取消达人收藏
-        fav_para = {"author_id": author_id}
-        fav_response = base().return_request(method="post", path=PathMessage.author_fav, data=json.dumps(fav_para),
-                                             tokens=get_token, hosts=get_host)
-        para=f"page=1&page_size=50&star_category=&group_id=&sub_user_id=0&keyword="
-        response = base().return_request(method="get", path=PathMessage.authorMine_listsV2, data=para, tokens=get_token,hosts=get_host)
-        assert response["status_code"] == 200
-        assert len(response["response_body"]["data"]["list"]) > 0
-        author_id_list = jsonpath.jsonpath(response["response_body"], f'$.data.list[*].author.author_id')
-        assert author_id not in author_id_list
+
+    # @pytest.mark.run(order=3)
+    # @allure.description("""验证取消达人收藏，达人收藏列表是否正确显示""")
+    # @allure.title("取消收藏达人，收藏列表正确显示")
+    # def test_authorMine_fav(self,get_token,get_host,add_author):
+    #     author_id, nickname, label,group_id=add_author
+    #     # 取消达人收藏
+    #     fav_para = {"author_id": author_id}
+    #     fav_response = base().return_request(method="post", path=PathMessage.author_fav, data=json.dumps(fav_para),
+    #                                          tokens=get_token, hosts=get_host)
+    #     para=f"page=1&page_size=50&star_category=&group_id=&sub_user_id=0&keyword="
+    #     response = base().return_request(method="get", path=PathMessage.authorMine_listsV2, data=para, tokens=get_token,hosts=get_host)
+    #     assert response["status_code"] == 200
+    #     assert len(response["response_body"]["data"]["list"]) > 0
+    #     author_id_list = jsonpath.jsonpath(response["response_body"], f'$.data.list[*].author.author_id')
+    #     assert author_id not in author_id_list
