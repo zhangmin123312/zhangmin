@@ -268,6 +268,17 @@ class PathMessage:
 
     # 取消直播监控
     live_monitor_cancel = ["/v1/douyin/live/monitor/cancel"]
+    # 昨日新兴榜
+
+    authorLiveSelect_rising = ['/v1/choose/product/dayRank']
+    # 三日潜力榜单
+    authorLiveSelect_potential = ['/v1/choose/product/dayRank']
+    # 七日热销榜
+    test_rank_authorLiveSelect_hotSale = ['/v1/choose/product/dayRank']
+    # 持续好货榜
+    authorLiveSelect_superiorProduct = ['/v1/choose/product/continueRank']
+    # 历史同期榜
+    authorLiveSelect_period = ['/v1/choose/product/sameTimeRank']
 
 
 if __name__ == '__main__':
