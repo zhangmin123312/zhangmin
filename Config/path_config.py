@@ -279,6 +279,10 @@ class PathMessage:
     authorLiveSelect_superiorProduct=['/v1/choose/product/continueRank']
     #历史同期榜
     authorLiveSelect_period=['/v1/choose/product/sameTimeRank']
+    #直播商品一键采集
+    test_home_associcte=['/v1/author/detail/productSelection']
+    #视频监控搜索达人
+    authorSearch=['/v1/author/search']
 
 if __name__ == '__main__':
 
