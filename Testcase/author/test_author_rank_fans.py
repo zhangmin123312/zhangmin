@@ -18,10 +18,9 @@ class TestCase_Author_Rank_Fans():
     @allure.story('验证涨粉达人榜日榜、周榜、月榜遍历商品大类返回的数据是否大于20条')
     @pytest.mark.parametrize('times', base.return_time_message())
     @pytest.mark.parametrize('star_category', base.return_star_category(os.getenv("host"), 1))
-    @allure.title("涨粉达人榜日期:{times},类目：{product_type}")
+    @allure.title("涨粉达人榜日期:{times},达人类目：{star_category}")
     def test_author_rank_product_type(self, get_token, get_host, times, star_category):
-        para = "star_category={}&day_type={}&day={}&page=1&size=50&is_commerce=0&province=".format(
-            star_category[0],times[0], times[1] )
+        para = f"star_category={star_category[0]}&day_type={times[0]}&day={times[1]}&page=1&size=50&is_commerce=0&province="
         responce = base().return_request(method="get", path=PathMessage.author_rank_fans, data=para, tokens=get_token,
                                          hosts=get_host, )
         time.sleep(0.1)
