@@ -6,12 +6,12 @@
 接口路径配置文件
 """
 
-class PathMessage:
 
-    #token路径
+class PathMessage:
+    # token路径
     token = ["/v1/access/token"]
 
-    #商品分类路径
+    # 商品分类路径
     product_path = ["/v1/product/category"]
 
     # 达人分类路径
@@ -20,52 +20,55 @@ class PathMessage:
     # 地域分类
     common_area = ["/v1/common/area"]
 
-    #成长达人榜
+    # 成长达人榜
     cheng_zhang_da_ren_bang = ["/v1/authorRank/bangNew"]
 
-    #商品品牌榜
+    # 商品品牌榜
     brand_rank = ["/v1/brand/rank"]
 
-    #抖音销量榜
+    # 抖音销量榜
     rank_yesterdaySaleRank = ["/v1/home/rank/yesterdaySaleRank"]
 
-    #抖音热推榜
+    # 抖音热推榜
     rank_yesterdayHotRank = ["/v1/home/rank/yesterdayHotRank"]
 
-    #实时销量榜
+    # 实时销量榜
     rank_liveRank = ["/v1/home/rank/liveRank"]
 
-    #抖音小店榜
+    # 抖音小店榜
     rank_specialtyToday = ["/v1/home/rank/specialtyToday"]
 
-    #小店库
+    # 小店库
     shop_search = ["/v2/shop/search"]
 
-    #小店详情页
+    # 小店详情页
     shop_detail_info = ["/v1/shop/detail/info"]
 
-    #选品库
+    # 选品库
     product_search = ["/v2/product/search"]
-    
-    #品牌库
+
+    # 品牌库
     brand_search = ["/v2/home/brand/search"]
 
-    #品牌详情页
+    # 品牌详情页
     brand_detail_info = ["/v1/brand/detail/info"]
 
-    #品牌详情页-小店分析
+    # 品牌详情页-小店分析
     brand_detail_chart = ["/v1/brand/detail/chart"]
 
-    #品牌详情页-观众分析
+    # 品牌详情页-观众分析
     brand_detail_authorFansAnalysis = ["/v2/brand/detail/authorFansAnalysis"]
 
-    #全天销量榜
+    # 品牌自播榜
+    brand_self_author = ["/v1/douyin/live/rank/author/sales"]
+
+    # 全天销量榜
     rank_allDayRank = ["/v1/home/rank/allDayRank"]
 
-    #涨粉达人榜
+    # 涨粉达人榜
     author_rank_fans = ["/v1/home/author/rank/fans"]
 
-    #达人详情页info
+    # 达人详情页info
     author_detail_info = ["/v1/author/detail/info"]
 
     # 商品分享日榜
@@ -74,14 +77,23 @@ class PathMessage:
     # 商品分享周榜和月榜
     authorRank_starRank = ["/v1/authorRank/starRank"]
 
-    #达人榜
+    # 达人榜
     authorRank_bangNew = ["/v1/authorRank/bangNew"]
+
+    # 达人榜-带货达人
+    authorRank_bangProductNew = ["/v1/authorRank/bangProductNew"]
+
+    # 达人带货榜
+    author_TakeProduct = ["/v1/douyin/live/rank/author/sales"]
 
     # 带货视频榜
     rank_productAweme = ['/v1/home/rank/productAweme']
 
     # 热门视频榜
     rank_hotAweme = ["/v1/home/rank/hotAweme"]
+
+    # 探店视频榜
+    rank_searchShop = ["/v1/searchShop/rank"]
 
     # 直播-今日带货榜
     rank_official_daily = ["/v1/douyin/live/rank/official/daily"]
@@ -134,10 +146,10 @@ class PathMessage:
     # 视频详情，观众分析
     aweme_personas = ["/v1/aweme/personas"]
 
-    #达人库
+    # 达人库
     author_search = ["/v2/home/author/search"]
 
-    #达人视频指数或潜力榜
+    # 达人视频指数或潜力榜
     rank_officialStarRank = ["/v1/home/rank/officialStarRank"]
 
     # 视频探测器榜点
@@ -206,10 +218,10 @@ class PathMessage:
     # 取消商品收藏
     product_fav = ["/v1/product/fav"]
 
-    #话题榜
-    rank_subject=["/v1/subject/rank"]
+    # 话题榜
+    rank_subject = ["/v1/subject/rank"]
 
-    #mcn榜
+    # mcn榜
     mcn_rank = ["/v1/mcn/rank"]
 
     # 小店收藏列表
@@ -268,23 +280,11 @@ class PathMessage:
 
     # 取消直播监控
     live_monitor_cancel = ["/v1/douyin/live/monitor/cancel"]
-  #昨日新兴榜
 
-    authorLiveSelect_rising=['/v1/choose/product/dayRank']
-    #三日潜力榜单
-    authorLiveSelect_potential = ['/v1/choose/product/dayRank']
-    #七日热销榜
-    test_rank_authorLiveSelect_hotSale=['/v1/choose/product/dayRank']
-    #持续好货榜
-    authorLiveSelect_superiorProduct=['/v1/choose/product/continueRank']
-    #历史同期榜
-    authorLiveSelect_period=['/v1/choose/product/sameTimeRank']
-    #直播商品一键采集
-    test_home_associcte=['/v1/author/detail/productSelection']
-    #视频监控搜索达人
-    authorSearch=['/v1/author/search']
+    # 品类趋势分析
+    tool_Category_trend = ["/v1/industry/analysis/generate"]
+
 
 if __name__ == '__main__':
-
     pass
 

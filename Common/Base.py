@@ -120,11 +120,40 @@ class base():
 
         return [["day",now_day],["week",week_date],["month",month_data]]
 
+    @staticmethod
+    def return_time_message_1():
+        """
+        返回昨天、上周的时间list
+        """
+        now = datetime.datetime.now().date()
+        lDay = now - timedelta(days=now.weekday() + (7 * abs(1)))
+        rDay = lDay + timedelta(days=6)
+        week_date = "{}-{}".format(str(lDay).replace("-", ""), str(rDay).replace("-", ""))
+        del_day = datetime.datetime.now() - datetime.timedelta(days=1)
+        now_day = del_day.strftime('%Y-%m-%d')
 
+        return [["day", now_day], ["week", week_date]]
+
+    @staticmethod
+    def return_time_message_2():
+        """
+        返回上个月的时间list
+        """
+        now = datetime.datetime.now().date()
+        lDay = now - timedelta(days=now.weekday() + (7 * abs(1)))
+        rDay = lDay + timedelta(days=6)
+        today = datetime.date.today()
+        day = today.replace(day=1)
+        last_month = day - datetime.timedelta(days=1)
+        last_quarter = day - datetime.timedelta(days=3)
+        month_data = last_month.strftime("%Y%m")
+        quarter_data = last_quarter.strftime("%Y%m")
+
+        return [["month", month_data], ["quarter", quarter_data], ]
 
 
     @staticmethod
-    def return_product_types(host,type,product_type='all'):
+    def return_product_types(host, type, product_type='all'):
         """
         返回商品分类
         """
@@ -262,6 +291,78 @@ class base():
         else:
             print("类别输入有误")
             raise False
+
+    @staticmethod
+    def return_city_2(host, type):
+        """
+        返回城市
+        type: 返回省份下的城市，
+        """
+        responce = base().return_request(method="get", path=PathMessage.common_area, hosts=host)['response_body'][
+            'data']
+
+        city_list = []
+
+        province_list = []
+
+        for i in responce:
+            province_list.append(i["name"])
+            for a in i["children"]:
+                city_list.append([a["name"]])
+
+        if type == 1:
+            return city_list
+
+        else:
+            print("类别输入有误")
+            raise False
+
+    @staticmethod
+    def return_city_3(host, province):
+        """
+        根据省份返回地区
+        """
+        response = \
+            base().return_request(method="get", path=PathMessage.common_area, hosts=host)['response_body']['data']
+        city_list = []
+        print(response)
+        for i in response:
+            if (i["name"]) == province:
+                for a in i["children"]:
+                    city_list.append(a["name"])
+
+        return city_list
+
+    @staticmethod
+    def return_city_4(host, type, province):
+        """
+        返回某一个省份和城市
+        type: 1返回省份列表，2返回省份和城市组合列表
+        """
+        responce = base().return_request(method="get", path=PathMessage.common_area, hosts=host)['response_body'][
+            'data']
+
+        city_list = []
+
+        province_list = []
+
+        for i in responce:
+            if (i["name"]) == province:
+                for a in i["children"]:
+                    city_list.append([i["name"], a["name"]])
+        print(city_list)
+        if type == 1:
+
+            return province_list
+
+        elif type == 2:
+
+            return city_list
+
+        else:
+            print("类别输入有误")
+            raise False
+
 
     @staticmethod
     def return_Filter_date(is_include_today,timelen=7):
