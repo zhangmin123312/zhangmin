@@ -95,9 +95,9 @@ def add_aweme_fav(get_token):
     # 获取视频id
     search_para="gender_type=-1&age_types=&province=&page=1&star_category=&star_sub_category=&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort=digg_count&time=24h&size=50&goods_relatived=0&fans_hottest=0&group_buy_relatived=0&filter_delete=1&order_by=desc"
     search_response = base().return_request(method="get", path=PathMessage.aweme_search, data=search_para, tokens=get_token,hosts=os.environ["host"], )
-    aweme_id=search_response['response_body']['data']['list'][0]['aweme_info']['aweme_id']
-    aweme_title=search_response['response_body']['data']['list'][0]['aweme_info']['aweme_title']
-    category=search_response['response_body']['data']['list'][0]['author_info']['single_tags']['first']
+    aweme_id=search_response['response_body']['data']['list'][10]['aweme_info']['aweme_id']
+    aweme_title=search_response['response_body']['data']['list'][10]['aweme_info']['aweme_title']
+    category=search_response['response_body']['data']['list'][10]['author_info']['single_tags']['first']
 
     # 添加分组
     favGroupAdd_para = {"group_name": "测试分组"+str(time.time())}
