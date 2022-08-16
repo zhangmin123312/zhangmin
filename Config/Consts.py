@@ -11,7 +11,7 @@
 API_ENVIRONMENT = 'release'
 
 # 获取token的账号
-telephone = 13506034753
+telephone = 18695682863
 # 用于添加子账号
 sub_telephone=13444444445
 
@@ -23,3 +23,4 @@ commission_rate = ['10-', '20-', '30-', '40-', '50-']
 
 # 商品来源
 platform = ['jinritemai','taobao','tmall','jd','suning','kaola','weipinhui','yanxuan']
+

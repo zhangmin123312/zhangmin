@@ -280,9 +280,27 @@ class PathMessage:
 
     # 取消直播监控
     live_monitor_cancel = ["/v1/douyin/live/monitor/cancel"]
+     #昨日新兴榜
 
-    # 品类趋势分析
-    tool_Category_trend = ["/v1/industry/analysis/generate"]
+    authorLiveSelect_rising=['/v1/choose/product/dayRank']
+    #三日潜力榜单
+    authorLiveSelect_potential = ['/v1/choose/product/dayRank']
+    #七日热销榜
+    test_rank_authorLiveSelect_hotSale=['/v1/choose/product/dayRank']
+    #持续好货榜
+    authorLiveSelect_superiorProduct=['/v1/choose/product/continueRank']
+    #历史同期榜
+    authorLiveSelect_period=['/v1/choose/product/sameTimeRank']
+    #直播商品一键采集
+    test_home_associcte = ['/v1/author/detail/productSelection']
+    #达人监控搜索达人
+    authorSearch = ['/v1/author/search']
+    #添加达人监控
+    track_create = ['/v1/track/create']
+    #达人监控列表
+    track_history = ['/v1/track/history']
+    #达人监控-达人置顶
+    track_topSwitch_author=['/v1/track/topSwitch']
 
 
 if __name__ == '__main__':

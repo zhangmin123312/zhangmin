@@ -83,3 +83,20 @@ def add_live_monitor(get_token):
             delete_para = {"monitor_id": value['id']}
             delete_response = base().return_request(method="post", path=PathMessage.live_monitor_delete,data=json.dumps(delete_para),tokens=get_token, hosts=os.environ["host"])
 
+
+@pytest.fixture(scope='session')
+def add_author_monitor(get_token):
+
+    #搜索达人
+    authorSeach_para={'keyword': "7"}
+    authorSeach_responce=base().return_request(method="post",path=PathMessage.authorSearch,data=json.dumps(authorSeach_para),tokens=get_token,hosts=os.environ["host"])
+    # print(authorSeach_responce)
+    nickname=authorSeach_responce["response_body"]["data"]['author_info']["nickname"]
+    author_id=authorSeach_responce["response_body"]["data"]['author_info']["author_id"]
+    unique_id=authorSeach_responce["response_body"]["data"]['author_info']["unique_id"]
+    # print(nickname,unique_id,author_id)
+
+    yield nickname, unique_id, author_id
+
+
+
