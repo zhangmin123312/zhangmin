@@ -11,7 +11,7 @@
 API_ENVIRONMENT = 'release'
 
 # 获取token的账号
-telephone = 13506034753
+telephone = 18695682863
 # 用于添加子账号
 sub_telephone=18046304924
 
