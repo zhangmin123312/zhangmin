@@ -77,7 +77,7 @@ class TestCase_Author_Search():
                                          tokens=get_token, hosts=get_host)["response_body"]["data"]["list"]
         # print(response)
         for i in response:
-            assert  i["live_average_amount_30_v2"] > 100000 and i["follower_count"] < 100000
+            assert i["live_average_amount_30_v2"] > 100000 and i["follower_count"] < 100000
 
     @allure.story('验证达人库性别筛选是否正确')
     @pytest.mark.parametrize('gender', [0, 1])
