@@ -385,7 +385,7 @@ class base():
         return time_list
 
     @staticmethod
-    def return_hotspot_time(get_token,get_host,data_type='',include_today=1):
+    def return_hotspot_time(get_token, get_host, data_type='',include_today=1):
         """
         返回视频探测器的时间倒计时间/日期，以及近7天的日期
         """
@@ -407,8 +407,9 @@ class base():
             while day:
                 day = day - 1
                 time_list.append((now - datetime.timedelta(days=day+1-include_today)).strftime('%Y-%m-%d'))
-
+        print(time_list)
         return time_list
+
 
     def return_token(self,host):
 
