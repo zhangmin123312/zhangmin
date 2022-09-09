@@ -58,8 +58,10 @@ def add_live_monitor(get_token):
     # 搜索达人
     multiSearch_para = {"keyword": "b"}
     multiSearch_response = base().return_request(method="post", path=PathMessage.author_multiSearch, data=json.dumps(multiSearch_para),tokens=get_token, hosts=os.environ["host"])
+    # print(multiSearch_response)
     nickname=multiSearch_response['response_body']['data']['search_results'][0]['author_info']['nickname']
-    unique_id=multiSearch_response['response_body']['data']['search_results'][0]['author_info']['unique_id']
+    #有些达人没有unique_id，统一全部取short_id
+    unique_id=multiSearch_response['response_body']['data']['search_results'][0]['author_info']['short_id']
     author_id=multiSearch_response['response_body']['data']['search_results'][0]['author_info']['author_id']
 
     # 查询是否已添加监控
@@ -98,5 +100,56 @@ def add_author_monitor(get_token):
 
     yield nickname, unique_id, author_id
 
+
+@pytest.fixture(scope='session')
+def delete_author_monitor(get_token):
+
+    #筛选已完成监控的达人
+    data = {
+        'keyword': '',
+        'list_type': 'author',
+        'page': '1',
+        'pagesize': 15,
+        'status': 2
+    }
+    responce=base().return_request(method="post",path=PathMessage.track_history,data=json.dumps(data),tokens=get_token,hosts=os.environ["host"])
+    # print(responce)
+    trackId = jsonpath.jsonpath(responce["response_body"], f'$.data.track_lists[*].track_info.trackId')
+    yield trackId
+
+
+@pytest.fixture(scope='session')
+def delete_aweme_monitor(get_token):
+# 筛选已完成监控的视频监控id
+    delete_aweme_data = {
+        'keyword': '',
+        'list_type': 'aweme',
+        'page': '1',
+        'pagesize': 15,
+        'status': 2
+    }
+
+
+    delete_aweme_responce = base().return_request(method="post", path=PathMessage.track_history, data=json.dumps(delete_aweme_data), tokens=get_token,
+                                 hosts=os.environ["host"])
+    # print(delete_aweme_responce)
+    trackId = jsonpath.jsonpath(delete_aweme_responce["response_body"], f'$.data.track_lists[*].track_info.trackId')
+    yield trackId
+
+
+@pytest.fixture(scope='session')
+def add_aweme_monitor(get_token):
+#热门视频库获取监控视频id
+    para='gender_type=-1&age_types=&province=&page=1&star_category=&star_sub_category=&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort=digg_count&time=24h&size=50&goods_relatived=0&fans_hottest=0&group_buy_relatived=0&aweme_graph_type=0&filter_delete=1&order_by=desc&from=detail'
+
+
+    responce = base().return_request(method="get", path=PathMessage.aweme_search, data=para, tokens=get_token,
+                                 hosts=os.environ["host"])
+
+    nickname = responce["response_body"]["data"]['list'][0]["author_info"]['nickname']
+    aweme_url = responce["response_body"]["data"]['list'][0]["aweme_info"]['aweme_url']
+    aweme_title = responce["response_body"]["data"]['list'][0]["aweme_info"]['aweme_title']
+    # print(nickname, aweme_url, aweme_title)
+    yield nickname, aweme_url, aweme_title
 
 
