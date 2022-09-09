@@ -301,6 +301,10 @@ class PathMessage:
     track_history = ['/v1/track/history']
     #达人监控-达人置顶
     track_topSwitch_author=['/v1/track/topSwitch']
+    #达人监控-删除达人
+    track_delete=['/v1/track/delete']
+    #视频监控弹窗，视频搜索
+    aweme_monitor_search=["/v1/aweme/search"]
 
 
 if __name__ == '__main__':

@@ -134,9 +134,6 @@ class TestCase_author_monitor():
 
 
 
-
-
-
     @allure.description("""验证添加监控弹窗搜索昵称，监控列表是否正确显示""")
     @allure.title("搜索昵称，监控列表正确显示")
     def test_author_monitor_nickname(self, get_token, get_host, add_author_monitor):
@@ -166,4 +163,17 @@ class TestCase_author_monitor():
         unique_id_list = response["response_body"]["data"]["author_info"]["unique_id"]
         # print(unique_id_list)
         assert unique_id in unique_id_list
+
+    @allure.description("""验证删除已监控完成的达人，监控列表是否正确""")
+    @allure.title("删除已监控完成的达人")
+    def test_author_monitor_delete_finish_id(self, get_token, get_host, delete_author_monitor):
+        trackId = delete_author_monitor
+
+        # print(data)
+        for  value in trackId:
+            data = {"trackId": value}
+            delete_response = base().return_request(method="post", path=PathMessage.track_delete, data=data, tokens=get_token,
+                                             hosts=get_host)
+
+
 
