@@ -305,6 +305,10 @@ class PathMessage:
     track_delete=['/v1/track/delete']
     #视频监控弹窗，视频搜索
     aweme_monitor_search=["/v1/aweme/search"]
+    #评论监控已授权抖音号
+    authormine_auth = ['/v1/authormine/auth/list']
+    #评论监控已授权抖音号列表
+    getCreatorAwemeList = ['/v3/boss/aweme/getCreatorAwemeList']
 
 
 if __name__ == '__main__':
