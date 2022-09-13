@@ -146,6 +146,9 @@ class PathMessage:
     # 视频详情，观众分析
     aweme_personas = ["/v1/aweme/personas"]
 
+    # 视频详情 视频诊断
+    aweme_diagnose = ["/v1/aweme/detail/diagnose/info"]
+
     # 达人库
     author_search = ["/v2/home/author/search"]
 
