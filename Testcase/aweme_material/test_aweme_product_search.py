@@ -162,3 +162,31 @@ class TestCase_Aweme_Product_Search():
         # print(response)
         assert response["status_code"] == 200
         assert len(response["response_body"]["data"]["list"]) > 10
+
+    @allure.description("""验证视频库按品牌找，数据是否正确""")
+    @pytest.mark.parametrize('aweme_bring_product_brand', ["NIKE/耐克"])
+    @allure.title("视频库按品牌找")
+    def test_aweme_search_aweme_graph_type(self, get_token, get_host, aweme_bring_product_brand):
+        para = f'search_type=aweme&goods_relatived=1&page=1&hour_ranges=&star_category=&star_sub_category=&big_category=&first_category=&second_category=&keyword=&digg=&follower_count=&durations=&product_amount=&product_volume=&sort=product_volume&time=30d&size=50&rank_type=1&filter_delete=1&order_by=desc&aweme_bring_product_brand={aweme_bring_product_brand}&product_title=&aweme_graph_type=0'
+        response = base().return_request(method="get", path=PathMessage.aweme_search, data=para, tokens=get_token, hosts=get_host, )
+        # print(response)
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]["list"]) > 10
+        product_info_list = jsonpath.jsonpath(response["response_body"], '$.data.list[*].product_info.promotion_id')
+        # print(product_info_list)
+        assert all(value for value in product_info_list)
+
+
+    @allure.description("""验证视频库按商品找，数据是否正确""")
+    @pytest.mark.parametrize('product_title', ["适配耐克增高鞋垫AJ1男女boost运动防臭吸汗超软隐形内增高鞋垫女"])
+    @allure.title("视频库按商品找")
+    def test_aweme_search_aweme_graph_type(self, get_token, get_host, product_title):
+        para = f'search_type=aweme&goods_relatived=1&page=1&hour_ranges=&star_category=&star_sub_category=&big_category=&first_category=&second_category=&keyword=&digg=&follower_count=&durations=&product_amount=&product_volume=&sort=product_volume&time=30d&size=50&rank_type=1&filter_delete=1&order_by=desc&aweme_bring_product_brand=&product_title={product_title}&aweme_graph_type=0'
+        response = base().return_request(method="get", path=PathMessage.aweme_search, data=para, tokens=get_token,
+                                         hosts=get_host, )
+        # print(response)
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]["list"]) > 10
+        product_info_list = jsonpath.jsonpath(response["response_body"], '$.data.list[*].product_info.promotion_id')
+        # print(product_info_list)
+        assert all(value for value in product_info_list)
