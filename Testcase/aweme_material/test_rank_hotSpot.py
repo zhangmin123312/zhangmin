@@ -9,7 +9,7 @@ from Config.path_config import PathMessage
 import os,jsonpath,datetime,random
 
 def get_timestamp():
-    timestamp = datetime.datetime.now().replace(minute=0, second=0, microsecond=0).timestamp()
+    timestamp = datetime.datetime.now().replace(hour=9, minute=0, second=0, microsecond=0).timestamp()
     timestamp = int(timestamp)
     return timestamp
 print(get_timestamp())
