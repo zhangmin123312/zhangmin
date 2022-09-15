@@ -2,6 +2,8 @@
 # @Time    : 2022/1/7
 # @Author  : linchenzhen
 # @File    : test_music_search.py
+import time
+
 import allure
 import pytest
 
@@ -37,11 +39,12 @@ class TestCase_Music_Search():
 
     @allure.description("""验证音乐库搜索结果是否正确""")
     @allure.title("音乐库搜索结果是否正确")
-    def test_music_search_keyword(self,get_token,get_host):
-        title_para=f"keyword=&page=1&size=50&orderby={self.orderby[0]}&incr_type={self.incr_type[0]}&order=desc"
+    def test_music_search_keyword(self, get_token, get_host):
+        title_para = f"keyword=&page=1&size=50&orderby={self.orderby[0]}&incr_type={self.incr_type[0]}&order=desc"
         title_response = base().return_request(method="get", path=PathMessage.music_search, data=title_para, tokens=get_token,hosts=get_host)
         keyword=title_response["response_body"]["data"]["list"][0]['title']
-
+        # print(keyword)
+        time.sleep(0.1)
         para = f"keyword={keyword}&page=1&size=50&orderby={self.orderby[0]}&incr_type={self.incr_type[0]}&order=desc"
         response = base().return_request(method="get", path=PathMessage.music_search, data=para, tokens=get_token,
                                          hosts=get_host)
@@ -49,5 +52,6 @@ class TestCase_Music_Search():
         assert len(response["response_body"]["data"]["list"]) > 0
         # 验证搜索结果包含关键字的每一个字
         title_list = jsonpath.jsonpath(response["response_body"], f'$.data.list[*].title')
-        for i in keyword:
-            assert all(i in value for value in title_list)
+        # print(title_list)
+        #     assert all(i in value for value in title_list)
+        assert keyword in title_list

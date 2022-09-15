@@ -151,6 +151,30 @@ class base():
 
         return [["month", month_data], ["quarter", quarter_data], ]
 
+    @staticmethod
+    def return_time_message_lastday():
+        """
+        返回昨日的时间
+        """
+        now = datetime.datetime.now().date()
+        lDay = now - timedelta(days=now.weekday() + (7 * abs(1)))
+        del_day = datetime.datetime.now() - datetime.timedelta(days=1)
+        now_day = del_day.strftime('%Y-%m-%d')
+
+        return [["day", now_day]]
+
+    @staticmethod
+    def return_time_message_nowday():
+        """
+        返回今日的时间
+        """
+        now = datetime.datetime.now().date()
+        lDay = now - timedelta(days=now.weekday() + (7 * abs(1)))
+        del_day = datetime.datetime.now()
+        now_day = del_day.strftime('%Y-%m-%d')
+
+        return [["day", now_day]]
+
 
     @staticmethod
     def return_product_types(host, type, product_type='all'):

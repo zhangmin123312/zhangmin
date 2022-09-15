@@ -92,8 +92,17 @@ class PathMessage:
     # 热门视频榜
     rank_hotAweme = ["/v1/home/rank/hotAweme"]
 
+    # 引流视频榜
+    rank_DrainageAweme = ["/v1/douyin/drainageAweme/rank"]
+
+    # 官方热点榜
+    rank_hotSpotRank = ["/v1/home/rank/hotSpotRank"]
+
     # 探店视频榜
     rank_searchShop = ["/v1/searchShop/rank"]
+
+    # 探店视频榜地区
+    rank_searchShop_area = ["/v1/douyin/poi/rank/area"]
 
     # 直播-今日带货榜
     rank_official_daily = ["/v1/douyin/live/rank/official/daily"]
@@ -145,6 +154,9 @@ class PathMessage:
 
     # 视频详情，观众分析
     aweme_personas = ["/v1/aweme/personas"]
+
+    # 视频详情 视频诊断
+    aweme_diagnose = ["/v1/aweme/detail/diagnose/info"]
 
     # 达人库
     author_search = ["/v2/home/author/search"]

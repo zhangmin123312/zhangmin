@@ -60,8 +60,15 @@ class TestCase_Aweme_Product_Search():
     def test_aweme_product_big_category(self,get_token,get_host,product_type):
         para=f"search_type=aweme&goods_relatived=1&page=1&hour_ranges=&star_category=&star_sub_category=&big_category={product_type[0]}&first_category=&second_category=&keyword=&digg=&follower_count=&durations=&product_amount=&product_volume=&sort={self.sort[0]}&time={self.time[0]}&size=50&rank_type=1&filter_delete=1&order_by=desc"
         response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
+        # print(response)
         assert response["status_code"]==200
-        assert len(response["response_body"]["data"]["list"]) > 0
+        assert len(response["response_body"]["data"]["list"]) > 10
+        # aweme_id_list = jsonpath.jsonpath(response["response_body"], '$.data.list[*].aweme_info.aweme_id')
+        # for id in aweme_id_list:
+        #     diagnose_para = {"aweme_id": id, "time_section": 1, "diagnose_type": "big"}
+        #     diagnose_response = base().return_request(method="get", path=PathMessage.aweme_diagnose, data=diagnose_para, tokens=get_token, hosts=get_host)
+            # print(diagnose_response)
+            # assert json.dumps(product_type) in diagnose_response["response_body"]['data']['label']
 
     # @allure.description("""验证带货视频库遍历商品二级分类是否有返回数据""")
     # @pytest.mark.parametrize('product_type',base.return_product_types(os.getenv("host"),2))
@@ -145,3 +152,41 @@ class TestCase_Aweme_Product_Search():
         product_amounts=product_amount.split("-")
         assert all(float(product_amounts[0])<=float(value) for value in product_amount_list if len(product_amounts[0])>0)
         assert all(float(value)<=float(product_amounts[1]) for value in product_amount_list if len(product_amounts[1])>0)
+
+
+    @allure.description("""验证视频库按图文筛选，数据是否正确""")
+    @allure.title("视频库按图文筛选")
+    def test_aweme_search_aweme_graph_type(self,get_token,get_host):
+        para=f"gender_type=-1&age_types=&province=&page=1&star_category=&star_sub_category=&keyword=&digg=&follower_counts=&durations=&hour_ranges=&sort={self.sort[0]}&time={self.time[0]}&size=50&goods_relatived=0&fans_hottest=0&group_buy_relatived=0&aweme_graph_type=1&filter_delete=1&order_by=desc"
+        response = base().return_request(method="get", path=PathMessage.aweme_search, data=para,tokens=get_token,hosts=get_host, )
+        # print(response)
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]["list"]) > 10
+
+    @allure.description("""验证视频库按品牌找，数据是否正确""")
+    @pytest.mark.parametrize('aweme_bring_product_brand', ["NIKE/耐克"])
+    @allure.title("视频库按品牌找")
+    def test_aweme_search_aweme_graph_type(self, get_token, get_host, aweme_bring_product_brand):
+        para = f'search_type=aweme&goods_relatived=1&page=1&hour_ranges=&star_category=&star_sub_category=&big_category=&first_category=&second_category=&keyword=&digg=&follower_count=&durations=&product_amount=&product_volume=&sort=product_volume&time=30d&size=50&rank_type=1&filter_delete=1&order_by=desc&aweme_bring_product_brand={aweme_bring_product_brand}&product_title=&aweme_graph_type=0'
+        response = base().return_request(method="get", path=PathMessage.aweme_search, data=para, tokens=get_token, hosts=get_host, )
+        # print(response)
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]["list"]) > 10
+        product_info_list = jsonpath.jsonpath(response["response_body"], '$.data.list[*].product_info.promotion_id')
+        # print(product_info_list)
+        assert all(value for value in product_info_list)
+
+
+    @allure.description("""验证视频库按商品找，数据是否正确""")
+    @pytest.mark.parametrize('product_title', ["适配耐克增高鞋垫AJ1男女boost运动防臭吸汗超软隐形内增高鞋垫女"])
+    @allure.title("视频库按商品找")
+    def test_aweme_search_aweme_graph_type(self, get_token, get_host, product_title):
+        para = f'search_type=aweme&goods_relatived=1&page=1&hour_ranges=&star_category=&star_sub_category=&big_category=&first_category=&second_category=&keyword=&digg=&follower_count=&durations=&product_amount=&product_volume=&sort=product_volume&time=30d&size=50&rank_type=1&filter_delete=1&order_by=desc&aweme_bring_product_brand=&product_title={product_title}&aweme_graph_type=0'
+        response = base().return_request(method="get", path=PathMessage.aweme_search, data=para, tokens=get_token,
+                                         hosts=get_host, )
+        # print(response)
+        assert response["status_code"] == 200
+        assert len(response["response_body"]["data"]["list"]) > 10
+        product_info_list = jsonpath.jsonpath(response["response_body"], '$.data.list[*].product_info.promotion_id')
+        # print(product_info_list)
+        assert all(value for value in product_info_list)

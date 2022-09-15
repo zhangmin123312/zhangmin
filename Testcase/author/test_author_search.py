@@ -14,7 +14,7 @@ import time
 @pytest.mark.flaky(reruns=5, reruns_delay=1)
 class TestCase_Author_Search():
 
-    sort = ['follower_count', 'inc_follower', 'aweme_digg_medium', 'aweme_digg_follower_ration', 'live_count_30','live_average_amount_30_v2', 'live_average_user_30', ]
+    sort = ['follower_count', 'inc_follower', 'aweme_digg_medium', 'live_count_30','live_average_amount_30_v2', 'live_average_user_30', ]
     order_by = ['desc', 'asc']
 
     @allure.story('验证达人库排序是否正确')
@@ -93,7 +93,7 @@ class TestCase_Author_Search():
 
 
     @allure.story('验证达人库地区筛选是否正确')
-    @pytest.mark.parametrize('city', base.return_city_3(os.getenv("host"), "河北省"))
+    @pytest.mark.parametrize('city', base.return_city_3(os.getenv("host"), "北京市"))
     @allure.title("地区筛选条件为：{city}")
     def test_author_search_city_type(self, get_token, get_host, city):
         para = f"keyword=&author_type=0&goods_cat=&star_category=&star_sub_category=&gender=-1&age=&province=%E6%B2%B3%E5%8C%97%E7%9C%81&city={city}&fans_gender=-1&fans_age=&fans_province=&live_price_preference=&aweme_price_preference=&live_purchase_intention=&aweme_purchase_intention=&follower_count=&take_product_method=0&verification_type=0&author_level=&is_brand_self_author=0&is_shop_author=0&is_star_author=0&is_low_fans_high_gmv=0&is_commerce=0&author_self_play=0&take_product_level=&take_product_price=&reputation_level=-1&live_watch_count=&live_average_amount_30_v2=&gpm=&digg_count=&is_ignore_government=1&contact=0&similar_author_id=&page=1&size=10&sort=inc_follower&bring_product_brand=&order_by=desc&from=detail"
