@@ -24,7 +24,7 @@ class TestCase_Rank_subject():
 
     @allure.story('验证昨日话题榜排序')
     @pytest.mark.parametrize('sort', ["aweme_count_inc", "interact_inc"])
-    @allure.title("排序：{sort}")
+    @allure.title("热门话题榜排序：{sort}")
     def test_rank_subject_sort(self, get_token, get_host, sort):
         times = base.return_time_message()[0][1]
         para="day_type=day&date={}&order={}&page=1&size=50".format(times,sort)
