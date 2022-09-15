@@ -309,6 +309,16 @@ class PathMessage:
     authormine_auth = ['/v1/authormine/auth/list']
     #评论监控已授权抖音号列表
     getCreatorAwemeList = ['/v3/boss/aweme/getCreatorAwemeList']
+    #话术监控，添加监控搜索
+    author_multadd = ["/v1/author/multiSearch"]
+    # 添加话术监控
+    add_topic_monitor = ['/v1/douyin/live/topic_monitor/add']
+    #话术监控列表
+    topic_monitor_list  = ['/v1/douyin/live/topic_monitor/list']
+    #删除话术监控
+    topic_monitor_delete= ['/v1/douyin/live/topic_monitor/delete']
+    #话术监控置顶
+    topic_monitor_topSwitch=['/v1/douyin/live/topic_monitor/topSwitch']
 
 
 if __name__ == '__main__':

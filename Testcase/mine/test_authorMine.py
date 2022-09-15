@@ -97,8 +97,9 @@ class TestCase_AuthorMine():
         para=f"page=1&page_size=50&star_category=&group_id=&sub_user_id=0&keyword=&cooperation_status=-1"
         response_list = base().return_request(method="get", path=PathMessage.authorMine_listsV2, data=para, tokens=get_token,hosts=get_host)
         assert response_list["status_code"] == 200
+
         len_author = len(jsonpath.jsonpath(response_list["response_body"], f'$.data.list[*].author.author_id'))
-        # print(len_author)
+        print(len_author)
         assert len_author > 0
         author_id_list = jsonpath.jsonpath(response_list["response_body"], f'$.data.list[*].author.author_id')
         assert author_id in author_id_list

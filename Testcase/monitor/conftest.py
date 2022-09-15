@@ -4,6 +4,7 @@ from Common.Base import base
 from Config.path_config import PathMessage
 import datetime,os,jsonpath,json,time
 from filelock import FileLock
+import time
 
 
 def get_live_monitor_id(get_token,unique_id):
@@ -151,5 +152,22 @@ def add_aweme_monitor(get_token):
     aweme_title = responce["response_body"]["data"]['list'][0]["aweme_info"]['aweme_title']
     # print(nickname, aweme_url, aweme_title)
     yield nickname, aweme_url, aweme_title
+@pytest.fixture(scope='session')
+def add_live_topic_monitor(get_token):
+    datatime1 = datetime.datetime.now() - datetime.timedelta(days=1)
+    times=datatime1.strftime('%Y-%m-%d')
+    para=f'day_type=day&day={times}&big_category=&first_category=&second_category=&sort=sales_volume&page=1&size=50&verification_type=&is_brand_self_author=0&is_shop_author=0&dark_horse=0&first_rank=0&is_bomb=0'
+    responce = base().return_request(method="get", path=PathMessage.author_TakeProduct, data=para, tokens=get_token,
+                                     hosts=os.environ["host"])
+    # print(responce)
+    nickname=responce["response_body"]["data"]['list'][0]["nickname"]
+    author_id=responce["response_body"]["data"]['list'][0]["author_id"]
+    unique_id=responce["response_body"]["data"]['list'][0]["unique_id"]
+    yield nickname, author_id, unique_id
+
+
+
+
+
 
 
