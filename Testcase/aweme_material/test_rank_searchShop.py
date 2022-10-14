@@ -27,7 +27,7 @@ class TestCase_Rank_searchShop():
     @allure.story('验证探店视频榜遍历商品一级级分类返回的数据是否大于10条')
     @allure.description("""验证探店视频榜查看任意分类""")
     @pytest.mark.parametrize('times', base.return_time_message_1())
-    @pytest.mark.parametrize('city', base.return_city_3(os.getenv("host"), "福建省"))
+    @pytest.mark.parametrize('city', base.return_city_3(os.getenv("host"), "海南省"))
     @pytest.mark.parametrize('sort', sort)
     @allure.title("探店视频榜日期:{times},城市:{city}")
     def test_rank_searchShop(self, get_token, get_host, sort, times, city):
