@@ -110,7 +110,24 @@ class TestCase_live_topic_monitor():
         topic_monitor1 = jsonpath.jsonpath(topic_monitor_list_response1["response_body"], f'$.data.list[*].id')
         assert topic_monitor_topSwitch["status_code"] == 200
         assert topic_monitor1[0] == topic_monitor[1]
-
+    @allure.description("""验证话术监控取消置顶，监控列表是否正确""")
+    @allure.title("验证话术监控取消置顶")
+    def test_live_topic_monitor_topSwitch_(self, get_token, get_host):
+        para='page=1&size=15&status=-1&keyword='
+        topic_monitor_list_response = base().return_request(method="get", path=PathMessage.topic_monitor_list,
+                                                                data=para, tokens=get_token,
+                                                                hosts=get_host)
+        topic_monitor=jsonpath.jsonpath(topic_monitor_list_response["response_body"], f'$.data.list[*].id')
+        data={'monitor_id':topic_monitor[0],'top':0 }
+        topic_monitor_topSwitch =base().return_request(method="post", path=PathMessage.topic_monitor_topSwitch,
+                                                                data=data, tokens=get_token,
+                                                                hosts=get_host)
+        topic_monitor_list_response1 = base().return_request(method="get", path=PathMessage.topic_monitor_list,
+                                                            data=para, tokens=get_token,
+                                                            hosts=get_host)
+        topic_monitor1 = jsonpath.jsonpath(topic_monitor_list_response1["response_body"], f'$.data.list[*].id')
+        assert topic_monitor_topSwitch["status_code"] == 200
+        assert topic_monitor1[0] != topic_monitor[0]
 
 
 
