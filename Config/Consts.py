@@ -24,3 +24,7 @@ commission_rate = ['10-', '20-', '30-', '40-', '50-']
 # 商品来源
 platform = ['jinritemai','taobao','tmall','jd','suning','kaola','weipinhui','yanxuan']
 
+# 钉钉机器人配置
+webhook = "https://oapi.dingtalk.com/robot/send?access_token=7627b69d751c1a29e516ff480f8bb1ab2fcf9e8017f470f31874366b45166af2"
+secret = 'SEC0c7f019e6065f8728d29896448ee800b7fe78e6b98efcdf6e51826d196f8bd84'
+at_phone = ["17350755951"]
