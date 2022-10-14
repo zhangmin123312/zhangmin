@@ -24,7 +24,7 @@ class PathMessage:
     cheng_zhang_da_ren_bang = ["/v1/authorRank/bangNew"]
 
     # 商品品牌榜
-    brand_rank = ["/v1/brand/rank"]
+    brand_rank = ["/v1/hot/brand/rank"]
 
     # 抖音销量榜
     rank_yesterdaySaleRank = ["/v1/home/rank/yesterdaySaleRank"]
