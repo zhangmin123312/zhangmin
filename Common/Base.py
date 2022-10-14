@@ -29,28 +29,25 @@ class base():
         """复制文件"""
         shutil.copyfile(source_file,targrt_file)
 
-
     @staticmethod
-    def dingding(title):
-        """使用钉钉，发送消息"""
-
-        # 机器人的webhooK
+    def dingding_notic():
+        # 钉钉通知
         timestamp = str(round(time.time() * 1000))
         secret_enc = secret.encode('utf-8')
         string_to_sign = '{}\n{}'.format(timestamp, secret)
         string_to_sign_enc = string_to_sign.encode('utf-8')
         hmac_code = hmac.new(secret_enc, string_to_sign_enc, digestmod=hashlib.sha256).digest()
         sign = urllib.parse.quote_plus(base64.b64encode(hmac_code))
-        webhook_all = webhook + "&timestamp="+timestamp+"&sign="+sign
+        webhook_all = webhook + "&timestamp=" + timestamp + "&sign=" + sign
         xiaoding = DingtalkChatbot(webhook_all)
         xiaoding.send_text(msg=os.getenv("REPORT"), at_mobiles=at_phone)
 
-    @staticmethod
-    def dingding_suceces():
-        webhook = "https://oapi.dingtalk.com/robot/send?access_token=496fea610cae3356bd829c68db5b82b6affe551726c1c917c09c61b7e2114c58"
-        send_time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
-        xiaoding = DingtalkChatbot(webhook)
-        xiaoding.send_text(msg="""监控情况：无异常\n时间：{}\n类型：小红书数据""".format(send_time), at_mobiles=["18695682863"])
+    # @staticmethod
+    # def dingding_suceces():
+    #     webhook = "https://oapi.dingtalk.com/robot/send?access_token=496fea610cae3356bd829c68db5b82b6affe551726c1c917c09c61b7e2114c58"
+    #     send_time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
+    #     xiaoding = DingtalkChatbot(webhook)
+    #     xiaoding.send_text(msg="""监控情况：无异常\n时间：{}\n类型：小红书数据""".format(send_time), at_mobiles=["18695682863"])
 
 
     @staticmethod
