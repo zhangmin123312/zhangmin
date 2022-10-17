@@ -17,6 +17,11 @@ from Config.Consts import user_agent
 from Config.path_config import PathMessage
 from Config.Consts import API_ENVIRONMENT,telephone,user_agent
 from Common.mylog import Mylog
+from Config.Consts import user_agent, webhook, secret, at_phone
+import hmac
+import base64
+import urllib.parse
+from urllib.parse import quote
 
 
 
@@ -29,14 +34,19 @@ class base():
 
 
     @staticmethod
-    def dingding(title):
+    def dingding():
         """使用钉钉，发送消息"""
 
-        # 机器人的webhooK
-        webhook = "https://oapi.dingtalk.com/robot/send?access_token=496fea610cae3356bd829c68db5b82b6affe551726c1c917c09c61b7e2114c58"
-        send_time = time.strftime('%Y-%m-%d %H:%M:%S',time.localtime(time.time()))
-        xiaoding = DingtalkChatbot(webhook)
-        xiaoding.send_text(msg="""监控等级：WARNING\n时间：{}\n类型：小红书数据\n内容：{}""".format(send_time,title), at_mobiles=["17350894220","18521716740"])
+        # 钉钉通知
+        timestamp = str(round(time.time() * 1000))
+        secret_enc = secret.encode('utf-8')
+        string_to_sign = '{}\n{}'.format(timestamp, secret)
+        string_to_sign_enc = string_to_sign.encode('utf-8')
+        hmac_code = hmac.new(secret_enc, string_to_sign_enc, digestmod=hashlib.sha256).digest()
+        sign = urllib.parse.quote_plus(base64.b64encode(hmac_code))
+        webhook_all = webhook + "&timestamp=" + timestamp + "&sign=" + sign
+        xiaoding = DingtalkChatbot(webhook_all)
+        xiaoding.send_text(msg=os.getenv("REPORT"), at_mobiles=at_phone)
 
     @staticmethod
     def dingding_suceces():
@@ -100,7 +110,24 @@ class base():
             print("类型输入错误")
 
 
+    @staticmethod
+    def second_switch(second) -> str:
 
+        """
+            秒转换为时分秒
+        """
+        if second < 60:
+            times = str(second) + "s"
+        elif 3600 > second >= 60:
+            m = int(second / 60)
+            s = second % 60
+            times = str(m) + "m" + str(int(s)) + "s"
+        else:
+            m, s = divmod(second, 60)
+            h, m = divmod(m, 60)
+            times = str(h) + "h" + str(m) + "m" + str(int(s)) + "s"
+
+        return times
 
     @staticmethod
     def return_time_message():
@@ -463,9 +490,9 @@ class base():
 
 
 if __name__ == "__main__":
-    get_token, get_host=1,2
-    base().return_hotspot_time(get_host,include_today=0)
-
+    # get_token, get_host=1,2
+    # base().return_hotspot_time(get_host,include_today=0)
+    base().dingding()
 
 
 

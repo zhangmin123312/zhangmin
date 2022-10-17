@@ -11,5 +11,5 @@ from Common.Base import base
 if __name__ == "__main__":
     args = ["./Testcase","-n","auto","--dist=loadfile","-q","-s","--alluredir=./Report/allure-results","--clean-alluredir"]
     pytest.main(args)
-    # base.dingding_suceces()
+    base.dingding()
     # os.system(r"allure generate --clean ./Report/allure-results/ -o ./Report/html")
