@@ -59,6 +59,7 @@ class PathMessage:
     # 品牌详情页-观众分析
     brand_detail_authorFansAnalysis = ["/v2/brand/detail/authorFansAnalysis"]
 
+
     # 品牌自播榜
     brand_self_author = ["/v1/douyin/live/rank/author/sales"]
 
