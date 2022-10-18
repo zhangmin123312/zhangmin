@@ -24,13 +24,14 @@ def add_author(get_token):
     addGroup_para = {"group_name": "测试分组"+str(time.time())}
     addGroup_response = base().return_request(method="post", path=PathMessage.authorMine_addGroup,data=json.dumps(addGroup_para),tokens=get_token, hosts=os.environ["host"])
     group_id = addGroup_response['response_body']['data']['group_id']
+    print(group_id)
     # 达人转移到分组内
     changeGroup_para = {"group_id": group_id,"author_id": author_id}
     changeGroup_response = base().return_request(method="post", path=PathMessage.authorMine_changeGroup,data=json.dumps(changeGroup_para),tokens=get_token, hosts=os.environ["host"])
     yield author_id,nickname,tag,group_id
-    # 删除分组
-    delGroup_para = {"group_id": group_id}
-    delGroup_response = base().return_request(method="post", path=PathMessage.authorMine_delGroup,data=json.dumps(delGroup_para),tokens=get_token, hosts=os.environ["host"])
+    # # 删除分组
+    # delGroup_para = {"group_id": group_id}
+    # delGroup_response = base().return_request(method="post", path=PathMessage.authorMine_delGroup,data=json.dumps(delGroup_para),tokens=get_token, hosts=os.environ["host"])
 
 
 def add_subAccount(get_token):
